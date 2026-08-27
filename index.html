@@ -1552,10 +1552,19 @@ function routeFromHash(smooth){
   if (!m) return false;
   selectTab(m[1]);
   render();
-  if (m[2]) setTimeout(function(){ jumpTo(parseInt(m[2], 10), !!smooth); }, 30);
+  if (m[2]) {
+    var n = parseInt(m[2], 10);
+    var go = function(){ jumpTo(n, false); };
+    setTimeout(function(){ jumpTo(n, !!smooth); }, 30);
+    /* Web fonts land after first paint and reflow the page, which drags the
+       target away from the viewport — re-anchor once they are ready. */
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(go);
+    window.addEventListener("load", function(){ setTimeout(go, 80); }, { once: true });
+  }
   else window.scrollTo({ top: 0 });
   return true;
 }
+try { if ("scrollRestoration" in history) history.scrollRestoration = "manual"; } catch(e){}
 window.addEventListener("hashchange", function(){ routeFromHash(true); });
 
 document.addEventListener("click", function(e){
