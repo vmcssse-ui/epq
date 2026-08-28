@@ -1,0 +1,691 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="description" content="%%DESCRIPTION%%">
+%%NOINDEX%%
+<title>%%TITLE%%</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="%%FONTS%%">
+
+<style>
+/* ---------------------------------------------------------------
+   Weekly page template. Neutral ground + structure live here;
+   track accents and every word come from the manifest.
+   --------------------------------------------------------------- */
+:root{
+  --bg:#FBF7EE; --surface:#FFFFFF; --surface-2:#F4EFE2; --surface-3:#EDE6D5;
+  --ink:#1A2333; --ink-2:#48536A; --ink-3:#7C859A;
+  --rule:#E3DAC6; --rule-2:#CEC3A8;
+  --navy:#12294D; --gold:#C9A227; --gold-ink:#8A6D12;
+  --danger:#A62016; --danger-bg:#FAEAE7; --danger-rule:#E8C2BB;
+  --shadow:0 1px 2px rgba(26,35,51,.06), 0 8px 24px -16px rgba(26,35,51,.28);
+  --track:#12294D; --track-bg:#EDE6D5; --track-rule:#CEC3A8;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0E1420; --surface:#161E2C; --surface-2:#1C2738; --surface-3:#243044;
+    --ink:#EBE5D7; --ink-2:#B2BBCA; --ink-3:#7E8899;
+    --rule:#2A3547; --rule-2:#3B4759;
+    --navy:#9DB6DA; --gold:#D9B84A; --gold-ink:#D9B84A;
+    --danger:#F09184; --danger-bg:#2C1714; --danger-rule:#4C2620;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px -18px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0E1420; --surface:#161E2C; --surface-2:#1C2738; --surface-3:#243044;
+  --ink:#EBE5D7; --ink-2:#B2BBCA; --ink-3:#7E8899;
+  --rule:#2A3547; --rule-2:#3B4759;
+  --navy:#9DB6DA; --gold:#D9B84A; --gold-ink:#D9B84A;
+  --danger:#F09184; --danger-bg:#2C1714; --danger-rule:#4C2620;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px -18px rgba(0,0,0,.8);
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font-family:"Source Sans 3","Segoe UI",system-ui,sans-serif;
+  font-size:16px; line-height:1.55; -webkit-font-smoothing:antialiased;
+}
+a{color:var(--track); text-underline-offset:2px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+
+/* ---------- masthead ---------- */
+.mast{border-bottom:2px solid var(--rule-2);background:var(--surface-2)}
+.mast .wrap{padding-top:34px;padding-bottom:26px}
+.crest{display:flex;align-items:baseline;gap:10px;font-family:"IBM Plex Mono",ui-monospace,monospace;
+  font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3)}
+.crest b{color:var(--gold-ink);font-weight:600}
+h1{font-family:Newsreader,Georgia,serif;font-weight:500;font-size:clamp(30px,5.2vw,48px);
+  line-height:1.06;margin:12px 0 8px;letter-spacing:-.015em;text-wrap:balance;color:var(--ink)}
+.standfirst{max-width:62ch;color:var(--ink-2);font-size:17px;margin:0}
+.hint{margin:14px 0 0;font-size:13.5px;color:var(--ink-3);max-width:62ch}
+.hint b{color:var(--gold-ink);font-weight:600}
+.facts{display:flex;flex-wrap:wrap;gap:0;margin-top:20px;border-top:2px solid var(--rule-2)}
+.fact{padding:12px 22px 10px 0;margin-right:22px;border-right:2px solid var(--rule)}
+.fact:last-child{border-right:0}
+.fact dt{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--ink-3);margin:0 0 3px}
+.fact dd{margin:0;font-size:15px;font-weight:600;font-variant-numeric:tabular-nums}
+
+/* ---------- toolbar ---------- */
+.bar{position:sticky;top:0;z-index:40;background:var(--surface);
+  border-bottom:2px solid var(--rule-2);box-shadow:0 1px 0 rgba(0,0,0,.02)}
+.bar .wrap{display:flex;flex-wrap:wrap;gap:14px;align-items:center;padding-top:10px;padding-bottom:10px}
+.tabs{display:flex;gap:6px;flex-wrap:wrap}
+.tab{appearance:none;cursor:pointer;border:2px solid var(--rule-2);background:transparent;
+  color:var(--ink-2);border-radius:2px;padding:7px 13px;font:inherit;font-size:14px;
+  font-weight:600;display:flex;align-items:center;gap:8px;transition:background .12s,border-color .12s,color .12s}
+.tab .dot{width:9px;height:9px;border-radius:50%;background:currentColor;opacity:.45}
+.tab:hover{background:var(--surface-2)}
+.tab[aria-selected="true"]{background:var(--track-bg);border-color:var(--track);color:var(--track)}
+.tab[aria-selected="true"] .dot{opacity:1}
+.tab .n{font-family:"IBM Plex Mono",monospace;font-size:11px;opacity:.7;font-weight:500}
+.spacer{flex:1 1 40px}
+.seg{display:inline-flex;border:2px solid var(--rule-2);border-radius:2px;overflow:hidden}
+.seg button{appearance:none;cursor:pointer;border:0;background:transparent;color:var(--ink-2);
+  font:inherit;font-size:13px;font-weight:600;padding:7px 12px}
+.seg button + button{border-left:2px solid var(--rule-2)}
+.seg button[aria-pressed="true"]{background:var(--navy);color:var(--surface)}
+.btn{appearance:none;cursor:pointer;border:2px solid var(--rule-2);background:transparent;
+  color:var(--ink-2);border-radius:2px;padding:7px 12px;font:inherit;font-size:13px;font-weight:600}
+.btn:hover{background:var(--surface-2)}
+.meter{display:flex;align-items:center;gap:9px;font-family:"IBM Plex Mono",monospace;
+  font-size:11px;color:var(--ink-3);letter-spacing:.04em}
+.meter .track-bar{width:88px;height:5px;background:var(--surface-3);border-radius:3px;overflow:hidden}
+.meter .fill{height:100%;background:var(--track);width:0;transition:width .25s}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{
+  outline:2px solid var(--gold);outline-offset:2px}
+
+/* ---------- track intro ---------- */
+.intro{background:var(--track-bg);border-bottom:2px solid var(--track-rule)}
+.intro .wrap{padding:20px 20px 22px;display:grid;grid-template-columns:1fr auto;gap:24px;align-items:start}
+.intro h2{font-family:Newsreader,Georgia,serif;font-weight:500;font-size:23px;margin:0 0 6px;color:var(--track)}
+.intro p{margin:0;max-width:64ch;color:var(--ink-2);font-size:15px}
+.spine{display:flex;flex-direction:column;gap:5px;min-width:210px}
+.spine .row{display:flex;justify-content:space-between;gap:16px;font-size:13px;
+  padding:5px 0;border-bottom:2px dotted var(--track-rule)}
+.spine .row:last-child{border-bottom:0}
+.spine .k{color:var(--ink-2)}
+.spine .v{font-family:"IBM Plex Mono",monospace;font-weight:600;color:var(--track);
+  font-variant-numeric:tabular-nums;white-space:nowrap}
+
+/* ---------- weeks ---------- */
+main{padding:26px 0 70px}
+.termhead{display:flex;align-items:center;gap:14px;margin:34px 0 14px;scroll-margin-top:108px}
+.termhead:first-child{margin-top:6px}
+.termhead h3{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--ink-3);margin:0;white-space:nowrap;font-weight:600}
+.termhead .line{flex:1;height:2px;background:var(--rule-2)}
+
+.wk{scroll-margin-top:108px;background:var(--surface);border:2px solid var(--rule-2);border-radius:3px;
+  margin-bottom:10px;box-shadow:var(--shadow);overflow:hidden}
+.wk.deadline{border-color:var(--danger-rule)}
+.wk .inner{display:grid;grid-template-columns:158px 1fr;gap:0}
+.idx{padding:16px 16px 16px 18px;border-right:2px solid var(--rule-2);background:var(--surface-2)}
+.wk.deadline .idx{background:var(--danger-bg);border-right-color:var(--danger-rule)}
+.idx .num{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--ink-3);font-weight:600}
+.idx .date{font-family:Newsreader,Georgia,serif;font-size:21px;line-height:1.15;margin-top:2px;color:var(--ink)}
+.idx .days{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--ink-3);margin-top:3px;
+  font-variant-numeric:tabular-nums}
+.idx .note{font-size:12px;color:var(--ink-2);margin-top:8px;font-style:italic;line-height:1.35}
+.wlink{appearance:none;cursor:pointer;border:0;background:transparent;padding:0;margin-top:10px;
+  font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;
+  font-weight:600;color:var(--ink-3);border-bottom:2px solid var(--rule-2);line-height:1.7}
+.wlink:hover{color:var(--track);border-bottom-color:var(--track)}
+.wlink[data-done="1"]{color:var(--track);border-bottom-color:var(--track)}
+.wurl{display:none;width:100%;margin-top:7px;font-family:"IBM Plex Mono",monospace;font-size:10.5px;
+  padding:5px 6px;border:2px solid var(--rule-2);border-radius:2px;background:var(--surface);
+  color:var(--ink-2)}
+.wurl.show{display:block}
+.wk.flash{border-color:var(--gold)}
+.wk.flash .idx{background:var(--surface-3)}
+.body{padding:15px 18px 16px}
+.phase{display:inline-block;font-family:"IBM Plex Mono",monospace;font-size:10px;
+  letter-spacing:.13em;text-transform:uppercase;font-weight:600;color:var(--track);
+  background:var(--track-bg);border:2px solid var(--track-rule);border-radius:2px;padding:3px 7px}
+.flag{display:inline-block;font-family:"IBM Plex Mono",monospace;font-size:10px;
+  letter-spacing:.13em;text-transform:uppercase;font-weight:600;color:var(--danger);
+  background:var(--danger-bg);border:2px solid var(--danger-rule);border-radius:2px;padding:3px 7px;margin-left:6px}
+h4.wt{font-family:Newsreader,Georgia,serif;font-weight:600;font-size:20px;margin:9px 0 2px;
+  letter-spacing:-.01em;text-wrap:balance}
+.lede{margin:0 0 12px;color:var(--ink-2);font-size:15px;max-width:68ch}
+.slots{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:0;
+  border:2px solid var(--rule-2);border-radius:2px;margin-bottom:13px}
+.slot{padding:10px 13px;display:flex;flex-direction:column}
+.slot + .slot{border-left:2px solid var(--rule-2)}
+.slot dt{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--ink-3);font-weight:600;margin-bottom:3px}
+.slot dd{margin:0;font-size:14.5px;color:var(--ink)}
+.slinks{margin-top:auto;padding-top:10px;display:flex;flex-wrap:wrap;gap:6px}
+.slink{display:inline-flex;align-items:center;gap:5px;text-decoration:none;font-size:13px;
+  font-weight:600;color:var(--track);background:var(--track-bg);
+  border:2px solid var(--track-rule);border-radius:2px;padding:4px 9px 4px 7px;
+  transition:border-color .12s,background .12s}
+.slink:hover{border-color:var(--track)}
+.slink .ar{font-size:10px;opacity:.65;line-height:1}
+
+/* ---------- media ---------- */
+.media{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 12px}
+.mbtn{appearance:none;cursor:pointer;font:inherit;font-size:13px;font-weight:600;
+  display:inline-flex;align-items:center;gap:7px;padding:5px 11px 5px 9px;border-radius:2px;
+  color:var(--gold-ink);background:transparent;border:2px solid var(--gold);
+  transition:background .12s}
+.mbtn:hover{background:var(--surface-2)}
+.mbtn[aria-expanded="true"]{background:var(--gold);color:#1A2333}
+.mbtn .gl{font-size:11px;line-height:1}
+.mbtn .mins{font-family:"IBM Plex Mono",monospace;font-size:10.5px;opacity:.75;font-weight:500}
+.mstage{margin:0 0 13px}
+.mstage[hidden]{display:none}
+.mstage .frame{position:relative;width:100%;aspect-ratio:16/9;border:2px solid var(--rule-2);
+  border-radius:2px;overflow:hidden;background:#000}
+.mstage .frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.mstage audio{width:100%;display:block}
+
+.tasks{list-style:none;margin:0 0 4px;padding:0;display:flex;flex-direction:column;gap:3px}
+.tasks li{display:flex;gap:10px;align-items:flex-start;padding:4px 0;font-size:15px}
+.tasks input{margin:4px 0 0;accent-color:var(--track);width:15px;height:15px;flex:none;cursor:pointer}
+.tasks label{cursor:pointer}
+.tasks li.checked label{color:var(--ink-3);text-decoration:line-through}
+.subhead{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--ink-3);font-weight:600;margin:12px 0 4px}
+.logbox{border-left:4px solid var(--gold);background:var(--surface-2);padding:8px 12px;
+  font-size:14.5px;margin:10px 0 0;color:var(--ink-2)}
+.logbox b{color:var(--ink);font-weight:600}
+.links{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.chip{display:inline-flex;align-items:center;gap:6px;text-decoration:none;font-size:13px;
+  font-weight:600;color:var(--ink-2);background:var(--surface-2);border:2px solid var(--rule);
+  border-radius:2px;padding:4px 9px;transition:border-color .12s,color .12s}
+.chip:hover{border-color:var(--track);color:var(--track)}
+.chip .ext{font-family:"IBM Plex Mono",monospace;font-size:9px;letter-spacing:.1em;
+  color:var(--ink-3);border:2px solid var(--rule-2);border-radius:2px;padding:1px 3px}
+.sup{border-top:2px dashed var(--rule-2);margin-top:14px;padding-top:11px;display:none}
+body[data-view="sup"] .sup{display:block}
+.sup .subhead{color:var(--gold-ink);margin-top:0}
+.sup p{margin:0 0 6px;font-size:14.5px;color:var(--ink-2)}
+.qa{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.qa span{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.06em;
+  color:var(--gold-ink);border:2px solid var(--gold);border-radius:2px;padding:2px 7px;background:transparent}
+
+.brk{display:flex;align-items:center;gap:14px;margin:14px 0;padding:9px 16px;
+  background:repeating-linear-gradient(135deg,transparent 0 7px,var(--surface-2) 7px 14px);
+  border:2px solid var(--rule-2);border-radius:3px}
+.brk .lbl{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.14em;
+  text-transform:uppercase;font-weight:600;color:var(--ink-2);white-space:nowrap}
+.brk .dt{font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--ink-3);
+  font-variant-numeric:tabular-nums;white-space:nowrap}
+.brk .msg{font-size:14px;color:var(--ink-2);font-style:italic}
+.brk.warn{background:var(--danger-bg);border-color:var(--danger-rule)}
+.brk.warn .lbl,.brk.warn .dt{color:var(--danger)}
+
+.endcap{border:2px solid var(--track-rule);background:var(--track-bg);border-radius:3px;
+  padding:20px 22px;margin-top:18px}
+.endcap h4{font-family:Newsreader,Georgia,serif;font-weight:600;font-size:21px;margin:0 0 6px;color:var(--track)}
+.endcap p{margin:0 0 8px;color:var(--ink-2);font-size:15px;max-width:66ch}
+.endcap ul{margin:6px 0 0;padding-left:20px;color:var(--ink-2);font-size:15px}
+.endcap li{margin-bottom:3px}
+
+.lib{border-top:2px solid var(--rule-2);margin-top:44px;padding-top:30px}
+.lib h3{font-family:Newsreader,Georgia,serif;font-weight:500;font-size:26px;margin:0 0 4px}
+.lib > p{margin:0 0 20px;color:var(--ink-2);max-width:66ch;font-size:15px}
+.shelves{display:grid;grid-template-columns:repeat(auto-fit,minmax(272px,1fr));gap:14px}
+.shelf{border:2px solid var(--rule-2);border-radius:3px;background:var(--surface);padding:14px 16px}
+.shelf h5{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--ink-3);margin:0 0 9px;font-weight:600}
+.shelf ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:5px}
+.shelf a{display:block;font-size:14.5px;text-decoration:none;color:var(--ink);
+  border-bottom:2px dotted var(--rule);padding-bottom:6px}
+.shelf li:last-child a{border-bottom:0}
+.shelf a:hover{color:var(--track)}
+.shelf a .t{font-family:"IBM Plex Mono",monospace;font-size:9.5px;color:var(--ink-3);margin-left:6px;
+  letter-spacing:.08em}
+.gap{margin-top:16px;border:2px dashed var(--rule-2);border-radius:3px;padding:12px 15px;
+  font-size:14px;color:var(--ink-2)}
+.gap b{color:var(--ink)}
+.gap[hidden]{display:none}
+footer{border-top:2px solid var(--rule-2);margin-top:40px;padding:20px 0 40px;
+  font-size:13px;color:var(--ink-3)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between}
+
+@media (max-width:720px){
+  .wk .inner{grid-template-columns:1fr}
+  .idx{border-right:0;border-bottom:2px solid var(--rule-2);display:flex;align-items:baseline;
+    gap:10px;flex-wrap:wrap;padding:11px 16px}
+  .wk.deadline .idx{border-bottom-color:var(--danger-rule)}
+  .idx .date{font-size:18px;margin-top:0}
+  .idx .note{width:100%;margin-top:2px}
+  .intro .wrap{grid-template-columns:1fr}
+  .slot + .slot{border-left:0;border-top:2px solid var(--rule-2)}
+  .fact{padding-right:16px;margin-right:16px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+
+<header class="mast"><div class="wrap">
+  <div class="crest" id="crest"></div>
+  <h1 id="pageTitle"></h1>
+  <p class="standfirst" id="standfirst"></p>
+  <dl class="facts" id="facts"></dl>
+  <p class="hint" id="hint"></p>
+</div></header>
+
+<div class="bar"><div class="wrap">
+  <div class="tabs" id="tabs" role="tablist" aria-label="Track"></div>
+  <div class="spacer"></div>
+  <div class="meter"><span id="mcount">0 / 0</span><span class="track-bar"><span class="fill" id="mfill"></span></span></div>
+  <div class="seg" role="group" aria-label="View">
+    <button id="vStu" aria-pressed="true"></button>
+    <button id="vSup" aria-pressed="false"></button>
+  </div>
+  <button class="btn" id="today"></button>
+</div></div>
+
+<div class="intro"><div class="wrap">
+  <div><h2 id="introTitle"></h2><p id="introText"></p></div>
+  <div class="spine" id="introSpine"></div>
+</div></div>
+
+<main class="wrap" id="weeks"></main>
+
+<div class="wrap">
+  <section class="lib">
+    <h3 id="libTitle"></h3>
+    <p id="libLede"></p>
+    <div class="shelves" id="shelves"></div>
+    <div class="gap" id="gapBox" hidden></div>
+  </section>
+</div>
+
+<footer><div class="wrap" id="foot"></div></footer>
+
+<script>
+(function(){
+"use strict";
+
+var M = %%MANIFEST%%;
+
+var el = function(id){ return document.getElementById(id); };
+function esc(s){ return String(s == null ? "" : s).replace(/&/g,"&amp;").replace(/</g,"&lt;"); }
+var L = M.meta.labels || {};
+function lab(k, d){ return L[k] != null ? L[k] : d; }
+
+/* ---------- theme: track accents + optional token overrides ---------- */
+(function theme(){
+  function vars(o){ return Object.keys(o || {}).map(function(k){ return "--" + k + ":" + o[k] + ";"; }).join(""); }
+  function trackRules(prefix, dark){
+    return M.tracks.map(function(t){
+      var a = t.accent || {};
+      var ink  = dark ? (a.inkDark  || a.ink)  : a.ink;
+      var bg   = dark ? (a.bgDark   || a.bg)   : a.bg;
+      var rule = dark ? (a.ruleDark || a.rule) : a.rule;
+      return prefix + 'body[data-track="' + t.key + '"]{--track:' + ink +
+             ";--track-bg:" + bg + ";--track-rule:" + rule + "}";
+    }).join("\n");
+  }
+  var th = M.theme || {};
+  var css = ":root{" + vars(th.light) + "}\n" + trackRules("", false) + "\n" +
+    '@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){' + vars(th.dark) + "}\n" +
+    trackRules(':root:not([data-theme="light"]) ', true) + "}\n" +
+    ':root[data-theme="dark"]{' + vars(th.dark) + "}\n" +
+    trackRules(':root[data-theme="dark"] ', true);
+  var s = document.createElement("style");
+  s.textContent = css;
+  document.head.appendChild(s);
+})();
+
+/* ---------- file links ---------- */
+var FI = M.files || {};
+function encPath(p){ return p.split("/").map(encodeURIComponent).join("/"); }
+function F(path){
+  if (/^https?:/i.test(path)) return path;
+  var ext = (path.split(".").pop() || "").toLowerCase();
+  var office = (FI.officeExt || []).indexOf(ext) !== -1;
+  return (FI.origin || "") + encPath((FI.prefix || "") + (FI.base || "") + path).replace(/^([^/])/, "/$1") +
+         (office ? (FI.officeParam || "") : "");
+}
+function FOLDER(sub){
+  if (!FI.folderView) return "#";
+  var id = (FI.folderRoot || "") + (sub ? "/" + sub : "");
+  return (FI.origin || "") + FI.folderView + encodeURIComponent(id);
+}
+var R = M.resources || {};
+
+/* ---------- calendar ---------- */
+var WC = M.calendar.weeks;
+var LASTWEEK = WC.length;
+var SHORT = M.calendar.shortWeeks || {};
+var TERMS = M.calendar.terms || [];
+var NOTES = M.calendar.notes || {};
+var BREAKS = M.calendar.breaks || {};
+var MN = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+function wcDate(n){ var p = WC[n-1].split("-"); return new Date(+p[0], +p[1]-1, +p[2]); }
+function fmt(d){ return d.getDate() + " " + MN[d.getMonth()]; }
+function wcLabel(n){
+  var a = wcDate(n), b = new Date(a.getTime());
+  b.setDate(b.getDate() + (SHORT[n] != null ? SHORT[n] : 4));
+  return fmt(a) + " – " + fmt(b) + " " + b.getFullYear();
+}
+
+var state = { track: M.tracks[0].key, view: "stu" };
+
+/* ---------- links ---------- */
+function pageBase(){
+  var u = M.meta.siteUrl;
+  if (u) return u.split("#")[0];
+  try { if (window.top !== window.self && window.top.location.href) return window.top.location.href.split("#")[0]; }
+  catch(e){ if (document.referrer) return document.referrer.split("#")[0]; }
+  return location.href.split("#")[0];
+}
+function weekURL(n){ return pageBase() + "#" + state.track + "-w" + n; }
+
+function chip(id){
+  var r = R[id]; if (!r) return "";
+  return '<a class="chip" href="' + F(r.path) + '" target="_blank" rel="noopener">' + esc(r.label) +
+         ' <span class="ext">' + esc(r.type) + "</span></a>";
+}
+function slink(ids){
+  if (!ids || !ids.length) return "";
+  return '<div class="slinks">' + ids.map(function(id){
+    var r = R[id]; if (!r) return "";
+    return '<a class="slink" href="' + F(r.path) + '" target="_blank" rel="noopener" title="' + esc(r.label) + '">' +
+           '<span class="ar" aria-hidden="true">&#9656;</span>' + esc(r.short || r.label) + "</a>";
+  }).join("") + "</div>";
+}
+
+/* ---------- media ---------- */
+function ytEmbed(url){
+  var m = /(?:youtu\.be\/|v=|\/embed\/|\/shorts\/)([A-Za-z0-9_-]{6,})/.exec(url || "");
+  return m ? "https://www.youtube-nocookie.com/embed/" + m[1] + "?rel=0" : null;
+}
+function mbtn(kind, o, glyph, fallback){
+  var mins = o.mins ? '<span class="mins">' + esc(o.mins) + "</span>" : "";
+  return '<button class="mbtn" type="button" aria-expanded="false" data-kind="' + kind +
+         '" data-src="' + esc(o.url) + '"><span class="gl" aria-hidden="true">' + glyph + "</span>" +
+         esc(o.label || fallback) + mins + "</button>";
+}
+function media(d){
+  var out = [];
+  if (d.video && d.video.url)   out.push(mbtn("video", d.video, "&#9654;", lab("watch","Watch")));
+  if (d.podcast && d.podcast.url) out.push(mbtn("audio", d.podcast, "&#9835;", lab("listen","Listen")));
+  if (!out.length) return "";
+  return '<div class="media">' + out.join("") + '</div><div class="mstage" hidden></div>';
+}
+document.addEventListener("click", function(e){
+  var b = e.target.closest && e.target.closest(".mbtn");
+  if (!b) return;
+  var stage = b.parentNode.nextElementSibling;
+  if (!stage || !stage.classList.contains("mstage")) return;
+  var open = b.getAttribute("aria-expanded") === "true";
+  Array.prototype.forEach.call(b.parentNode.querySelectorAll(".mbtn"), function(x){
+    x.setAttribute("aria-expanded", "false");
+  });
+  if (open){ stage.hidden = true; stage.innerHTML = ""; return; }
+  var src = b.getAttribute("data-src");
+  if (b.getAttribute("data-kind") === "video"){
+    var emb = ytEmbed(src) || src;
+    stage.innerHTML = '<div class="frame"><iframe src="' + esc(emb) +
+      '" title="Video" allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture" ' +
+      'referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe></div>';
+  } else {
+    stage.innerHTML = '<audio controls preload="none" src="' + esc(/^https?:/i.test(src) ? src : F(src)) + '"></audio>';
+  }
+  stage.hidden = false;
+  b.setAttribute("aria-expanded", "true");
+});
+
+/* ---------- week card ---------- */
+function weekHTML(n, d){
+  var flag = d.f ? '<span class="flag">' + esc(d.f) + "</span>" : "";
+  var note = NOTES[n] ? '<div class="note">' + esc(NOTES[n]) + "</div>" : "";
+  var tasks = (d.k || []).map(function(t, i){
+    var key = "wk:" + M.meta.id + ":" + state.track + ":" + n + ":" + i;
+    return '<li data-key="' + key + '"><input type="checkbox" id="' + key + '"><label for="' + key + '">' + esc(t) + "</label></li>";
+  }).join("");
+  var used = (d.wl || []).concat(d.cl || []);
+  var extra = (d.r || []).filter(function(id){ return used.indexOf(id) === -1; });
+  var links = extra.length
+    ? '<div class="subhead">' + esc(lab("also","Also this week")) + '</div><div class="links">' + extra.map(chip).join("") + "</div>"
+    : "";
+  var qa = (d.q && d.q.length)
+    ? '<div class="qa">' + d.q.map(function(x){ return "<span>" + esc(x) + "</span>"; }).join("") + "</div>" : "";
+  var supBlock = d.s
+    ? '<div class="sup"><div class="subhead">' + esc(lab("supervisor","Supervisor")) + "</div><p>" + esc(d.s) + "</p>" + qa + "</div>"
+    : "";
+  return '<article class="wk' + (d.f ? " deadline" : "") + '" id="w' + n + '"><div class="inner">' +
+    '<div class="idx"><div class="num">' + esc(lab("weekWord","Week")) + " " + n + "</div>" +
+      '<div class="date">' + fmt(wcDate(n)) + "</div>" +
+      '<div class="days">' + wcLabel(n) + "</div>" + note +
+      '<button class="wlink" data-w="' + n + '">' + esc(lab("copyLink","Copy week link")) + "</button>" +
+      '<input class="wurl" readonly value="' + weekURL(n) + '" aria-label="Link to week ' + n + '">' +
+    "</div>" +
+    '<div class="body">' +
+      '<span class="phase">' + esc(d.p) + "</span>" + flag +
+      '<h4 class="wt">' + esc(d.t) + "</h4>" +
+      '<p class="lede">' + esc(d.l) + "</p>" +
+      '<dl class="slots">' +
+        '<div class="slot"><dt>' + esc(lab("slotA","Session A")) + "</dt><dd>" + esc(d.w) + "</dd>" + slink(d.wl) + "</div>" +
+        '<div class="slot"><dt>' + esc(lab("slotB","Session B")) + "</dt><dd>" + esc(d.c) + "</dd>" + slink(d.cl) + "</div>" +
+      "</dl>" +
+      media(d) +
+      '<div class="subhead">' + esc(lab("tasks","Before the next session")) + "</div>" +
+      '<ul class="tasks">' + tasks + "</ul>" +
+      (d.g ? '<div class="logbox"><b>' + esc(lab("logbook","Log book")) + ":</b> " + esc(d.g) + "</div>" : "") +
+      links + supBlock +
+    "</div></div></article>";
+}
+
+function breakHTML(b){
+  return '<div class="brk' + (b.warn ? " warn" : "") + '"><span class="lbl">' + esc(b.lbl) + "</span>" +
+    '<span class="dt">' + esc(b.dt) + "</span>" +
+    (b.msg ? '<span class="msg">' + esc(b.msg) + "</span>" : "") + "</div>";
+}
+
+function trackByKey(k){
+  for (var i = 0; i < M.tracks.length; i++) if (M.tracks[i].key === k) return M.tracks[i];
+  return M.tracks[0];
+}
+
+function render(){
+  var t = state.track, D = M.weeks[t] || {}, route = trackByKey(t);
+  document.body.setAttribute("data-track", t);
+  document.body.setAttribute("data-view", state.view);
+  el("introTitle").textContent = route.name;
+  el("introText").textContent = route.blurb;
+  el("introSpine").innerHTML = (route.spine || []).map(function(r){
+    return '<div class="row"><span class="k">' + esc(r[0]) + '</span><span class="v">' + esc(r[1]) + "</span></div>";
+  }).join("");
+
+  var out = [], keys = Object.keys(D).map(Number);
+  var lastWeek = keys.length ? Math.max.apply(null, keys) : 0;
+  TERMS.forEach(function(T){
+    var body = [];
+    for (var n = T.from; n <= T.to; n++){
+      if (D[n]) body.push(weekHTML(n, D[n]));
+      if (BREAKS[n] && n <= lastWeek) body.push(breakHTML(BREAKS[n]));
+    }
+    if (body.length) out.push('<div class="termhead"><h3>' + esc(T.t) + '</h3><span class="line"></span></div>' + body.join(""));
+  });
+
+  if (lastWeek && lastWeek < LASTWEEK){
+    var title = lab("endcapTitle", "Weeks %A%–%B% · nothing scheduled")
+      .replace("%A%", lastWeek + 1).replace("%B%", LASTWEEK).replace("%L%", lastWeek);
+    var bodyTxt = lab("endcapBody", "This track finishes in week %L%.").replace("%L%", lastWeek)
+      .replace("%A%", lastWeek + 1).replace("%B%", LASTWEEK);
+    var pts = (lab("endcapPoints", []) || []).map(function(p){ return "<li>" + esc(p) + "</li>"; }).join("");
+    out.push('<div class="endcap"><h4>' + esc(title) + "</h4><p>" + esc(bodyTxt) + "</p>" +
+             (pts ? "<ul>" + pts + "</ul>" : "") + "</div>");
+  }
+  el("weeks").innerHTML = out.join("");
+  restore();
+}
+
+/* ---------- task persistence ---------- */
+function store(k, v){ try { if (v) localStorage.setItem(k, "1"); else localStorage.removeItem(k); } catch(e){} }
+function restore(){
+  var boxes = document.querySelectorAll(".tasks input");
+  Array.prototype.forEach.call(boxes, function(b){
+    var on = false;
+    try { on = localStorage.getItem(b.id) === "1"; } catch(e){}
+    b.checked = on;
+    b.parentNode.classList.toggle("checked", on);
+  });
+  meter();
+}
+function meter(){
+  var boxes = document.querySelectorAll(".tasks input"), done = 0;
+  Array.prototype.forEach.call(boxes, function(b){ if (b.checked) done++; });
+  el("mcount").textContent = done + " / " + boxes.length;
+  el("mfill").style.width = Math.round(done / (boxes.length || 1) * 100) + "%";
+}
+document.addEventListener("change", function(e){
+  if (e.target && e.target.matches(".tasks input")){
+    e.target.parentNode.classList.toggle("checked", e.target.checked);
+    store(e.target.id, e.target.checked);
+    meter();
+  }
+});
+
+/* ---------- deep links ---------- */
+function selectTab(t){
+  Array.prototype.forEach.call(document.querySelectorAll(".tab"), function(x){
+    x.setAttribute("aria-selected", x.getAttribute("data-t") === t ? "true" : "false");
+  });
+  state.track = t;
+}
+function jumpTo(n, smooth){
+  var node = el("w" + n);
+  if (!node) return;
+  node.scrollIntoView({ behavior: smooth ? "smooth" : "auto", block: "start" });
+  node.classList.add("flash");
+  setTimeout(function(){ node.classList.remove("flash"); }, 2600);
+}
+var TRACKRE = new RegExp("^#?(" + M.tracks.map(function(t){ return t.key; }).join("|") + ")(?:-w(\\d+))?$");
+function routeFromHash(smooth){
+  var m = TRACKRE.exec((location.hash || "").trim());
+  if (!m) return false;
+  selectTab(m[1]);
+  render();
+  if (m[2]){
+    var n = parseInt(m[2], 10);
+    var go = function(){ jumpTo(n, false); };
+    setTimeout(function(){ jumpTo(n, !!smooth); }, 30);
+    /* Web fonts land after first paint and reflow the page, which drags the
+       target away from the viewport — re-anchor once they are ready. */
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(go);
+    window.addEventListener("load", function(){ setTimeout(go, 80); }, { once: true });
+  }
+  else window.scrollTo({ top: 0 });
+  return true;
+}
+try { if ("scrollRestoration" in history) history.scrollRestoration = "manual"; } catch(e){}
+window.addEventListener("hashchange", function(){ routeFromHash(true); });
+
+document.addEventListener("click", function(e){
+  var b = e.target.closest && e.target.closest(".wlink");
+  if (!b) return;
+  var field = b.parentNode.querySelector(".wurl");
+  var url = weekURL(b.getAttribute("data-w"));
+  field.value = url;
+  field.classList.add("show");
+  field.focus(); field.select();
+  var ok = false;
+  try { document.execCommand("copy"); ok = true; } catch(err){}
+  var done = function(good){
+    b.textContent = good ? lab("copied","Link copied") : lab("copyManual","Copy from the box");
+    b.setAttribute("data-done", "1");
+  };
+  if (navigator.clipboard && navigator.clipboard.writeText){
+    navigator.clipboard.writeText(url).then(function(){ done(true); }, function(){ done(ok); });
+  } else done(ok);
+  setTimeout(function(){ b.textContent = lab("copyLink","Copy week link"); b.removeAttribute("data-done"); }, 4000);
+});
+
+/* ---------- chrome ---------- */
+(function chrome(){
+  var m = M.meta;
+  document.title = m.title;
+  el("crest").innerHTML = (m.eyebrow || []).map(function(x, i){
+    return i === 0 ? "<b>" + esc(x) + "</b>" : "<span>·</span> <span>" + esc(x) + "</span>";
+  }).join(" ");
+  el("pageTitle").textContent = m.title;
+  el("standfirst").textContent = m.standfirst || "";
+  el("facts").innerHTML = (m.facts || []).map(function(f){
+    return '<div class="fact"><dt>' + esc(f[0]) + "</dt><dd>" + esc(f[1]) + "</dd></div>";
+  }).join("");
+  if (m.hint) el("hint").innerHTML = m.hint; else el("hint").remove();
+  el("vStu").textContent = lab("viewA","Student");
+  el("vSup").textContent = lab("viewB","Supervisor");
+  el("today").textContent = lab("today","This week");
+  el("tabs").innerHTML = M.tracks.map(function(t, i){
+    return '<button class="tab" data-t="' + esc(t.key) + '" role="tab" aria-selected="' + (i === 0) + '">' +
+      '<span class="dot"></span>' + esc(t.label) +
+      (t.count ? ' <span class="n">' + esc(t.count) + "</span>" : "") + "</button>";
+  }).join("");
+  Array.prototype.forEach.call(document.querySelectorAll(".tab"), function(b){
+    b.addEventListener("click", function(){
+      selectTab(b.getAttribute("data-t"));
+      try { history.replaceState(null, "", "#" + state.track); } catch(e){}
+      render();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  });
+  el("foot").innerHTML = (m.footer || []).map(function(x){ return "<span>" + esc(x) + "</span>"; }).join("\n");
+
+  var lib = M.library || {};
+  el("libTitle").textContent = lab("libraryTitle","Where everything lives");
+  if (lib.lede || L.libraryLede) el("libLede").innerHTML = lib.lede || L.libraryLede; else el("libLede").remove();
+  var shelves = (lib.shelves || []).map(function(s){
+    return '<div class="shelf"><h5>' + esc(s[0]) + "</h5><ul>" + s[1].map(function(id){
+      var r = R[id]; if (!r) return "";
+      return '<li><a href="' + F(r.path) + '" target="_blank" rel="noopener">' + esc(r.label) +
+             '<span class="t">' + esc(r.type) + "</span></a></li>";
+    }).join("") + "</ul></div>";
+  });
+  if ((lib.folders || []).length){
+    shelves.push('<div class="shelf"><h5>Folders</h5><ul>' + lib.folders.map(function(f){
+      return '<li><a href="' + FOLDER(f[1]) + '" target="_blank" rel="noopener">' + esc(f[0]) +
+             '<span class="t">' + esc(f[2] || "FOLDER") + "</span></a></li>";
+    }).join("") + "</ul></div>");
+  }
+  el("shelves").innerHTML = shelves.join("");
+  if (lib.gaps){
+    el("gapBox").innerHTML = "<b>" + esc(lab("gapsLabel","Not available yet:")) + "</b> " + esc(lib.gaps);
+    el("gapBox").hidden = false;
+  }
+  if (!(lib.shelves || []).length && !(lib.folders || []).length && !lib.gaps){
+    document.querySelector(".lib").remove();
+  }
+})();
+
+function setView(v){
+  state.view = v;
+  el("vStu").setAttribute("aria-pressed", v === "stu");
+  el("vSup").setAttribute("aria-pressed", v === "sup");
+  document.body.setAttribute("data-view", v);
+}
+el("vStu").addEventListener("click", function(){ setView("stu"); });
+el("vSup").addEventListener("click", function(){ setView("sup"); });
+
+el("today").addEventListener("click", function(){
+  var now = new Date(), best = null;
+  for (var n = 1; n <= LASTWEEK; n++){
+    var a = wcDate(n), b = new Date(a.getTime()); b.setDate(b.getDate() + 7);
+    if (now >= a && now < b){ best = n; break; }
+    if (now < a){ best = n; break; }
+  }
+  if (!best) best = LASTWEEK;
+  var node = el("w" + best);
+  while (!node && best > 1){ best--; node = el("w" + best); }
+  if (node) node.scrollIntoView({ behavior: "smooth", block: "start" });
+});
+
+if (!routeFromHash(false)) render();
+})();
+</script>
+</body>
+</html>
