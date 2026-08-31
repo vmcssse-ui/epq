@@ -654,7 +654,13 @@
           "Tracker: baseline recorded",
           "Route: provisional"
         ],
-        "video": null,
+        "video": {
+          "url": "https://www.youtube.com/watch?v=1YIfN4rAhiE",
+          "label": "Getting an A* in the EPQ",
+          "by": "Martin Blyth",
+          "title": "Secrets to EPQ Success: How to get an A* in your Extended Project Qualification (AQA)",
+          "mins": "13:31"
+        },
         "podcast": null
       },
       "2": {
@@ -687,7 +693,13 @@
           "Referral round 1 issued",
           "Specialist Feedback sheet open"
         ],
-        "video": null,
+        "video": {
+          "url": "https://www.youtube.com/watch?v=hrD3-s84Qhc",
+          "label": "Structuring the EPQ essay",
+          "by": "Mr Davey",
+          "title": "How to write your EPQ essay",
+          "mins": "4:48"
+        },
         "podcast": null
       },
       "3": {
@@ -719,7 +731,13 @@
           "Log book check 1",
           "Conference recorded"
         ],
-        "video": null,
+        "video": {
+          "url": "https://www.youtube.com/watch?v=AwfWoqo3LhA",
+          "label": "Completing the evaluation",
+          "by": "Martin Blyth",
+          "title": "EPQ Secrets: Production Log Series - Completing the Evaluation",
+          "mins": "7:02"
+        },
         "podcast": null
       },
       "4": {
@@ -751,7 +769,13 @@
           "Panel confirmed",
           "Referral 1 returned"
         ],
-        "video": null,
+        "video": {
+          "url": "https://www.youtube.com/watch?v=5PNyS2hqpU8",
+          "label": "Delivering the EPQ presentation",
+          "by": "CompSciByteSize",
+          "title": "6. How to do your EPQ presentation",
+          "mins": "4:36"
+        },
         "podcast": null
       },
       "5": {
@@ -782,7 +806,13 @@
           "Presentation records signed",
           "AO4 evidence captured"
         ],
-        "video": null,
+        "video": {
+          "url": "https://www.youtube.com/watch?v=5PNyS2hqpU8",
+          "label": "Delivering the EPQ presentation",
+          "by": "CompSciByteSize",
+          "title": "6. How to do your EPQ presentation",
+          "mins": "4:36"
+        },
         "podcast": null
       },
       "6": {
@@ -817,7 +847,13 @@
           "Submission collected",
           "Declarations signed"
         ],
-        "video": null,
+        "video": {
+          "url": "https://www.youtube.com/watch?v=8_SxY2jpRFc",
+          "label": "Academic integrity and plagiarism",
+          "by": "HumberEDU",
+          "title": "Academic Integrity | Plagiarism: One Form of Academic Misconduct",
+          "mins": "3:56"
+        },
         "podcast": null
       },
       "7": {
@@ -907,7 +943,13 @@
           "Tracker: baseline recorded",
           "Route: confirmed"
         ],
-        "video": null,
+        "video": {
+          "url": "https://www.youtube.com/watch?v=1YIfN4rAhiE",
+          "label": "Getting an A* in the EPQ",
+          "by": "Martin Blyth",
+          "title": "Secrets to EPQ Success: How to get an A* in your Extended Project Qualification (AQA)",
+          "mins": "13:31"
+        },
         "podcast": null
       },
       "2": {
@@ -940,7 +982,13 @@
         "q": [
           "Referral round 1 issued"
         ],
-        "video": null,
+        "video": {
+          "url": "https://www.youtube.com/watch?v=71-GucBaM8U",
+          "label": "Building a strong research question",
+          "by": "Scribbr",
+          "title": "How to Develop a STRONG Research Question",
+          "mins": "4:19"
+        },
         "podcast": null
       },
       "3": {
@@ -970,7 +1018,13 @@
         ],
         "s": "Watch for students who cannot discard anything — usually a symptom of a question too broad to discriminate. Flag them for a title conversation in week 5.",
         "q": [],
-        "video": null,
+        "video": {
+          "url": "https://www.youtube.com/watch?v=p18Y6zAB84o",
+          "label": "Five ways to find academic sources",
+          "by": "Presenting Psychology",
+          "title": "Obtaining academic sources: five reliable methods",
+          "mins": "7:58"
+        },
         "podcast": null
       },
       "4": {
@@ -999,7 +1053,13 @@
         ],
         "s": "Check the documents in week 5 conferences. A row that only summarises the source is the standard failure — push for the 'how it knows' column.",
         "q": [],
-        "video": null,
+        "video": {
+          "url": "https://www.youtube.com/watch?v=zIYC6zG265E",
+          "label": "What a literature review does",
+          "by": "Scribbr",
+          "title": "How to Write a Literature Review: 3 Minute Step-by-step Guide",
+          "mins": "3:05"
+        },
         "podcast": null
       },
       "5": {
@@ -1030,7 +1090,13 @@
         "q": [
           "Conference rota live"
         ],
-        "video": null,
+        "video": {
+          "url": "https://www.youtube.com/watch?v=rNulPTwLFMQ",
+          "label": "Choosing an analysis strategy",
+          "by": "Scribbr",
+          "title": "Research Design: Decide on your Data Analysis Strategy",
+          "mins": "3:03"
+        },
         "podcast": null
       },
       "6": {
@@ -1058,7 +1124,13 @@
         ],
         "s": "Frames with fifteen categories are frames that have not been thought about. Push for fewer, better-defended categories.",
         "q": [],
-        "video": null,
+        "video": {
+          "url": "https://www.youtube.com/watch?v=g6DkPanv76Q",
+          "label": "Coding data with Braun & Clarke",
+          "by": "Degree Doctor",
+          "title": "Coding qualitative data - how to code using Braun and Clarke",
+          "mins": "9:07"
+        },
         "podcast": null
       },
       "7": {
@@ -1091,7 +1163,13 @@
           "MPR signed",
           "Break brief issued"
         ],
-        "video": null,
+        "video": {
+          "url": "https://www.youtube.com/watch?v=pRfmI11F3GA",
+          "label": "The Mid Project Review",
+          "by": "Martin Blyth",
+          "title": "EPQ Secrets: Production Log Series - Mid Project Review",
+          "mins": "9:03"
+        },
         "podcast": null
       },
       "8": {
@@ -1123,7 +1201,13 @@
           "Cohort unified",
           "Referral 1 recorded"
         ],
-        "video": null,
+        "video": {
+          "url": "https://www.youtube.com/watch?v=3pjilybtP8g",
+          "label": "The four ethical considerations",
+          "by": "Grad Coach",
+          "title": "What Are RESEARCH ETHICS? The 4 Ethical Considerations",
+          "mins": "8:56"
+        },
         "podcast": null
       },
       "9": {
@@ -1153,7 +1237,13 @@
         ],
         "s": "Pilot everything. An unpiloted questionnaire is the single most common source of unusable Year 13 data.",
         "q": [],
-        "video": null,
+        "video": {
+          "url": "https://www.youtube.com/watch?v=Iq_fhTuY1hw",
+          "label": "Seven tips for survey questions",
+          "by": "Elon University Poll",
+          "title": "7 tips for good survey questions",
+          "mins": "4:02"
+        },
         "podcast": null
       },
       "10": {
@@ -1185,7 +1275,13 @@
           "Referral round 2 issued",
           "Ethics signed off"
         ],
-        "video": null,
+        "video": {
+          "url": "https://www.youtube.com/watch?v=3pjilybtP8g",
+          "label": "The four ethical considerations",
+          "by": "Grad Coach",
+          "title": "What Are RESEARCH ETHICS? The 4 Ethical Considerations",
+          "mins": "8:56"
+        },
         "podcast": null
       },
       "11": {
@@ -1216,7 +1312,13 @@
         ],
         "s": "Point students at the school AI governance rules in the companion logbook. Make the declaration a working document now rather than a signature in April.",
         "q": [],
-        "video": null,
+        "video": {
+          "url": "https://www.youtube.com/watch?v=8_SxY2jpRFc",
+          "label": "Academic integrity and plagiarism",
+          "by": "HumberEDU",
+          "title": "Academic Integrity | Plagiarism: One Form of Academic Misconduct",
+          "mins": "3:56"
+        },
         "podcast": null
       },
       "12": {
@@ -1244,7 +1346,13 @@
         ],
         "s": "Insist on words on paper this week. Students who postpone the first draft section until January do not recover the time.",
         "q": [],
-        "video": null,
+        "video": {
+          "url": "https://www.youtube.com/watch?v=9hnIkyZrbos",
+          "label": "Combining sources, not listing them",
+          "by": "Academic Bites",
+          "title": "Synthesising: How to Combine Your Sources in Academic Writing",
+          "mins": "4:10"
+        },
         "podcast": null
       },
       "13": {
@@ -1307,7 +1415,13 @@
         "q": [
           "Section 1 returned"
         ],
-        "video": null,
+        "video": {
+          "url": "https://www.youtube.com/watch?v=9hnIkyZrbos",
+          "label": "Combining sources, not listing them",
+          "by": "Academic Bites",
+          "title": "Synthesising: How to Combine Your Sources in Academic Writing",
+          "mins": "4:10"
+        },
         "podcast": null
       },
       "15": {
@@ -1337,7 +1451,13 @@
         ],
         "s": "Surprise is the marker of genuine analysis. Students who report that everything confirmed their expectations are usually describing, not analysing.",
         "q": [],
-        "video": null,
+        "video": {
+          "url": "https://www.youtube.com/watch?v=g6DkPanv76Q",
+          "label": "Coding data with Braun & Clarke",
+          "by": "Degree Doctor",
+          "title": "Coding qualitative data - how to code using Braun and Clarke",
+          "mins": "9:07"
+        },
         "podcast": null
       },
       "16": {
@@ -1368,7 +1488,13 @@
         "q": [
           "Referral round 3 issued"
         ],
-        "video": null,
+        "video": {
+          "url": "https://www.youtube.com/watch?v=9hnIkyZrbos",
+          "label": "Combining sources, not listing them",
+          "by": "Academic Bites",
+          "title": "Synthesising: How to Combine Your Sources in Academic Writing",
+          "mins": "4:10"
+        },
         "podcast": null
       },
       "17": {
@@ -1398,7 +1524,13 @@
         ],
         "s": "This is the highest-leverage single session of the spring. Book the room where students can spread paper out.",
         "q": [],
-        "video": null,
+        "video": {
+          "url": "https://www.youtube.com/watch?v=9hnIkyZrbos",
+          "label": "Combining sources, not listing them",
+          "by": "Academic Bites",
+          "title": "Synthesising: How to Combine Your Sources in Academic Writing",
+          "mins": "4:10"
+        },
         "podcast": null
       },
       "18": {
@@ -1426,7 +1558,13 @@
         ],
         "s": "Confirm the draft deadline in writing and tell students what a 'full draft' means: every section present, referenced, no placeholders.",
         "q": [],
-        "video": null,
+        "video": {
+          "url": "https://www.youtube.com/watch?v=9hnIkyZrbos",
+          "label": "Combining sources, not listing them",
+          "by": "Academic Bites",
+          "title": "Synthesising: How to Combine Your Sources in Academic Writing",
+          "mins": "4:10"
+        },
         "podcast": null
       },
       "19": {
@@ -1518,7 +1656,13 @@
         ],
         "s": "Evaluations that apologise score badly; evaluations that weigh alternatives score well. Use the deck's WEAK/STRONG pairs directly in the room.",
         "q": [],
-        "video": null,
+        "video": {
+          "url": "https://www.youtube.com/watch?v=AwfWoqo3LhA",
+          "label": "Completing the evaluation",
+          "by": "Martin Blyth",
+          "title": "EPQ Secrets: Production Log Series - Completing the Evaluation",
+          "mins": "7:02"
+        },
         "podcast": null
       },
       "22": {
@@ -1548,7 +1692,13 @@
         "q": [
           "Panel confirmed"
         ],
-        "video": null,
+        "video": {
+          "url": "https://www.youtube.com/watch?v=5PNyS2hqpU8",
+          "label": "Delivering the EPQ presentation",
+          "by": "CompSciByteSize",
+          "title": "6. How to do your EPQ presentation",
+          "mins": "4:36"
+        },
         "podcast": null
       },
       "23": {
@@ -1579,7 +1729,13 @@
           "Presentation records signed",
           "AO4 evidence captured"
         ],
-        "video": null,
+        "video": {
+          "url": "https://www.youtube.com/watch?v=5PNyS2hqpU8",
+          "label": "Delivering the EPQ presentation",
+          "by": "CompSciByteSize",
+          "title": "6. How to do your EPQ presentation",
+          "mins": "4:36"
+        },
         "podcast": null
       },
       "24": {
@@ -1641,7 +1797,13 @@
         ],
         "s": "Check declarations against the school AI governance rules. Any student whose account of AI use has changed since December needs a conversation, not a form.",
         "q": [],
-        "video": null,
+        "video": {
+          "url": "https://www.youtube.com/watch?v=8_SxY2jpRFc",
+          "label": "Academic integrity and plagiarism",
+          "by": "HumberEDU",
+          "title": "Academic Integrity | Plagiarism: One Form of Academic Misconduct",
+          "mins": "3:56"
+        },
         "podcast": null
       },
       "26": {
@@ -1725,7 +1887,13 @@
         "q": [
           "Route review logged"
         ],
-        "video": null,
+        "video": {
+          "url": "https://www.youtube.com/watch?v=5PNyS2hqpU8",
+          "label": "Delivering the EPQ presentation",
+          "by": "CompSciByteSize",
+          "title": "6. How to do your EPQ presentation",
+          "mins": "4:36"
+        },
         "podcast": null
       }
     },
@@ -1762,7 +1930,13 @@
         "q": [
           "Tracker: rows opened"
         ],
-        "video": null,
+        "video": {
+          "url": "https://www.youtube.com/watch?v=1YIfN4rAhiE",
+          "label": "Getting an A* in the EPQ",
+          "by": "Martin Blyth",
+          "title": "Secrets to EPQ Success: How to get an A* in your Extended Project Qualification (AQA)",
+          "mins": "13:31"
+        },
         "podcast": null
       },
       "2": {
@@ -1793,7 +1967,13 @@
         "q": [
           "Referral round 1 issued"
         ],
-        "video": null,
+        "video": {
+          "url": "https://www.youtube.com/watch?v=71-GucBaM8U",
+          "label": "Building a strong research question",
+          "by": "Scribbr",
+          "title": "How to Develop a STRONG Research Question",
+          "mins": "4:19"
+        },
         "podcast": null
       },
       "3": {
@@ -1822,7 +2002,13 @@
         ],
         "s": "Provisional, not final — say so. Titles fixed too hard in week 4 become projects that cannot respond to what the reading turns up.",
         "q": [],
-        "video": null,
+        "video": {
+          "url": "https://www.youtube.com/watch?v=bGBBJBaWqEI",
+          "label": "Descriptive vs analytical writing",
+          "by": "Grad Coach",
+          "title": "Descriptive Writing vs Critical Analytical Writing In Research",
+          "mins": "7:10"
+        },
         "podcast": null
       },
       "4": {
@@ -1851,7 +2037,13 @@
         ],
         "s": "Reject objectives that cannot be ticked — 'research the background' is not an objective. The chain aim → objective → tickability is the infographic to put on the board.",
         "q": [],
-        "video": null,
+        "video": {
+          "url": "https://www.youtube.com/watch?v=4BTJL2GcXBc",
+          "label": "Deadlines and SMART objectives",
+          "by": "Martin Blyth",
+          "title": "EPQ Secrets: Time Management - Setting Deadlines and SMART targets",
+          "mins": "3:48"
+        },
         "podcast": null
       },
       "5": {
@@ -1882,7 +2074,13 @@
         "q": [
           "Log book check 1"
         ],
-        "video": null,
+        "video": {
+          "url": "https://www.youtube.com/watch?v=p18Y6zAB84o",
+          "label": "Five ways to find academic sources",
+          "by": "Presenting Psychology",
+          "title": "Obtaining academic sources: five reliable methods",
+          "mins": "7:58"
+        },
         "podcast": null
       },
       "6": {
@@ -1911,7 +2109,13 @@
         ],
         "s": "Push for the disagreeing source. Students who only collect agreement build projects with nothing to analyse.",
         "q": [],
-        "video": null,
+        "video": {
+          "url": "https://www.youtube.com/watch?v=_M1-aMCJHFg",
+          "label": "Testing a source with CRAAP",
+          "by": "McMaster Libraries",
+          "title": "How Library Stuff Works: How to Evaluate Resources (the CRAAP test)",
+          "mins": "2:10"
+        },
         "podcast": null
       },
       "7": {
@@ -1945,7 +2149,13 @@
           "Part A complete",
           "Break brief issued"
         ],
-        "video": null,
+        "video": {
+          "url": "https://www.youtube.com/watch?v=zIYC6zG265E",
+          "label": "What a literature review does",
+          "by": "Scribbr",
+          "title": "How to Write a Literature Review: 3 Minute Step-by-step Guide",
+          "mins": "3:05"
+        },
         "podcast": null
       },
       "8": {
@@ -1977,7 +2187,13 @@
           "Cohort unified",
           "Referral 1 recorded"
         ],
-        "video": null,
+        "video": {
+          "url": "https://www.youtube.com/watch?v=rNulPTwLFMQ",
+          "label": "Choosing an analysis strategy",
+          "by": "Scribbr",
+          "title": "Research Design: Decide on your Data Analysis Strategy",
+          "mins": "3:03"
+        },
         "podcast": null
       },
       "9": {
@@ -2005,7 +2221,13 @@
         ],
         "s": "Frames with too many categories are frames that have not been thought about. Insist on the revision — the second version is where the thinking shows.",
         "q": [],
-        "video": null,
+        "video": {
+          "url": "https://www.youtube.com/watch?v=g6DkPanv76Q",
+          "label": "Coding data with Braun & Clarke",
+          "by": "Degree Doctor",
+          "title": "Coding qualitative data - how to code using Braun and Clarke",
+          "mins": "9:07"
+        },
         "podcast": null
       },
       "10": {
@@ -2033,7 +2255,13 @@
         ],
         "s": "For RE and humanities projects this is usually the highest-value optional session in the unit — encourage rather than require.",
         "q": [],
-        "video": null,
+        "video": {
+          "url": "https://www.youtube.com/watch?v=sgUTNm2_AQU",
+          "label": "Reading a visual text",
+          "by": "Jeddle",
+          "title": "How to Analyse any Visual Text - 14 Techniques",
+          "mins": "3:08"
+        },
         "podcast": null
       },
       "11": {
@@ -2064,7 +2292,13 @@
         "q": [
           "Log book check 2"
         ],
-        "video": null,
+        "video": {
+          "url": "https://www.youtube.com/watch?v=3pjilybtP8g",
+          "label": "The four ethical considerations",
+          "by": "Grad Coach",
+          "title": "What Are RESEARCH ETHICS? The 4 Ethical Considerations",
+          "mins": "8:56"
+        },
         "podcast": null
       },
       "12": {
@@ -2092,7 +2326,13 @@
         ],
         "s": "Pilot everything before the break. An unpiloted instrument collected in January is the classic irrecoverable Year 12 error.",
         "q": [],
-        "video": null,
+        "video": {
+          "url": "https://www.youtube.com/watch?v=Iq_fhTuY1hw",
+          "label": "Seven tips for survey questions",
+          "by": "Elon University Poll",
+          "title": "7 tips for good survey questions",
+          "mins": "4:02"
+        },
         "podcast": null
       },
       "13": {
@@ -2124,7 +2364,13 @@
           "Break brief issued",
           "MPR conferences booked"
         ],
-        "video": null,
+        "video": {
+          "url": "https://www.youtube.com/watch?v=pRfmI11F3GA",
+          "label": "The Mid Project Review",
+          "by": "Martin Blyth",
+          "title": "EPQ Secrets: Production Log Series - Mid Project Review",
+          "mins": "9:03"
+        },
         "podcast": null
       },
       "14": {
@@ -2156,7 +2402,13 @@
           "MPR signed",
           "Referral round 2 issued"
         ],
-        "video": null,
+        "video": {
+          "url": "https://www.youtube.com/watch?v=pRfmI11F3GA",
+          "label": "The Mid Project Review",
+          "by": "Martin Blyth",
+          "title": "EPQ Secrets: Production Log Series - Mid Project Review",
+          "mins": "9:03"
+        },
         "podcast": null
       },
       "15": {
@@ -2185,7 +2437,13 @@
         ],
         "s": "Anchor this in the school AI governance rules rather than inventing EPQ-specific ones. Honest early declarations are far easier to supervise than retrospective ones.",
         "q": [],
-        "video": null,
+        "video": {
+          "url": "https://www.youtube.com/watch?v=8_SxY2jpRFc",
+          "label": "Academic integrity and plagiarism",
+          "by": "HumberEDU",
+          "title": "Academic Integrity | Plagiarism: One Form of Academic Misconduct",
+          "mins": "3:56"
+        },
         "podcast": null
       },
       "16": {
@@ -2214,7 +2472,13 @@
         ],
         "s": "A complete reference list in January is the single best predictor of a calm April next year. Check it, do not just ask about it.",
         "q": [],
-        "video": null,
+        "video": {
+          "url": "https://www.youtube.com/watch?v=lEgc9NV3_Gc",
+          "label": "Harvard referencing, step by step",
+          "by": "Digital Learning Consultant",
+          "title": "Simple Harvard Referencing Tutorial",
+          "mins": "6:08"
+        },
         "podcast": null
       },
       "17": {
@@ -2242,7 +2506,13 @@
         ],
         "s": "Insist on words on paper. Year 12 students who delay the first section until the summer term arrive in Year 13 without a draft to work from.",
         "q": [],
-        "video": null,
+        "video": {
+          "url": "https://www.youtube.com/watch?v=9hnIkyZrbos",
+          "label": "Combining sources, not listing them",
+          "by": "Academic Bites",
+          "title": "Synthesising: How to Combine Your Sources in Academic Writing",
+          "mins": "4:10"
+        },
         "podcast": null
       },
       "18": {
@@ -2271,7 +2541,13 @@
         ],
         "s": "Writing surfaces the weaknesses in the question. Expect and welcome title adjustments here — record them rather than resisting them.",
         "q": [],
-        "video": null,
+        "video": {
+          "url": "https://www.youtube.com/watch?v=9hnIkyZrbos",
+          "label": "Combining sources, not listing them",
+          "by": "Academic Bites",
+          "title": "Synthesising: How to Combine Your Sources in Academic Writing",
+          "mins": "4:10"
+        },
         "podcast": null
       },
       "19": {
@@ -2366,7 +2642,13 @@
         "q": [
           "Ethics signed off"
         ],
-        "video": null,
+        "video": {
+          "url": "https://www.youtube.com/watch?v=hrD3-s84Qhc",
+          "label": "Structuring the EPQ essay",
+          "by": "Mr Davey",
+          "title": "How to write your EPQ essay",
+          "mins": "4:48"
+        },
         "podcast": null
       },
       "22": {
@@ -2395,7 +2677,13 @@
         ],
         "s": "Book a room with table space. This session works on paper and badly on screens.",
         "q": [],
-        "video": null,
+        "video": {
+          "url": "https://www.youtube.com/watch?v=9hnIkyZrbos",
+          "label": "Combining sources, not listing them",
+          "by": "Academic Bites",
+          "title": "Synthesising: How to Combine Your Sources in Academic Writing",
+          "mins": "4:10"
+        },
         "podcast": null
       },
       "23": {
@@ -2423,7 +2711,13 @@
         ],
         "s": "The mapping exercise is where over-long Year 12 projects find their cuts. Do it in the room, not as homework.",
         "q": [],
-        "video": null,
+        "video": {
+          "url": "https://www.youtube.com/watch?v=9hnIkyZrbos",
+          "label": "Combining sources, not listing them",
+          "by": "Academic Bites",
+          "title": "Synthesising: How to Combine Your Sources in Academic Writing",
+          "mins": "4:10"
+        },
         "podcast": null
       },
       "24": {
@@ -2455,7 +2749,13 @@
           "Progress review recorded",
           "Easter brief issued"
         ],
-        "video": null,
+        "video": {
+          "url": "https://www.youtube.com/watch?v=4BTJL2GcXBc",
+          "label": "Deadlines and SMART objectives",
+          "by": "Martin Blyth",
+          "title": "EPQ Secrets: Time Management - Setting Deadlines and SMART targets",
+          "mins": "3:48"
+        },
         "podcast": null
       },
       "25": {
@@ -2483,7 +2783,13 @@
         ],
         "s": "The introduction–conclusion mismatch is the most common structural fault at this stage and the easiest to fix now.",
         "q": [],
-        "video": null,
+        "video": {
+          "url": "https://www.youtube.com/watch?v=9hnIkyZrbos",
+          "label": "Combining sources, not listing them",
+          "by": "Academic Bites",
+          "title": "Synthesising: How to Combine Your Sources in Academic Writing",
+          "mins": "4:10"
+        },
         "podcast": null
       },
       "26": {
@@ -2515,7 +2821,13 @@
           "Referral round 3 issued",
           "Drafts collected"
         ],
-        "video": null,
+        "video": {
+          "url": "https://www.youtube.com/watch?v=lEgc9NV3_Gc",
+          "label": "Harvard referencing, step by step",
+          "by": "Digital Learning Consultant",
+          "title": "Simple Harvard Referencing Tutorial",
+          "mins": "6:08"
+        },
         "podcast": null
       },
       "27": {
@@ -2576,7 +2888,13 @@
         "q": [
           "Referral 3 recorded"
         ],
-        "video": null,
+        "video": {
+          "url": "https://www.youtube.com/watch?v=9hnIkyZrbos",
+          "label": "Combining sources, not listing them",
+          "by": "Academic Bites",
+          "title": "Synthesising: How to Combine Your Sources in Academic Writing",
+          "mins": "4:10"
+        },
         "podcast": null
       },
       "29": {
@@ -2604,7 +2922,13 @@
         ],
         "s": "Students who now disagree with their February definition of 'finished' are showing growth — record it as a decision rather than correcting it.",
         "q": [],
-        "video": null,
+        "video": {
+          "url": "https://www.youtube.com/watch?v=hrD3-s84Qhc",
+          "label": "Structuring the EPQ essay",
+          "by": "Mr Davey",
+          "title": "How to write your EPQ essay",
+          "mins": "4:48"
+        },
         "podcast": null
       },
       "30": {
@@ -2632,7 +2956,13 @@
         ],
         "s": "Cutting is the hardest thing to teach and the most reliable mark-raiser. Model it on a shared paragraph first.",
         "q": [],
-        "video": null,
+        "video": {
+          "url": "https://www.youtube.com/watch?v=9hnIkyZrbos",
+          "label": "Combining sources, not listing them",
+          "by": "Academic Bites",
+          "title": "Synthesising: How to Combine Your Sources in Academic Writing",
+          "mins": "4:10"
+        },
         "podcast": null
       },
       "31": {
@@ -2692,7 +3022,13 @@
         ],
         "s": "Students who kept the Decisions Log properly will find this straightforward; those who did not will discover why it mattered. Let them discover it.",
         "q": [],
-        "video": null,
+        "video": {
+          "url": "https://www.youtube.com/watch?v=AwfWoqo3LhA",
+          "label": "Completing the evaluation",
+          "by": "Martin Blyth",
+          "title": "EPQ Secrets: Production Log Series - Completing the Evaluation",
+          "mins": "7:02"
+        },
         "podcast": null
       },
       "33": {
@@ -2720,7 +3056,13 @@
         ],
         "s": "Backfilled decisions are acceptable if dated honestly as reconstructions. Undated invention is not — be explicit about the difference.",
         "q": [],
-        "video": null,
+        "video": {
+          "url": "https://www.youtube.com/watch?v=AwfWoqo3LhA",
+          "label": "Completing the evaluation",
+          "by": "Martin Blyth",
+          "title": "EPQ Secrets: Production Log Series - Completing the Evaluation",
+          "mins": "7:02"
+        },
         "podcast": null
       },
       "34": {
@@ -2748,7 +3090,13 @@
         ],
         "s": "The two-minute version is diagnostic: a student who cannot summarise the argument aloud usually does not yet have one.",
         "q": [],
-        "video": null,
+        "video": {
+          "url": "https://www.youtube.com/watch?v=5PNyS2hqpU8",
+          "label": "Delivering the EPQ presentation",
+          "by": "CompSciByteSize",
+          "title": "6. How to do your EPQ presentation",
+          "mins": "4:36"
+        },
         "podcast": null
       },
       "35": {
@@ -2779,7 +3127,13 @@
         ],
         "s": "Check the AI declaration against the school governance rules. A December statement that has not changed by June is worth a conversation.",
         "q": [],
-        "video": null,
+        "video": {
+          "url": "https://www.youtube.com/watch?v=8_SxY2jpRFc",
+          "label": "Academic integrity and plagiarism",
+          "by": "HumberEDU",
+          "title": "Academic Integrity | Plagiarism: One Form of Academic Misconduct",
+          "mins": "3:56"
+        },
         "podcast": null
       },
       "36": {
