@@ -189,8 +189,10 @@ can skip weeks freely — a track with weeks 1–8 simply ends after week 8.
   "r": ["nA1","trk"],               // other files; anything already in wl/cl is filtered out
   "s": "Note shown only in the second view.",
   "q": ["Log book check 1"],        // checkpoint chips, second view only
-  "video":   { "url": "https://youtu.be/…", "label": "Watch", "mins": "6 min" },
-  "podcast": { "url": "…/week5.mp3",        "label": "Listen", "mins": "12 min" }
+  "video":   { "url": "https://youtu.be/…", "label": "Strong research questions",
+               "by": "Scribbr", "title": "How to Develop a STRONG Research Question",
+               "mins": "4:19" },
+  "podcast": { "url": "…/week5.mp3", "label": "Listen", "mins": "12 min" }
 }
 ```
 
@@ -204,6 +206,21 @@ through `files` like any other resource.
 
 Nothing loads until the button is pressed — a page with 38 weeks of video does
 not fetch 38 iframes — and opening one closes the other.
+
+`label` is what the button says, so write it as the thing the student will learn
+("Testing a source with CRAAP"), not the word "Watch". `by` is the channel and
+renders after a middot — worth filling in, because a student deciding whether to
+spend four minutes reads the source as well as the topic. `title` is the full
+video title and becomes the button's tooltip; keeping the real title there means
+a video that later gets renamed or replaced can still be identified. All three
+are optional.
+
+Verify ids before shipping them. YouTube ids are opaque, an id that does not
+exist renders as an empty player rather than an error, and one that exists but
+is the wrong video is worse. `https://www.youtube.com/oembed?format=json&url=…`
+returns the real title and channel for a public, embeddable video and fails for
+anything else — check every id against it and compare the returned title to what
+you meant to link.
 
 ---
 

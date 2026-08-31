@@ -177,6 +177,8 @@ h4.wt{font-family:Newsreader,Georgia,serif;font-weight:600;font-size:20px;margin
 .mbtn:hover{background:var(--surface-2)}
 .mbtn[aria-expanded="true"]{background:var(--gold);color:#1A2333}
 .mbtn .gl{font-size:11px;line-height:1}
+.mbtn .by{font-size:12px;opacity:.72;font-weight:500}
+.mbtn .by:before{content:"· "}
 .mbtn .mins{font-family:"IBM Plex Mono",monospace;font-size:10.5px;opacity:.75;font-weight:500}
 .mstage{margin:0 0 13px}
 .mstage[hidden]{display:none}
@@ -404,9 +406,11 @@ function ytEmbed(url){
 }
 function mbtn(kind, o, glyph, fallback){
   var mins = o.mins ? '<span class="mins">' + esc(o.mins) + "</span>" : "";
+  var by = o.by ? '<span class="by">' + esc(o.by) + "</span>" : "";
   return '<button class="mbtn" type="button" aria-expanded="false" data-kind="' + kind +
-         '" data-src="' + esc(o.url) + '"><span class="gl" aria-hidden="true">' + glyph + "</span>" +
-         esc(o.label || fallback) + mins + "</button>";
+         '" data-src="' + esc(o.url) + '" title="' + esc(o.title || o.label || fallback) + '">' +
+         '<span class="gl" aria-hidden="true">' + glyph + "</span>" +
+         esc(o.label || fallback) + by + mins + "</button>";
 }
 function media(d){
   var out = [];
