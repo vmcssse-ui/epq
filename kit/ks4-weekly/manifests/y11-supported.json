@@ -1,0 +1,2610 @@
+{
+  "schema": "ks4-weekly/1",
+  "meta": {
+    "title": "Year 11 RS · Week by Week · Supported",
+    "description": "",
+    "noindex": false,
+    "homeLink": {
+      "href": "index.html#year11",
+      "html": "◂ <b>Harlington RE</b> · all course pages"
+    },
+    "eyebrow": [
+      "Edexcel GCSE (9&#8211;1) Religious Studies B &#183; Papers 1 &amp; 2",
+      "Harlington School &#183; Year 11 &#183; 2026&#8211;27"
+    ],
+    "pill": "Supported edition",
+    "h1": "Your year, week by week",
+    "tagline": "listen &#183; read &#183; practise",
+    "sub": "Thirty-three weeks, from the first lesson in September to the last exam in May. Find your week. Do the three things in it. That is all you have to do.",
+    "facts": [
+      [
+        "13 May",
+        "Paper 1 &#183; Christianity"
+      ],
+      [
+        "21 May",
+        "Paper 2 &#183; Islam"
+      ],
+      [
+        "2",
+        "mocks before then"
+      ],
+      [
+        "28",
+        "topics to know"
+      ]
+    ],
+    "footer": [
+      "Year 11 Religious Studies &#183; week by week &#183; Supported edition",
+      "Harlington School &#183; Edexcel GCSE (9&#8211;1) Religious Studies B"
+    ],
+    "siteUrl": "",
+    "id": "y11_supported",
+    "tripwirePath": "summit/year11-supported.html",
+    "tripwireEndpoint": "https://eduai-tripwire.sveduai.workers.dev/e",
+    "canonicalHost": "vmcssse-ui.github.io",
+    "tier": "Supported"
+  },
+  "theme": {},
+  "files": {
+    "resourceBase": "https://hs365.sharepoint.com/sites/HS_Subjects_RE/Year%2011/Philosophy/Edu%20Ai%20-%20GCSE/KS4%20Edexcel%20RS%20-%20Full%20Scheme%20of%20Work%203%20%281%29",
+    "podcastBase": "https://hs365.sharepoint.com/sites/HS_Subjects_RE/Year%2011/Philosophy/Edu%20Ai%20-%20GCSE/Podcast_Audio",
+    "podcastFolder": "Podcast_Audio",
+    "setupNote": [
+      "   ONE LINE TO PUT THIS PAGE ONLINE",
+      "   ---------------------------------------------------------------------",
+      "   Paste the SharePoint address of the uploaded YEAR 11 folder between the",
+      "   quotes below. Every button and every player on the page then reads from",
+      "   SharePoint instead of this Mac. Leave it empty and the page keeps using",
+      "   the copies in the folder next to it.",
+      "",
+      "   It must be the address from the browser bar with the folder open, e.g.",
+      "     https://hs365.sharepoint.com/sites/HS_Subjects_RE/Shared Documents/Edu Ai - GCSE/Year 11",
+      "   NOT a \"Copy link\" sharing link (the kind with /:f:/s/ and a long code) —",
+      "   those cannot have file names added to the end of them.",
+      "",
+      "   The folder you upload must keep its shape: 1 - Mock Exam Lessons,",
+      "   2 - Post-Mock Lessons, 3 - Mock Exam Companion (with Podcast_Audio inside),",
+      "   4, 5, 6 and the workbooks. Renaming or moving a folder breaks its links."
+    ],
+    "podcastNote": [
+      "The podcasts sit in their own folder rather than inside 3 - Mock Exam Companion.",
+      "Leave this empty if you ever move them back in beside the companion."
+    ],
+    "folderName": "Year 11",
+    "selfCheck": "audio",
+    "links": {}
+  },
+  "calendar": {
+    "weeks": [
+      "2026-08-31",
+      "2026-09-07",
+      "2026-09-14",
+      "2026-09-21",
+      "2026-09-28",
+      "2026-10-05",
+      "2026-10-12",
+      "2026-10-19",
+      "2026-11-02",
+      "2026-11-09",
+      "2026-11-16",
+      "2026-11-23",
+      "2026-11-30",
+      "2026-12-07",
+      "2026-12-14",
+      "2027-01-04",
+      "2027-01-11",
+      "2027-01-18",
+      "2027-01-25",
+      "2027-02-01",
+      "2027-02-08",
+      "2027-02-22",
+      "2027-03-01",
+      "2027-03-08",
+      "2027-03-15",
+      "2027-03-22",
+      "2027-04-12",
+      "2027-04-19",
+      "2027-04-26",
+      "2027-05-03",
+      "2027-05-10",
+      "2027-05-17",
+      "2027-05-24"
+    ],
+    "terms": [
+      {
+        "label": "Autumn 1",
+        "from": 1
+      },
+      {
+        "label": "Autumn 2",
+        "from": 9
+      },
+      {
+        "label": "Spring 1",
+        "from": 16
+      },
+      {
+        "label": "Spring 2",
+        "from": 22
+      },
+      {
+        "label": "Summer 1",
+        "from": 27
+      }
+    ],
+    "holidays": [
+      {
+        "before": 9,
+        "label": "Half term · 26–30 October 2026"
+      },
+      {
+        "before": 16,
+        "label": "Christmas holiday · 21 December 2026 – 1 January 2027"
+      },
+      {
+        "before": 22,
+        "label": "Half term · 15–19 February 2027"
+      },
+      {
+        "before": 27,
+        "label": "Easter holiday · 26 March – 9 April 2027"
+      },
+      {
+        "before": 34,
+        "label": "Half term · 31 May – 4 June 2027"
+      }
+    ],
+    "exams": [
+      {
+        "label": "Paper 1 · Religion and Ethics — Christianity",
+        "date": "2027-05-13"
+      },
+      {
+        "label": "Paper 2 · Religion, Peace and Conflict — Islam",
+        "date": "2027-05-21"
+      }
+    ]
+  },
+  "how": {
+    "num": "01",
+    "title": "Three things, every week",
+    "lead": "Every week on this page asks for the same three things, in the same order. Nothing else. If you do these three, you are revising properly.",
+    "steps": [
+      {
+        "title": "Listen",
+        "body": "Press play on the week's podcast. Headphones in, phone down. When it finishes, write the one thing you are taking from it.",
+        "note": "Listening while you scroll is not listening."
+      },
+      {
+        "title": "Read",
+        "body": "Open your Companion on the page shown for that week. Do the two tasks on it. This is your homework — it comes BEFORE the lesson, not after.",
+        "note": "Arrive already knowing a little. That is the whole point."
+      },
+      {
+        "title": "Practise",
+        "body": "Cover the key words on this page and write them from memory. Then write out the quote. Check. Fix what you got wrong.",
+        "note": "Recognising a word is not knowing it."
+      }
+    ]
+  },
+  "weeksSection": {
+    "num": "02",
+    "title": "The thirty-three weeks",
+    "lead": "Your teacher can send you straight to any week &#8212; press <b>Copy week link</b> on a week and paste it into Teams or an email. The link opens this page at that exact week."
+  },
+  "weeks": [
+    {
+      "n": 1,
+      "type": "teach",
+      "paper": "p1",
+      "title": "Matters of Life and Death",
+      "say": "Year 11 starts. You get your Unit 7 workbook and your Companion today. Keep both in your bag every lesson.",
+      "lessons": [
+        {
+          "title": "Origins of the universe",
+          "bq": "Where did everything come from?",
+          "sum": [
+            "Science says the universe began about 13.7 billion years ago. Everything was packed into a tiny, hot, dense mass. It expanded — the Big Bang — and over billions of years stars, planets and Earth were formed. The man who first suggested the theory, Georges Lemaître, was a Catholic priest. He never thought it disproved God.",
+            "Christians disagree about it. Some take Genesis literally: God made the world in six days, so the Big Bang must be wrong. Others read Genesis as a picture of a truth — it tells you THAT God created, not HOW — so God could have created through the Big Bang. They also disagree about what the world is for. A minority read 'subdue it' as permission to use it however we like. Most call it stewardship: looking after it for God."
+          ],
+          "deck": {
+            "key": "deck_MLD_L01",
+            "rel": "../1%20-%20Mock%20Exam%20Lessons/MLD_L01_Origins_of_the_universe.pptx",
+            "sp": "Year%2011/1%20-%20Mock%20Exam%20Lessons/MLD_L01_Origins_of_the_universe.pptx",
+            "icon": "&#9635;",
+            "label": "Open the lesson",
+            "sub": "MLD_L01_Origins_of_the_universe.pptx"
+          },
+          "kws": [
+            "Big Bang",
+            "creation",
+            "commodity",
+            "stewardship"
+          ],
+          "quote": {
+            "q": "Be fruitful and increase in number; fill the earth and subdue it",
+            "cite": "Genesis 1:28"
+          }
+        },
+        {
+          "title": "Origins of human life",
+          "bq": "Are humans special — or just clever apes?",
+          "sum": [
+            "Evolution is the leading scientific explanation of how life developed. It began billions of years ago with single-celled creatures in the sea. Over millions of years, simple life forms slowly changed into different species. It means humans share a distant ancestor with apes.",
+            "Some Christians reject this and read Genesis literally — God made humans separately and on purpose. Many accept it: the Church of England's General Synod said evolution and faith can sit together. Genesis 2:7 says God breathed the breath of life into the first human, so however life developed, Christians believe the source is God. That is also why most say humans are special: they are made in the image of God."
+          ],
+          "deck": {
+            "key": "deck_MLD_L02",
+            "rel": "../1%20-%20Mock%20Exam%20Lessons/MLD_L02_Origins_of_human_life.pptx",
+            "sp": "Year%2011/1%20-%20Mock%20Exam%20Lessons/MLD_L02_Origins_of_human_life.pptx",
+            "icon": "&#9635;",
+            "label": "Open the lesson",
+            "sub": "MLD_L02_Origins_of_human_life.pptx"
+          },
+          "kws": [
+            "evolution",
+            "survival of the fittest",
+            "image of God",
+            "General Synod"
+          ],
+          "quote": {
+            "q": "God formed a man from the dust of the ground and breathed into his nostrils the breath of life",
+            "cite": "Genesis 2:7"
+          }
+        }
+      ],
+      "podcasts": [
+        {
+          "key": "pod_E01_w1",
+          "rel": "Podcast_Audio/Mock_Countdown/E01_Wk1_Origins.mp3",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Mock_Countdown/E01_Wk1_Origins.mp3",
+          "series": "e",
+          "code": "E01",
+          "name": "Wk1 Origins",
+          "kind": "Countdown episode"
+        },
+        {
+          "key": "pod_C25_w1",
+          "rel": "Podcast_Audio/Christianity/C25_Origins_Universe.mp3",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Christianity/C25_Origins_Universe.mp3",
+          "series": "c",
+          "code": "C25",
+          "name": "Origins Universe",
+          "kind": "Christianity"
+        },
+        {
+          "key": "pod_C27_w1",
+          "rel": "Podcast_Audio/Christianity/C27_Origins_Human_Life.mp3",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Christianity/C27_Origins_Human_Life.mp3",
+          "series": "c",
+          "code": "C27",
+          "name": "Origins Human Life",
+          "kind": "Christianity"
+        }
+      ],
+      "reads": [
+        {
+          "key": "comp_w1",
+          "rel": "Mock_Exam_Companion_FE.docx",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Mock_Exam_Companion_FE.docx",
+          "icon": "&#9670;",
+          "label": "Companion 1 · page 8",
+          "sub": "Mock_Exam_Companion_FE.docx"
+        },
+        {
+          "key": "book_w1",
+          "rel": "../Unit7_Matters_of_Life_and_Death_Workbook_Supported.docx",
+          "sp": "Year%2011/Unit7_Matters_of_Life_and_Death_Workbook_Supported.docx",
+          "icon": "&#9632;",
+          "label": "Unit 7 workbook — Supported",
+          "sub": "Unit7_Matters_of_Life_and_Death_Workbook_Supported.docx"
+        }
+      ],
+      "ticks": "listen"
+    },
+    {
+      "n": 2,
+      "type": "teach",
+      "paper": "p1",
+      "title": "Matters of Life and Death",
+      "say": "Four mock topics done. Everything you learn this week is on the mock in November.",
+      "lessons": [
+        {
+          "title": "Life after death",
+          "bq": "Is death really the end?",
+          "sum": [
+            "Christians believe death is not the end. They give three reasons. The Bible promises an afterlife. God gave life purpose, so he would want it to continue. And Jesus rose from the dead — which Christians believe did not just suggest an afterlife but guaranteed one. Ephesians 2:6 says God 'raised us up with Christ'.",
+            "Some non-religious people also believe in an afterlife, but for different reasons: remembered past lives (reincarnation), the paranormal, near-death experiences, and the feeling that there must be a reward for a good life. Christians answer that the resurrection is their evidence and that God judges each life fairly. The exam argument is whether those non-religious reasons are convincing."
+          ],
+          "deck": {
+            "key": "deck_MLD_L03",
+            "rel": "../1%20-%20Mock%20Exam%20Lessons/MLD_L03_Life_after_death.pptx",
+            "sp": "Year%2011/1%20-%20Mock%20Exam%20Lessons/MLD_L03_Life_after_death.pptx",
+            "icon": "&#9635;",
+            "label": "Open the lesson",
+            "sub": "MLD_L03_Life_after_death.pptx"
+          },
+          "kws": [
+            "afterlife",
+            "resurrection",
+            "paranormal",
+            "reincarnation"
+          ],
+          "quote": {
+            "q": "God raised us up with Christ and seated us with him in the heavenly realms",
+            "cite": "Ephesians 2:6"
+          }
+        },
+        {
+          "title": "The natural world",
+          "bq": "Whose job is it to save the planet?",
+          "sum": [
+            "The natural world is under threat: polluted air, water and land, waste, deforestation, global warming, overuse of resources and cruelty to animals. These harm people alive now and the generations that come next, so Christians treat it as a religious issue, not only a political one.",
+            "A minority of Christians read Genesis 1:28 as authority to use the Earth's resources as they wish. Most believe in stewardship: God gave humans responsibility to care for the world on his behalf, and the power to make a real difference. Genesis 2:15 says humans were placed in the garden to 'work it and take care of it' — use it, but protect it. Use without care is exploitation."
+          ],
+          "deck": {
+            "key": "deck_MLD_L04",
+            "rel": "../1%20-%20Mock%20Exam%20Lessons/MLD_L04_The_natural_world.pptx",
+            "sp": "Year%2011/1%20-%20Mock%20Exam%20Lessons/MLD_L04_The_natural_world.pptx",
+            "icon": "&#9635;",
+            "label": "Open the lesson",
+            "sub": "MLD_L04_The_natural_world.pptx"
+          },
+          "kws": [
+            "pollution",
+            "global warming",
+            "stewardship",
+            "Assisi 1986"
+          ],
+          "quote": {
+            "q": "The Lord God took the man and put him in the Garden of Eden to work it and take care of it",
+            "cite": "Genesis 2:15"
+          }
+        }
+      ],
+      "podcasts": [
+        {
+          "key": "pod_E02_w2",
+          "rel": "Podcast_Audio/Mock_Countdown/E02_Wk2_Afterlife_Natural_World.mp3",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Mock_Countdown/E02_Wk2_Afterlife_Natural_World.mp3",
+          "series": "e",
+          "code": "E02",
+          "name": "Wk2 Afterlife Natural World",
+          "kind": "Countdown episode"
+        },
+        {
+          "key": "pod_C29_w2",
+          "rel": "Podcast_Audio/Christianity/C29_Afterlife.mp3",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Christianity/C29_Afterlife.mp3",
+          "series": "c",
+          "code": "C29",
+          "name": "Afterlife",
+          "kind": "Christianity"
+        },
+        {
+          "key": "pod_C32_w2",
+          "rel": "Podcast_Audio/Christianity/C32_Natural_World.mp3",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Christianity/C32_Natural_World.mp3",
+          "series": "c",
+          "code": "C32",
+          "name": "Natural World",
+          "kind": "Christianity"
+        }
+      ],
+      "reads": [
+        {
+          "key": "comp_w2",
+          "rel": "Mock_Exam_Companion_FE.docx",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Mock_Exam_Companion_FE.docx",
+          "icon": "&#9670;",
+          "label": "Companion 1 · page 9",
+          "sub": "Mock_Exam_Companion_FE.docx"
+        },
+        {
+          "key": "book_w2",
+          "rel": "../Unit7_Matters_of_Life_and_Death_Workbook_Supported.docx",
+          "sp": "Year%2011/Unit7_Matters_of_Life_and_Death_Workbook_Supported.docx",
+          "icon": "&#9632;",
+          "label": "Unit 7 workbook — Supported",
+          "sub": "Unit7_Matters_of_Life_and_Death_Workbook_Supported.docx"
+        }
+      ],
+      "ticks": "listen"
+    },
+    {
+      "n": 3,
+      "type": "teach",
+      "paper": "p2",
+      "title": "Peace and Conflict",
+      "say": "We swap to Islam and Paper 2. You get your Unit 8 workbook today.",
+      "lessons": [
+        {
+          "title": "Peace",
+          "bq": "Why is peace the heart of Islam?",
+          "sum": [
+            "Peace is at the centre of Islam. The word Islam is related to salam, meaning peace. Peace means being in harmony with yourself and with others — the opposite of war. Muslims greet each other with 'As-salaamu alaykum', peace be upon you.",
+            "One of Allah's characteristics is 'a Source of Peace', and remembering Allah is an important way of finding peace. The aim is a harmonious society, locally and globally. Surah 25:63 teaches Muslims to walk humbly and answer aggressive people with words of peace — so peace is not just a feeling, it is how you are expected to behave when someone provokes you."
+          ],
+          "deck": {
+            "key": "deck_PAC_L01",
+            "rel": "../1%20-%20Mock%20Exam%20Lessons/PAC_L01_Peace.pptx",
+            "sp": "Year%2011/1%20-%20Mock%20Exam%20Lessons/PAC_L01_Peace.pptx",
+            "icon": "&#9635;",
+            "label": "Open the lesson",
+            "sub": "PAC_L01_Peace.pptx"
+          },
+          "kws": [
+            "peace",
+            "salam",
+            "mercy",
+            "harmony"
+          ],
+          "quote": {
+            "q": "The servants of the Lord of Mercy are those who walk humbly on the earth… reply, with words of peace",
+            "cite": "Surah 25:63"
+          }
+        },
+        {
+          "title": "Conflict",
+          "bq": "What really causes war — and is religion to blame?",
+          "sum": [
+            "A conflict is a serious disagreement that can split people apart and, on a large scale, lead to war. The main causes are politics and ideology, nationalism and ethnicity, economics and greed — and sometimes religion itself.",
+            "Muslims aim to avoid conflict and to settle it peacefully. If every effort at peace has failed, fighting is permitted, but only under strict conditions set out in Surah 2:190-193: only against those who attack first, never overstepping the limits, and only until the persecution stops. Many non-religious people, including Humanists, take a similar line — war only as a last resort. The exam argument is whether religion really causes conflict, or gets blamed for it."
+          ],
+          "deck": {
+            "key": "deck_PAC_L02",
+            "rel": "../1%20-%20Mock%20Exam%20Lessons/PAC_L02_Conflict.pptx",
+            "sp": "Year%2011/1%20-%20Mock%20Exam%20Lessons/PAC_L02_Conflict.pptx",
+            "icon": "&#9635;",
+            "label": "Open the lesson",
+            "sub": "PAC_L02_Conflict.pptx"
+          },
+          "kws": [
+            "conflict",
+            "nationalism",
+            "ideology",
+            "economics"
+          ],
+          "quote": {
+            "q": "Fight in God's cause against those who fight against you, but do not overstep the limits",
+            "cite": "Surah 2:190-193"
+          }
+        }
+      ],
+      "podcasts": [
+        {
+          "key": "pod_E03_w3",
+          "rel": "Podcast_Audio/Mock_Countdown/E03_Wk3_Peace_Conflict.mp3",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Mock_Countdown/E03_Wk3_Peace_Conflict.mp3",
+          "series": "e",
+          "code": "E03",
+          "name": "Wk3 Peace Conflict",
+          "kind": "Countdown episode"
+        },
+        {
+          "key": "pod_I25_w3",
+          "rel": "Podcast_Audio/Islam/I25_Muslim_Peace.mp3",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Islam/I25_Muslim_Peace.mp3",
+          "series": "i",
+          "code": "I25",
+          "name": "Muslim Peace",
+          "kind": "Islam"
+        },
+        {
+          "key": "pod_I27_w3",
+          "rel": "Podcast_Audio/Islam/I27_Attitudes_Conflict.mp3",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Islam/I27_Attitudes_Conflict.mp3",
+          "series": "i",
+          "code": "I27",
+          "name": "Attitudes Conflict",
+          "kind": "Islam"
+        }
+      ],
+      "reads": [
+        {
+          "key": "comp_w3",
+          "rel": "Mock_Exam_Companion_FE.docx",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Mock_Exam_Companion_FE.docx",
+          "icon": "&#9670;",
+          "label": "Companion 1 · page 16",
+          "sub": "Mock_Exam_Companion_FE.docx"
+        },
+        {
+          "key": "book_w3",
+          "rel": "../Unit8_Peace_and_Conflict_Workbook_Supported.docx",
+          "sp": "Year%2011/Unit8_Peace_and_Conflict_Workbook_Supported.docx",
+          "icon": "&#9632;",
+          "label": "Unit 8 workbook — Supported",
+          "sub": "Unit8_Peace_and_Conflict_Workbook_Supported.docx"
+        }
+      ],
+      "ticks": "listen"
+    },
+    {
+      "n": 4,
+      "type": "teach",
+      "paper": "p2",
+      "title": "Peace and Conflict",
+      "say": "Peace and Conflict mock topics finished. Half of the mock is now taught.",
+      "lessons": [
+        {
+          "title": "Pacifism",
+          "bq": "Is it ever right to refuse to fight?",
+          "sum": [
+            "Pacifism is the belief that war and violence are wrong and that disagreements should be settled peacefully. There are four types: absolute (always wrong, even in self-defence), conditional (usually wrong, but fighting may be the lesser evil), selective (only some wars are wrong) and active (working publicly for peace). Passive resistance means non-violent protest.",
+            "Muslims hold different views. The earliest example of pacifism in Islam is Habil, who told his brother, 'If you raise your hand to kill me, I will not raise mine to kill you.' Others argue that Islam clearly permits fighting when Muslims are attacked, so absolute pacifism does not fit. The debate is whether you can be a Muslim and a pacifist at the same time."
+          ],
+          "deck": {
+            "key": "deck_PAC_L03",
+            "rel": "../1%20-%20Mock%20Exam%20Lessons/PAC_L03_Pacifism.pptx",
+            "sp": "Year%2011/1%20-%20Mock%20Exam%20Lessons/PAC_L03_Pacifism.pptx",
+            "icon": "&#9635;",
+            "label": "Open the lesson",
+            "sub": "PAC_L03_Pacifism.pptx"
+          },
+          "kws": [
+            "pacifism",
+            "passive resistance",
+            "last resort",
+            "Arab Spring"
+          ],
+          "quote": {
+            "q": "If you raise your hand to kill me, I will not raise mine to kill you",
+            "cite": "Surah 5:28"
+          }
+        },
+        {
+          "title": "Issues surrounding conflict",
+          "bq": "Does Islam promote terrorism — or condemn it?",
+          "sum": [
+            "Because of groups like IS and the way they are reported, many people wrongly assume Muslims support terrorism. Militant groups pick particular verses about war and use them to justify violence.",
+            "The vast majority of Muslims reject this and can show extremists ignore Islam's own rules. Fighting is only permitted after being attacked. Forced conversion is banned. Abu Bakr's ten rules of war forbid killing women, children and the elderly, cutting down fruit trees or destroying homes. Knowing those rules is what lets you answer the question properly rather than just disagreeing with it."
+          ],
+          "deck": {
+            "key": "deck_PAC_L04",
+            "rel": "../1%20-%20Mock%20Exam%20Lessons/PAC_L04_Issues_surrounding_conflict.pptx",
+            "sp": "Year%2011/1%20-%20Mock%20Exam%20Lessons/PAC_L04_Issues_surrounding_conflict.pptx",
+            "icon": "&#9635;",
+            "label": "Open the lesson",
+            "sub": "PAC_L04_Issues_surrounding_conflict.pptx"
+          },
+          "kws": [
+            "terrorism",
+            "extremists",
+            "martyr",
+            "lesser jihad"
+          ],
+          "quote": {
+            "q": "Do not kill women. Do not kill children. Do not kill an aged, infirm person"
+          }
+        }
+      ],
+      "podcasts": [
+        {
+          "key": "pod_E04_w4",
+          "rel": "Podcast_Audio/Mock_Countdown/E04_Wk4_Pacifism_Issues.mp3",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Mock_Countdown/E04_Wk4_Pacifism_Issues.mp3",
+          "series": "e",
+          "code": "E04",
+          "name": "Wk4 Pacifism Issues",
+          "kind": "Countdown episode"
+        },
+        {
+          "key": "pod_I28_w4",
+          "rel": "Podcast_Audio/Islam/I28_Pacifism.mp3",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Islam/I28_Pacifism.mp3",
+          "series": "i",
+          "code": "I28",
+          "name": "Pacifism",
+          "kind": "Islam"
+        },
+        {
+          "key": "pod_I32_w4",
+          "rel": "Podcast_Audio/Islam/I32_Issues_Conflict.mp3",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Islam/I32_Issues_Conflict.mp3",
+          "series": "i",
+          "code": "I32",
+          "name": "Issues Conflict",
+          "kind": "Islam"
+        }
+      ],
+      "reads": [
+        {
+          "key": "comp_w4",
+          "rel": "Mock_Exam_Companion_FE.docx",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Mock_Exam_Companion_FE.docx",
+          "icon": "&#9670;",
+          "label": "Companion 1 · page 17",
+          "sub": "Mock_Exam_Companion_FE.docx"
+        },
+        {
+          "key": "book_w4",
+          "rel": "../Unit8_Peace_and_Conflict_Workbook_Supported.docx",
+          "sp": "Year%2011/Unit8_Peace_and_Conflict_Workbook_Supported.docx",
+          "icon": "&#9632;",
+          "label": "Unit 8 workbook — Supported",
+          "sub": "Unit8_Peace_and_Conflict_Workbook_Supported.docx"
+        }
+      ],
+      "ticks": "listen"
+    },
+    {
+      "n": 5,
+      "type": "teach",
+      "paper": "p1",
+      "title": "Marriage and the Family",
+      "say": "Back to Christianity. These two topics are the ones the mock asks about.",
+      "lessons": [
+        {
+          "title": "Families",
+          "bq": "What is a family actually FOR?",
+          "sum": [
+            "Families come in many forms: nuclear (parents and children), extended (with grandparents and relatives), single-parent, blended and same-sex parent families. Christians value three purposes across all of them — procreation, security, and bringing children up in the faith.",
+            "Some traditions especially uphold the married, nuclear home, but the Church welcomes and supports every kind of family. Proverbs 22:6 says to start children off on the way they should go. Christians see the family as the first school of faith: prayers, Bible stories and right and wrong are learned at home years before church or school."
+          ],
+          "deck": {
+            "key": "deck_MR_L03",
+            "rel": "../1%20-%20Mock%20Exam%20Lessons/MR_L03_Families.pptx",
+            "sp": "Year%2011/1%20-%20Mock%20Exam%20Lessons/MR_L03_Families.pptx",
+            "icon": "&#9635;",
+            "label": "Open the lesson",
+            "sub": "MR_L03_Families.pptx"
+          },
+          "kws": [
+            "nuclear family",
+            "procreation",
+            "security",
+            "upbringing"
+          ],
+          "quote": {
+            "q": "Start children off on the way they should go",
+            "cite": "Proverbs 22:6"
+          }
+        },
+        {
+          "title": "Family planning",
+          "bq": "Who decides how big a family should be?",
+          "sum": [
+            "Family planning means deciding how many children to have and when. Christians agree children are a gift from God. They disagree about how far couples should control it.",
+            "The Catholic Church taught in Humanae Vitae (1968) that every act of sex must stay open to the transmission of life, so only natural methods — planning around timing — are permitted. Most Protestant churches accept artificial contraception within marriage as part of responsible, loving parenthood. Both sides claim to be protecting the same thing: the purpose God gave to sex and family."
+          ],
+          "deck": {
+            "key": "deck_MR_L05",
+            "rel": "../1%20-%20Mock%20Exam%20Lessons/MR_L05_Family_planning.pptx",
+            "sp": "Year%2011/1%20-%20Mock%20Exam%20Lessons/MR_L05_Family_planning.pptx",
+            "icon": "&#9635;",
+            "label": "Open the lesson",
+            "sub": "MR_L05_Family_planning.pptx"
+          },
+          "kws": [
+            "contraception",
+            "Humanae Vitae",
+            "natural methods",
+            "responsible"
+          ],
+          "quote": {
+            "q": "open to the transmission of life"
+          }
+        }
+      ],
+      "podcasts": [
+        {
+          "key": "pod_E05_w5",
+          "rel": "Podcast_Audio/Mock_Countdown/E05_Wk5_Family_Planning.mp3",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Mock_Countdown/E05_Wk5_Family_Planning.mp3",
+          "series": "e",
+          "code": "E05",
+          "name": "Wk5 Family Planning",
+          "kind": "Countdown episode"
+        },
+        {
+          "key": "pod_C11_w5",
+          "rel": "Podcast_Audio/Christianity/C11_Families.mp3",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Christianity/C11_Families.mp3",
+          "series": "c",
+          "code": "C11",
+          "name": "Families",
+          "kind": "Christianity"
+        },
+        {
+          "key": "pod_C13_w5",
+          "rel": "Podcast_Audio/Christianity/C13_Family_Planning.mp3",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Christianity/C13_Family_Planning.mp3",
+          "series": "c",
+          "code": "C13",
+          "name": "Family Planning",
+          "kind": "Christianity"
+        }
+      ],
+      "reads": [
+        {
+          "key": "comp_w5",
+          "rel": "Mock_Exam_Companion_FE.docx",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Mock_Exam_Companion_FE.docx",
+          "icon": "&#9670;",
+          "label": "Companion 1 · page 4",
+          "sub": "Mock_Exam_Companion_FE.docx"
+        }
+      ],
+      "ticks": "listen"
+    },
+    {
+      "n": 6,
+      "type": "teach",
+      "paper": "p1",
+      "title": "Marriage and the Family",
+      "say": "All the new mock teaching is done. From next week it is revision only.",
+      "lessons": [
+        {
+          "title": "Divorce",
+          "bq": "Can an unbreakable promise ever be broken?",
+          "sum": [
+            "Jesus taught that marriage is permanent: 'What God has joined together, let no one separate.' He said Moses only allowed divorce because people's hearts were hard. Divorce ends a marriage in law — but Christians disagree about whether it ends it in God's eyes.",
+            "The Catholic Church does not recognise divorce. Only an annulment, a declaration that the marriage was never valid in the first place, allows someone to remarry in church. The Church of England and most Protestants regretfully accept divorce as the lesser of two evils and may allow remarriage. Both are trying to hold together two things: the seriousness of a vow, and mercy when a marriage has broken."
+          ],
+          "deck": {
+            "key": "deck_MR_L06",
+            "rel": "../1%20-%20Mock%20Exam%20Lessons/MR_L06_Divorce.pptx",
+            "sp": "Year%2011/1%20-%20Mock%20Exam%20Lessons/MR_L06_Divorce.pptx",
+            "icon": "&#9635;",
+            "label": "Open the lesson",
+            "sub": "MR_L06_Divorce.pptx"
+          },
+          "kws": [
+            "divorce",
+            "annulment",
+            "remarriage",
+            "sanctity"
+          ],
+          "quote": {
+            "q": "What God has joined together, let no one separate",
+            "cite": "Mark 10:9"
+          }
+        },
+        {
+          "title": "Gender prejudice and discrimination",
+          "bq": "What should Christians DO about unfairness?",
+          "sum": [
+            "Prejudice is judging someone because of their gender. Discrimination is acting on it — unequal pay, blocked opportunities, everyday disrespect. Christians believe both insult the image of God in every person, so this is not simply about unfairness.",
+            "Jesus did the opposite of what his society expected: he taught women, defended them, and appeared first to women after the resurrection. Today Christians campaign against discrimination, and the Church of England has ordained women as priests since 1994 and as bishops since 2014. The sharpest exam argument is whether a church can preach equality while its own leadership is still unequal."
+          ],
+          "deck": {
+            "key": "deck_MR_L08",
+            "rel": "../1%20-%20Mock%20Exam%20Lessons/MR_L08_Gender_prejudice_and_discrimination.pptx",
+            "sp": "Year%2011/1%20-%20Mock%20Exam%20Lessons/MR_L08_Gender_prejudice_and_discrimination.pptx",
+            "icon": "&#9635;",
+            "label": "Open the lesson",
+            "sub": "MR_L08_Gender_prejudice_and_discrimination.pptx"
+          },
+          "kws": [
+            "prejudice",
+            "discrimination",
+            "dignity",
+            "justice"
+          ],
+          "quote": {
+            "q": "in the image of God he created them; male and female he created them",
+            "cite": "Genesis 1:27"
+          }
+        }
+      ],
+      "podcasts": [
+        {
+          "key": "pod_E06_w6",
+          "rel": "Podcast_Audio/Mock_Countdown/E06_Wk6_Divorce_Gender.mp3",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Mock_Countdown/E06_Wk6_Divorce_Gender.mp3",
+          "series": "e",
+          "code": "E06",
+          "name": "Wk6 Divorce Gender",
+          "kind": "Countdown episode"
+        },
+        {
+          "key": "pod_C14_w6",
+          "rel": "Podcast_Audio/Christianity/C14_Divorce.mp3",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Christianity/C14_Divorce.mp3",
+          "series": "c",
+          "code": "C14",
+          "name": "Divorce",
+          "kind": "Christianity"
+        },
+        {
+          "key": "pod_C16_w6",
+          "rel": "Podcast_Audio/Christianity/C16_Gender_Prejudice.mp3",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Christianity/C16_Gender_Prejudice.mp3",
+          "series": "c",
+          "code": "C16",
+          "name": "Gender Prejudice",
+          "kind": "Christianity"
+        }
+      ],
+      "reads": [
+        {
+          "key": "comp_w6",
+          "rel": "Mock_Exam_Companion_FE.docx",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Mock_Exam_Companion_FE.docx",
+          "icon": "&#9670;",
+          "label": "Companion 1 · page 5",
+          "sub": "Mock_Exam_Companion_FE.docx"
+        }
+      ],
+      "ticks": "listen"
+    },
+    {
+      "n": 7,
+      "type": "rev",
+      "paper": "p1",
+      "title": "Paper 1 revision — Christian Beliefs · Living the Christian Life",
+      "say": "No new topics now. This week is key words and quotes for Paper 1.",
+      "focuses": [
+        {
+          "title": "Christian Beliefs",
+          "sum": [
+            "Paper 1 Question 1 is Christian Beliefs — the foundations everything else rests on. The Trinity: one God as Father, Son and Holy Spirit, set out in the Nicene Creed. Creation, and what Genesis 1 teaches about God. The incarnation: God becoming human in Jesus. The last days of Jesus' life, the resurrection and the ascension. Salvation, and how Christians believe sin is dealt with.",
+            "The unit ends with the hardest question in the subject: if God is all-powerful and all-loving, why is there evil and suffering? Learn the problem as a set of statements that clash, then the Christian responses — prayer, charity, the example of Jesus, free will, and suffering as a test. This is the week to fix the key words and the quotes, because every question in this unit assumes them."
+          ]
+        },
+        {
+          "title": "Living the Christian Life",
+          "sum": [
+            "Paper 1 Question 3 is Living the Christian Life — what belief actually looks like from Monday to Sunday. Worship, both liturgical and non-liturgical, and why churches differ. The sacraments, especially baptism and holy communion, and the divergent views about what they do. Prayer: set prayers, informal prayer, and the Lord's Prayer.",
+            "Then the wider life: pilgrimage, and why some Christians go and others see no need; the festivals of Christmas and Easter; the future of the Church and mission and evangelism; and the work of the local and worldwide Church, including street pastors, food banks and organisations like Christian Aid and Tearfund. Named examples earn marks here — collect them."
+          ]
+        }
+      ],
+      "podcasts": [
+        {
+          "key": "pod_E07_w7",
+          "rel": "Podcast_Audio/Mock_Countdown/E07_Rev_Christian_Beliefs.mp3",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Mock_Countdown/E07_Rev_Christian_Beliefs.mp3",
+          "series": "e",
+          "code": "E07",
+          "name": "Rev Christian Beliefs",
+          "kind": "Countdown episode"
+        },
+        {
+          "key": "pod_E08_w7",
+          "rel": "Podcast_Audio/Mock_Countdown/E08_Rev_Living_Christian_Life.mp3",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Mock_Countdown/E08_Rev_Living_Christian_Life.mp3",
+          "series": "e",
+          "code": "E08",
+          "name": "Rev Living Christian Life",
+          "kind": "Countdown episode"
+        }
+      ],
+      "episodes": [
+        {
+          "key": "pset_C01_w7",
+          "rel": "Podcast_Audio/Christianity/C01_The_Trinity.mp3",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Christianity/C01_The_Trinity.mp3",
+          "text": "C01"
+        },
+        {
+          "key": "pset_C02_w7",
+          "rel": "Podcast_Audio/Christianity/C02_Creation.mp3",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Christianity/C02_Creation.mp3",
+          "text": "C02"
+        },
+        {
+          "key": "pset_C03_w7",
+          "rel": "Podcast_Audio/Christianity/C03_Incarnation.mp3",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Christianity/C03_Incarnation.mp3",
+          "text": "C03"
+        },
+        {
+          "key": "pset_C04_w7",
+          "rel": "Podcast_Audio/Christianity/C04_Last_Days_of_Jesus.mp3",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Christianity/C04_Last_Days_of_Jesus.mp3",
+          "text": "C04"
+        },
+        {
+          "key": "pset_C05_w7",
+          "rel": "Podcast_Audio/Christianity/C05_Salvation.mp3",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Christianity/C05_Salvation.mp3",
+          "text": "C05"
+        },
+        {
+          "key": "pset_C06_w7",
+          "rel": "Podcast_Audio/Christianity/C06_Eschatology.mp3",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Christianity/C06_Eschatology.mp3",
+          "text": "C06"
+        },
+        {
+          "key": "pset_C07_w7",
+          "rel": "Podcast_Audio/Christianity/C07_Problem_of_Evil.mp3",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Christianity/C07_Problem_of_Evil.mp3",
+          "text": "C07"
+        },
+        {
+          "key": "pset_C08_w7",
+          "rel": "Podcast_Audio/Christianity/C08_Solutions_to_Evil.mp3",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Christianity/C08_Solutions_to_Evil.mp3",
+          "text": "C08"
+        },
+        {
+          "key": "pset_C17_w7",
+          "rel": "Podcast_Audio/Christianity/C17_Worship.mp3",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Christianity/C17_Worship.mp3",
+          "text": "C17"
+        },
+        {
+          "key": "pset_C18_w7",
+          "rel": "Podcast_Audio/Christianity/C18_Sacraments.mp3",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Christianity/C18_Sacraments.mp3",
+          "text": "C18"
+        },
+        {
+          "key": "pset_C19_w7",
+          "rel": "Podcast_Audio/Christianity/C19_Prayer.mp3",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Christianity/C19_Prayer.mp3",
+          "text": "C19"
+        },
+        {
+          "key": "pset_C20_w7",
+          "rel": "Podcast_Audio/Christianity/C20_Pilgrimage.mp3",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Christianity/C20_Pilgrimage.mp3",
+          "text": "C20"
+        },
+        {
+          "key": "pset_C21_w7",
+          "rel": "Podcast_Audio/Christianity/C21_Celebrations.mp3",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Christianity/C21_Celebrations.mp3",
+          "text": "C21"
+        },
+        {
+          "key": "pset_C22_w7",
+          "rel": "Podcast_Audio/Christianity/C22_Future_of_Church.mp3",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Christianity/C22_Future_of_Church.mp3",
+          "text": "C22"
+        },
+        {
+          "key": "pset_C23_w7",
+          "rel": "Podcast_Audio/Christianity/C23_Local_Church.mp3",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Christianity/C23_Local_Church.mp3",
+          "text": "C23"
+        },
+        {
+          "key": "pset_C24_w7",
+          "rel": "Podcast_Audio/Christianity/C24_Worldwide_Church.mp3",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Christianity/C24_Worldwide_Church.mp3",
+          "text": "C24"
+        }
+      ],
+      "reads": [
+        {
+          "key": "comp_w7",
+          "rel": "Mock_Exam_Companion_FE.docx",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Mock_Exam_Companion_FE.docx",
+          "icon": "&#9670;",
+          "label": "Companion 1 · pages 2–3 and 6–7",
+          "sub": "Mock_Exam_Companion_FE.docx"
+        },
+        {
+          "key": "res_w7_0",
+          "rel": "../5%20-%20Revision%20Lessons/REV_W7_Paper1_Christian_Beliefs_LCL.pptx",
+          "sp": "Year%2011/5%20-%20Revision%20Lessons/REV_W7_Paper1_Christian_Beliefs_LCL.pptx",
+          "icon": "&#9679;",
+          "label": "Revision lesson — Paper 1",
+          "sub": "REV_W7_Paper1_Christian_Beliefs_LCL.pptx"
+        },
+        {
+          "key": "res_w7_1",
+          "rel": "../5%20-%20Revision%20Lessons/A3_W7_Paper1_Sheet.docx",
+          "sp": "Year%2011/5%20-%20Revision%20Lessons/A3_W7_Paper1_Sheet.docx",
+          "icon": "&#9679;",
+          "label": "A3 revision sheet — Paper 1",
+          "sub": "A3_W7_Paper1_Sheet.docx"
+        }
+      ],
+      "ticks": "listen"
+    },
+    {
+      "n": 8,
+      "type": "rev",
+      "paper": "p2",
+      "title": "Paper 2 revision — Muslim Beliefs · Living the Muslim Life",
+      "say": "Same job as last week, but for Islam and Paper 2.",
+      "focuses": [
+        {
+          "title": "Muslim Beliefs",
+          "sum": [
+            "Paper 2 Question 1 is Muslim Beliefs. Start with the difference that trips people up every year: Sunni Muslims hold the six Beliefs, Shi'a Muslims the five Roots of 'Usul ad-Din. Get that straight and a whole question becomes safe. Then the nature of Allah — the ninety-nine characteristics, tawhid, immanence and transcendence.",
+            "The rest of the unit follows from it: Risalah, prophethood, and how Allah communicates through prophets; the holy books, with the Qur'an as the final revelation; Malaikah, the angels and their roles; al-Qadr, predestination, and where Sunni and Shi'a understandings differ; and Akhirah, life after death and the Day of Judgement."
+          ]
+        },
+        {
+          "title": "Living the Muslim Life",
+          "sum": [
+            "Paper 2 Question 3 is Living the Muslim Life — practice rather than belief. The Ten Obligatory Acts of Shi'a Islam and the Five Pillars sit side by side here, so keep them separate in your head. Shahadah, the declaration of faith. Salah, prayer, and how and why it differs between Sunni and Shi'a Muslims.",
+            "Then Sawm, fasting in Ramadan, and who is excused; Zakah, and khums for Shi'a Muslims; Hajj, the pilgrimage to Makkah and what happens there; jihad, both the greater personal struggle and the lesser one, which is the most misunderstood term on the paper; and the festivals — Id-ul-Fitr, Id-ul-Adha and Ashura."
+          ]
+        }
+      ],
+      "podcasts": [
+        {
+          "key": "pod_E09_w8",
+          "rel": "Podcast_Audio/Mock_Countdown/E09_Rev_Muslim_Beliefs.mp3",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Mock_Countdown/E09_Rev_Muslim_Beliefs.mp3",
+          "series": "e",
+          "code": "E09",
+          "name": "Rev Muslim Beliefs",
+          "kind": "Countdown episode"
+        },
+        {
+          "key": "pod_E10_w8",
+          "rel": "Podcast_Audio/Mock_Countdown/E10_Rev_Living_Muslim_Life.mp3",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Mock_Countdown/E10_Rev_Living_Muslim_Life.mp3",
+          "series": "e",
+          "code": "E10",
+          "name": "Rev Living Muslim Life",
+          "kind": "Countdown episode"
+        }
+      ],
+      "episodes": [
+        {
+          "key": "pset_I01_w8",
+          "rel": "Podcast_Audio/Islam/I01_Six_Beliefs.mp3",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Islam/I01_Six_Beliefs.mp3",
+          "text": "I01"
+        },
+        {
+          "key": "pset_I02_w8",
+          "rel": "Podcast_Audio/Islam/I02_Five_Roots_Shia.mp3",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Islam/I02_Five_Roots_Shia.mp3",
+          "text": "I02"
+        },
+        {
+          "key": "pset_I03_w8",
+          "rel": "Podcast_Audio/Islam/I03_Nature_of_Allah.mp3",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Islam/I03_Nature_of_Allah.mp3",
+          "text": "I03"
+        },
+        {
+          "key": "pset_I04_w8",
+          "rel": "Podcast_Audio/Islam/I04_Risalah.mp3",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Islam/I04_Risalah.mp3",
+          "text": "I04"
+        },
+        {
+          "key": "pset_I05_w8",
+          "rel": "Podcast_Audio/Islam/I05_Holy_Books.mp3",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Islam/I05_Holy_Books.mp3",
+          "text": "I05"
+        },
+        {
+          "key": "pset_I06_w8",
+          "rel": "Podcast_Audio/Islam/I06_Malaikah.mp3",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Islam/I06_Malaikah.mp3",
+          "text": "I06"
+        },
+        {
+          "key": "pset_I07_w8",
+          "rel": "Podcast_Audio/Islam/I07_Al_Qadr.mp3",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Islam/I07_Al_Qadr.mp3",
+          "text": "I07"
+        },
+        {
+          "key": "pset_I08_w8",
+          "rel": "Podcast_Audio/Islam/I08_Akhirah.mp3",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Islam/I08_Akhirah.mp3",
+          "text": "I08"
+        },
+        {
+          "key": "pset_I17_w8",
+          "rel": "Podcast_Audio/Islam/I17_Ten_Obligatory_Acts.mp3",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Islam/I17_Ten_Obligatory_Acts.mp3",
+          "text": "I17"
+        },
+        {
+          "key": "pset_I18_w8",
+          "rel": "Podcast_Audio/Islam/I18_Shahadah.mp3",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Islam/I18_Shahadah.mp3",
+          "text": "I18"
+        },
+        {
+          "key": "pset_I19_w8",
+          "rel": "Podcast_Audio/Islam/I19_Salah.mp3",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Islam/I19_Salah.mp3",
+          "text": "I19"
+        },
+        {
+          "key": "pset_I20_w8",
+          "rel": "Podcast_Audio/Islam/I20_Sawm.mp3",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Islam/I20_Sawm.mp3",
+          "text": "I20"
+        },
+        {
+          "key": "pset_I21_w8",
+          "rel": "Podcast_Audio/Islam/I21_Zakah_Khums.mp3",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Islam/I21_Zakah_Khums.mp3",
+          "text": "I21"
+        },
+        {
+          "key": "pset_I22_w8",
+          "rel": "Podcast_Audio/Islam/I22_Hajj.mp3",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Islam/I22_Hajj.mp3",
+          "text": "I22"
+        },
+        {
+          "key": "pset_I23_w8",
+          "rel": "Podcast_Audio/Islam/I23_Jihad.mp3",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Islam/I23_Jihad.mp3",
+          "text": "I23"
+        },
+        {
+          "key": "pset_I24_w8",
+          "rel": "Podcast_Audio/Islam/I24_Celebrations.mp3",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Islam/I24_Celebrations.mp3",
+          "text": "I24"
+        }
+      ],
+      "reads": [
+        {
+          "key": "comp_w8",
+          "rel": "Mock_Exam_Companion_FE.docx",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Mock_Exam_Companion_FE.docx",
+          "icon": "&#9670;",
+          "label": "Companion 1 · pages 10–11 and 14–15",
+          "sub": "Mock_Exam_Companion_FE.docx"
+        },
+        {
+          "key": "res_w8_0",
+          "rel": "../5%20-%20Revision%20Lessons/REV_W8_Paper2_Muslim_Beliefs_LML.pptx",
+          "sp": "Year%2011/5%20-%20Revision%20Lessons/REV_W8_Paper2_Muslim_Beliefs_LML.pptx",
+          "icon": "&#9679;",
+          "label": "Revision lesson — Paper 2",
+          "sub": "REV_W8_Paper2_Muslim_Beliefs_LML.pptx"
+        },
+        {
+          "key": "res_w8_1",
+          "rel": "../5%20-%20Revision%20Lessons/A3_W8_Paper2_Sheet.docx",
+          "sp": "Year%2011/5%20-%20Revision%20Lessons/A3_W8_Paper2_Sheet.docx",
+          "icon": "&#9679;",
+          "label": "A3 revision sheet — Paper 2",
+          "sub": "A3_W8_Paper2_Sheet.docx"
+        }
+      ],
+      "ticks": "listen"
+    },
+    {
+      "n": 9,
+      "type": "rev",
+      "paper": "p2",
+      "title": "Crime and Punishment · then the (d) clinic",
+      "say": "Last week before the mock. We drill the 5 steps of the 12-mark (d) answer.",
+      "focuses": [
+        {
+          "title": "Crime and Punishment — the Year 10 half",
+          "sum": [
+            "This is the half of Crime and Punishment you met in Year 10, and the mock will test it. Justice: Al-'Adl, and Surah 4:135 demanding fairness even against yourself. Crime: the three categories, hudud, qisas and ta'zir, and the four causes — poverty, drugs, upbringing and low self-esteem.",
+            "Then good, evil and suffering: the fitrah, free will, and why Islam forbids what leads people into harm. And punishment itself: qisas and fair retribution in Surah 2:178, hadd punishments as fixed penalties, and the limit set by human rights — even the guilty keep the right to a fair trial and to be free from torture."
+          ]
+        },
+        {
+          "title": "The (d) clinic — the 12-mark answer",
+          "sum": [
+            "The (d) question is worth 12 marks — half the marks in every question on the paper. It is a statement you have to argue about, and it is the one place students lose the most. The method is fixed and you will drill it this week: four paragraphs, two agreeing and two disagreeing.",
+            "Paragraphs 1 and 3 end with a link back to the statement. Paragraphs 2 and 4 end by weighing both arguments on that side — the strength and the limit together. Then a full conclusion: judge it, weigh it against the best argument on the other side, name your evidence, and land it. Where the question asks for it, include a genuinely non-religious view, or the answer is capped at half marks."
+          ]
+        }
+      ],
+      "podcasts": [
+        {
+          "key": "pod_E11_w9",
+          "rel": "Podcast_Audio/Mock_Countdown/E11_Rev_Crime_Punishment.mp3",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Mock_Countdown/E11_Rev_Crime_Punishment.mp3",
+          "series": "e",
+          "code": "E11",
+          "name": "Rev Crime Punishment",
+          "kind": "Countdown episode"
+        }
+      ],
+      "episodes": [
+        {
+          "key": "pset_I09_w9",
+          "rel": "Podcast_Audio/Islam/I09_Justice.mp3",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Islam/I09_Justice.mp3",
+          "text": "I09"
+        },
+        {
+          "key": "pset_I10_w9",
+          "rel": "Podcast_Audio/Islam/I10_Crime.mp3",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Islam/I10_Crime.mp3",
+          "text": "I10"
+        },
+        {
+          "key": "pset_I11_w9",
+          "rel": "Podcast_Audio/Islam/I11_Muslim_Evil_Suffering.mp3",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Islam/I11_Muslim_Evil_Suffering.mp3",
+          "text": "I11"
+        },
+        {
+          "key": "pset_I12_w9",
+          "rel": "Podcast_Audio/Islam/I12_Punishment_Attitudes.mp3",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Islam/I12_Punishment_Attitudes.mp3",
+          "text": "I12"
+        }
+      ],
+      "reads": [
+        {
+          "key": "comp_w9",
+          "rel": "Mock_Exam_Companion_FE.docx",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Mock_Exam_Companion_FE.docx",
+          "icon": "&#9670;",
+          "label": "Companion 1 · pages 12–13 and 18",
+          "sub": "Mock_Exam_Companion_FE.docx"
+        },
+        {
+          "key": "res_w9_0",
+          "rel": "../5%20-%20Revision%20Lessons/REV_W9_Crime_Punishment_D_Clinic.pptx",
+          "sp": "Year%2011/5%20-%20Revision%20Lessons/REV_W9_Crime_Punishment_D_Clinic.pptx",
+          "icon": "&#9679;",
+          "label": "Revision lesson — C&P + (d) clinic",
+          "sub": "REV_W9_Crime_Punishment_D_Clinic.pptx"
+        },
+        {
+          "key": "res_w9_1",
+          "rel": "../5%20-%20Revision%20Lessons/A3_W9_CP_Clinic_Sheet.docx",
+          "sp": "Year%2011/5%20-%20Revision%20Lessons/A3_W9_CP_Clinic_Sheet.docx",
+          "icon": "&#9679;",
+          "label": "A3 clinic sheet",
+          "sub": "A3_W9_CP_Clinic_Sheet.docx"
+        }
+      ],
+      "ticks": "listen"
+    },
+    {
+      "n": 10,
+      "type": "mock",
+      "paper": "p1",
+      "title": "MOCK 1 · PAPER 1 — Religion and Ethics (Christianity)",
+      "say": "You sit Paper 1 this week. 1 hour 45 minutes. 102 marks. Bring two black pens.",
+      "checklist": [
+        "Christian Beliefs",
+        "Marriage and the Family",
+        "Living the Christian Life",
+        "Matters of Life and Death"
+      ],
+      "ticks": "exam"
+    },
+    {
+      "n": 11,
+      "type": "mock",
+      "paper": "p2",
+      "title": "MOCK 1 · PAPER 2 — Religion, Peace and Conflict (Islam)",
+      "say": "You sit Paper 2 this week. Same shape, same timing. Then marking begins.",
+      "checklist": [
+        "Muslim Beliefs",
+        "Crime and Punishment",
+        "Living the Muslim Life",
+        "Peace and Conflict"
+      ],
+      "ticks": "exam"
+    },
+    {
+      "n": 12,
+      "type": "teach",
+      "paper": "p1",
+      "title": "Matters of Life and Death",
+      "say": "New topics start again while your mock is being marked.",
+      "lessons": [
+        {
+          "title": "Sanctity of life",
+          "bq": "What makes a life sacred?",
+          "sum": [
+            "The sanctity of life is the belief that life is created by God and made holy by him. Human life is sacred. People have value simply because they exist, not because of what they can do, because they are made in the image of God. Genesis 1:27 is the verse to learn.",
+            "The Bible builds the idea up: God breathed life into humans, planned each person before they were born, and designed the body as a dwelling for the Holy Spirit. Notice that Genesis 1:27 mentions humans and not animals — which is why most Christians apply sanctity of life to people. This belief is the reason decisions about abortion and euthanasia are taken so seriously."
+          ],
+          "deck": {
+            "key": "deck_MLD_L05",
+            "rel": "../2%20-%20Post-Mock%20Lessons/MLD_L05_Sanctity_of_life.pptx",
+            "sp": "Year%2011/2%20-%20Post-Mock%20Lessons/MLD_L05_Sanctity_of_life.pptx",
+            "icon": "&#9635;",
+            "label": "Open the lesson",
+            "sub": "MLD_L05_Sanctity_of_life.pptx"
+          },
+          "kws": [
+            "sanctity of life",
+            "sacred",
+            "image of God",
+            "unconditional"
+          ],
+          "quote": {
+            "q": "So God created mankind in his own image, in the image of God he created them",
+            "cite": "Genesis 1:27"
+          }
+        },
+        {
+          "title": "Abortion",
+          "bq": "When does life begin — and who decides?",
+          "sum": [
+            "Abortion is the deliberate ending of a pregnancy. In England, Scotland and Wales it is legal if two doctors agree there is a risk to the physical or mental health of the mother, the baby, or the children she already has.",
+            "The Catholic Church and most evangelical Protestants are pro-life. Life is sacred from the moment of conception, God has a plan for every life, and Humanae Vitae ruled out abortion completely. Other Christians accept it in some situations — where the mother's life is in danger, or after rape — arguing that the most loving thing to do is what matters. Both sides use the sanctity of life; they just apply it differently."
+          ],
+          "deck": {
+            "key": "deck_MLD_L06",
+            "rel": "../2%20-%20Post-Mock%20Lessons/MLD_L06_Abortion.pptx",
+            "sp": "Year%2011/2%20-%20Post-Mock%20Lessons/MLD_L06_Abortion.pptx",
+            "icon": "&#9635;",
+            "label": "Open the lesson",
+            "sub": "MLD_L06_Abortion.pptx"
+          },
+          "kws": [
+            "abortion",
+            "pro-life",
+            "pro-choice",
+            "situation ethics"
+          ],
+          "quote": {
+            "q": "all direct abortion [is] to be absolutely excluded as lawful means of regulating the number of children"
+          }
+        }
+      ],
+      "podcasts": [
+        {
+          "key": "pod_C26_w12",
+          "rel": "Podcast_Audio/Christianity/C26_Sanctity_of_Life.mp3",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Christianity/C26_Sanctity_of_Life.mp3",
+          "series": "c",
+          "code": "C26",
+          "name": "Sanctity of Life",
+          "kind": "Christianity"
+        },
+        {
+          "key": "pod_C28_w12",
+          "rel": "Podcast_Audio/Christianity/C28_Abortion.mp3",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Christianity/C28_Abortion.mp3",
+          "series": "c",
+          "code": "C28",
+          "name": "Abortion",
+          "kind": "Christianity"
+        }
+      ],
+      "reads": [
+        {
+          "key": "comp_w12",
+          "rel": "../4%20-%20Mock%202%20Companion/Mock2_Companion_FE.docx",
+          "sp": "Year%2011/4%20-%20Mock%202%20Companion/Mock2_Companion_FE.docx",
+          "icon": "&#9670;",
+          "label": "Companion 2 · page 4",
+          "sub": "Mock2_Companion_FE.docx"
+        },
+        {
+          "key": "book_w12",
+          "rel": "../Unit7_Matters_of_Life_and_Death_Workbook_Supported.docx",
+          "sp": "Year%2011/Unit7_Matters_of_Life_and_Death_Workbook_Supported.docx",
+          "icon": "&#9632;",
+          "label": "Unit 7 workbook — Supported",
+          "sub": "Unit7_Matters_of_Life_and_Death_Workbook_Supported.docx"
+        }
+      ],
+      "ticks": "listen"
+    },
+    {
+      "n": 13,
+      "type": "teach",
+      "paper": "p1",
+      "title": "Matters of Life and Death",
+      "say": "Unit 7 is finished — all eight topics taught.",
+      "lessons": [
+        {
+          "title": "Arguments against the afterlife",
+          "bq": "Is the afterlife just wishful thinking?",
+          "sum": [
+            "Most non-religious people say there is not enough evidence for an afterlife. Four arguments come up again and again: it was invented for comfort, there is no proof, mediums have been caught faking, and the idea of heaven and hell is used to control how people behave.",
+            "Christians answer each one. Comfort does not mean invention — the Bible teaches it is real. Science cannot prove everything, so faith is required. Frauds prove nothing about the truth itself. And some Christians argue warning people about hell is a loving act, not a controlling one. Above all they point to the resurrection: for them, that is the evidence."
+          ],
+          "deck": {
+            "key": "deck_MLD_L07",
+            "rel": "../2%20-%20Post-Mock%20Lessons/MLD_L07_Arguments_against_the_afterlife.pptx",
+            "sp": "Year%2011/2%20-%20Post-Mock%20Lessons/MLD_L07_Arguments_against_the_afterlife.pptx",
+            "icon": "&#9635;",
+            "label": "Open the lesson",
+            "sub": "MLD_L07_Arguments_against_the_afterlife.pptx"
+          },
+          "kws": [
+            "evidence",
+            "fraudulent",
+            "mediums",
+            "social control"
+          ],
+          "quote": {
+            "q": "[You are saved] by the resurrection of Jesus Christ, who has gone into heaven and is at God's right hand"
+          }
+        },
+        {
+          "title": "Euthanasia",
+          "bq": "Who has the authority to end a life?",
+          "sum": [
+            "Euthanasia is when someone else deliberately gives a person medication to end their life. It is illegal in the UK. Voluntary euthanasia is at the person's own request. Non-voluntary is when the person cannot ask — for example if they are in a coma and the family decide.",
+            "Most Christians oppose it. It breaks the sanctity of life, only God has the right to end a life, and the Bible forbids murder. Job refused to end his life even in terrible suffering. Some Christians accept it in extreme cases, saying a loving God would not want pointless pain. Both sides usually agree on one thing: hospices, which give good care to the dying, are part of the answer."
+          ],
+          "deck": {
+            "key": "deck_MLD_L08",
+            "rel": "../2%20-%20Post-Mock%20Lessons/MLD_L08_Euthanasia.pptx",
+            "sp": "Year%2011/2%20-%20Post-Mock%20Lessons/MLD_L08_Euthanasia.pptx",
+            "icon": "&#9635;",
+            "label": "Open the lesson",
+            "sub": "MLD_L08_Euthanasia.pptx"
+          },
+          "kws": [
+            "euthanasia",
+            "voluntary",
+            "hospice",
+            "Natural Law"
+          ],
+          "quote": {
+            "q": "Shall we accept good from God, and not trouble?",
+            "cite": "Job 2:9-10"
+          }
+        }
+      ],
+      "podcasts": [
+        {
+          "key": "pod_C30_w13",
+          "rel": "Podcast_Audio/Christianity/C30_Non_religious_vs_Afterlife.mp3",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Christianity/C30_Non_religious_vs_Afterlife.mp3",
+          "series": "c",
+          "code": "C30",
+          "name": "Non religious vs Afterlife",
+          "kind": "Christianity"
+        },
+        {
+          "key": "pod_C31_w13",
+          "rel": "Podcast_Audio/Christianity/C31_Euthanasia.mp3",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Christianity/C31_Euthanasia.mp3",
+          "series": "c",
+          "code": "C31",
+          "name": "Euthanasia",
+          "kind": "Christianity"
+        }
+      ],
+      "reads": [
+        {
+          "key": "comp_w13",
+          "rel": "../4%20-%20Mock%202%20Companion/Mock2_Companion_FE.docx",
+          "sp": "Year%2011/4%20-%20Mock%202%20Companion/Mock2_Companion_FE.docx",
+          "icon": "&#9670;",
+          "label": "Companion 2 · page 5",
+          "sub": "Mock2_Companion_FE.docx"
+        },
+        {
+          "key": "book_w13",
+          "rel": "../Unit7_Matters_of_Life_and_Death_Workbook_Supported.docx",
+          "sp": "Year%2011/Unit7_Matters_of_Life_and_Death_Workbook_Supported.docx",
+          "icon": "&#9632;",
+          "label": "Unit 7 workbook — Supported",
+          "sub": "Unit7_Matters_of_Life_and_Death_Workbook_Supported.docx"
+        }
+      ],
+      "ticks": "listen"
+    },
+    {
+      "n": 14,
+      "type": "fb",
+      "paper": "p1",
+      "title": "MOCK 1 FEEDBACK · Paper 1",
+      "say": "Your paper comes back. We go through it question by question, then you rewrite one answer in green pen.",
+      "checklist": [
+        "Bring your mock paper",
+        "Green pen",
+        "Companion 1"
+      ],
+      "ticks": "feedback"
+    },
+    {
+      "n": 15,
+      "type": "fb",
+      "paper": "p2",
+      "title": "MOCK 1 FEEDBACK · Paper 2 and the (d) rewrite",
+      "say": "Paper 2 back. Everyone rewrites ONE 12-mark (d) answer, and you leave with your own target.",
+      "checklist": [
+        "Bring your mock paper",
+        "Green pen",
+        "Your target sheet"
+      ],
+      "ticks": "feedback"
+    },
+    {
+      "n": 16,
+      "type": "teach",
+      "paper": "p2",
+      "title": "Peace and Conflict",
+      "say": "New term, new topics. Same routine every week: listen, read, practise.",
+      "lessons": [
+        {
+          "title": "Peacemaking",
+          "bq": "How do Muslims build peace?",
+          "sum": [
+            "Peacemaking means actively building peace rather than just avoiding trouble. It works in three ways: justice — doing what is right and fair under the law; forgiveness — pardoning someone for a wrong they have done; and reconciliation — restoring a relationship after it has broken down.",
+            "Surah 41:34 says to repel evil with what is better, and your enemy will become as close as an old and valued friend. So peacemaking is not passive — evil is answered, but with something better than evil. The Muslim Peace Fellowship is a named example. The exam argument is usually whether Muslims should be doing more."
+          ],
+          "deck": {
+            "key": "deck_PAC_L05",
+            "rel": "../2%20-%20Post-Mock%20Lessons/PAC_L05_Peacemaking.pptx",
+            "sp": "Year%2011/2%20-%20Post-Mock%20Lessons/PAC_L05_Peacemaking.pptx",
+            "icon": "&#9635;",
+            "label": "Open the lesson",
+            "sub": "PAC_L05_Peacemaking.pptx"
+          },
+          "kws": [
+            "peacemaking",
+            "justice",
+            "forgiveness",
+            "reconciliation"
+          ],
+          "quote": {
+            "q": "Repel evil with what is better and your enemy will become as close as an old and valued friend",
+            "cite": "Surah 41:34"
+          }
+        },
+        {
+          "title": "The Just War theory",
+          "bq": "Can a war ever be just?",
+          "sum": [
+            "The Just War theory is a list of conditions a war must meet before it can be called justified: a just cause, a better situation afterwards, a proper authority declaring it, the right intention, war as a last resort, proportionate force, and a reasonable chance of success.",
+            "Every condition has to be met — not just some. No innocent people should be killed and prisoners must be treated fairly. The conditions are close to the rules of lesser jihad in Islam, which is why the two are often compared. Surah 4:75 asks why Muslims would not fight for the oppressed who cry out for rescue. The argument is whether any modern war could really meet all of it."
+          ],
+          "deck": {
+            "key": "deck_PAC_L06",
+            "rel": "../2%20-%20Post-Mock%20Lessons/PAC_L06_The_Just_War_theory.pptx",
+            "sp": "Year%2011/2%20-%20Post-Mock%20Lessons/PAC_L06_The_Just_War_theory.pptx",
+            "icon": "&#9635;",
+            "label": "Open the lesson",
+            "sub": "PAC_L06_The_Just_War_theory.pptx"
+          },
+          "kws": [
+            "Just War theory",
+            "just cause",
+            "last resort",
+            "proportionality"
+          ],
+          "quote": {
+            "q": "Why should you not fight in God's cause and for those oppressed men, women, and children",
+            "cite": "Surah 4:75"
+          }
+        }
+      ],
+      "podcasts": [
+        {
+          "key": "pod_I26_w16",
+          "rel": "Podcast_Audio/Islam/I26_Muslim_Peacemaking.mp3",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Islam/I26_Muslim_Peacemaking.mp3",
+          "series": "i",
+          "code": "I26",
+          "name": "Muslim Peacemaking",
+          "kind": "Islam"
+        },
+        {
+          "key": "pod_I29_w16",
+          "rel": "Podcast_Audio/Islam/I29_Just_War.mp3",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Islam/I29_Just_War.mp3",
+          "series": "i",
+          "code": "I29",
+          "name": "Just War",
+          "kind": "Islam"
+        }
+      ],
+      "reads": [
+        {
+          "key": "comp_w16",
+          "rel": "../4%20-%20Mock%202%20Companion/Mock2_Companion_FE.docx",
+          "sp": "Year%2011/4%20-%20Mock%202%20Companion/Mock2_Companion_FE.docx",
+          "icon": "&#9670;",
+          "label": "Companion 2 · page 8",
+          "sub": "Mock2_Companion_FE.docx"
+        },
+        {
+          "key": "book_w16",
+          "rel": "../Unit8_Peace_and_Conflict_Workbook_Supported.docx",
+          "sp": "Year%2011/Unit8_Peace_and_Conflict_Workbook_Supported.docx",
+          "icon": "&#9632;",
+          "label": "Unit 8 workbook — Supported",
+          "sub": "Unit8_Peace_and_Conflict_Workbook_Supported.docx"
+        }
+      ],
+      "ticks": "listen"
+    },
+    {
+      "n": 17,
+      "type": "teach",
+      "paper": "p2",
+      "title": "Peace and Conflict",
+      "say": "Unit 8 is finished — all eight topics taught.",
+      "lessons": [
+        {
+          "title": "Holy war",
+          "bq": "When — if ever — is war holy?",
+          "sum": [
+            "Holy war in Arabic is Harb al-Maqadis. It is allowed only when strict conditions are met: persecution has become intense, freedom of worship is being taken away, Muslims have been attacked first, or the war is authorised by a prophet, a khalifah for Sunni Muslims, or one of the twelve Imams for Shi'a Muslims.",
+            "The list of what is never permitted is just as important: starting a war, harming civilians, attacking the leaders or places of worship of other faiths, forcing conversion, killing fellow Muslims, or attacking by surprise at night. Surah 8:61 commands that if the enemy leans towards peace, Muslims must lean with them — which most read as proof that fighting is only ever defence."
+          ],
+          "deck": {
+            "key": "deck_PAC_L07",
+            "rel": "../2%20-%20Post-Mock%20Lessons/PAC_L07_Holy_war.pptx",
+            "sp": "Year%2011/2%20-%20Post-Mock%20Lessons/PAC_L07_Holy_war.pptx",
+            "icon": "&#9635;",
+            "label": "Open the lesson",
+            "sub": "PAC_L07_Holy_war.pptx"
+          },
+          "kws": [
+            "holy war",
+            "Harb al-Maqadis",
+            "persecution",
+            "khalifah"
+          ],
+          "quote": {
+            "q": "If they incline towards peace, you [Prophet] must also incline towards it",
+            "cite": "Surah 8:61"
+          }
+        },
+        {
+          "title": "Weapons of mass destruction",
+          "bq": "Can a weapon that kills thousands ever be justified?",
+          "sum": [
+            "Weapons of mass destruction are nuclear, biological or chemical weapons that kill and destroy on a huge scale. Nuclear weapons were first used in the Second World War on Hiroshima and Nagasaki, and the effects lasted for generations.",
+            "The problems are enormous: the destruction cannot be measured, civilian deaths are certain, and health problems continue for decades. The argument in their favour is deterrence — countries are less likely to attack a country that has them. Surah 5:32 says killing one person is like killing all mankind, revealed fourteen centuries before such weapons existed. Most Muslims read that as ruling them out completely."
+          ],
+          "deck": {
+            "key": "deck_PAC_L08",
+            "rel": "../2%20-%20Post-Mock%20Lessons/PAC_L08_Weapons_of_mass_destruction.pptx",
+            "sp": "Year%2011/2%20-%20Post-Mock%20Lessons/PAC_L08_Weapons_of_mass_destruction.pptx",
+            "icon": "&#9635;",
+            "label": "Open the lesson",
+            "sub": "PAC_L08_Weapons_of_mass_destruction.pptx"
+          },
+          "kws": [
+            "WMD",
+            "deterrent",
+            "sanctity of life",
+            "utilitarian"
+          ],
+          "quote": {
+            "q": "if anyone kills a person… it is as if he kills all mankind",
+            "cite": "Surah 5:32"
+          }
+        }
+      ],
+      "podcasts": [
+        {
+          "key": "pod_I30_w17",
+          "rel": "Podcast_Audio/Islam/I30_Holy_War.mp3",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Islam/I30_Holy_War.mp3",
+          "series": "i",
+          "code": "I30",
+          "name": "Holy War",
+          "kind": "Islam"
+        },
+        {
+          "key": "pod_I31_w17",
+          "rel": "Podcast_Audio/Islam/I31_WMD.mp3",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Islam/I31_WMD.mp3",
+          "series": "i",
+          "code": "I31",
+          "name": "WMD",
+          "kind": "Islam"
+        }
+      ],
+      "reads": [
+        {
+          "key": "comp_w17",
+          "rel": "../4%20-%20Mock%202%20Companion/Mock2_Companion_FE.docx",
+          "sp": "Year%2011/4%20-%20Mock%202%20Companion/Mock2_Companion_FE.docx",
+          "icon": "&#9670;",
+          "label": "Companion 2 · page 9",
+          "sub": "Mock2_Companion_FE.docx"
+        },
+        {
+          "key": "book_w17",
+          "rel": "../Unit8_Peace_and_Conflict_Workbook_Supported.docx",
+          "sp": "Year%2011/Unit8_Peace_and_Conflict_Workbook_Supported.docx",
+          "icon": "&#9632;",
+          "label": "Unit 8 workbook — Supported",
+          "sub": "Unit8_Peace_and_Conflict_Workbook_Supported.docx"
+        }
+      ],
+      "ticks": "listen"
+    },
+    {
+      "n": 18,
+      "type": "teach",
+      "paper": "p1",
+      "title": "Marriage and the Family",
+      "say": "The four Marriage topics the mock did not test.",
+      "lessons": [
+        {
+          "title": "Marriage",
+          "bq": "What is marriage actually FOR?",
+          "sum": [
+            "Christians believe marriage is a lifelong union made in front of God. Genesis 2:24 says the two 'become one flesh' — a new unit joined by God. Its purposes are companionship, the right place for a sexual relationship, and raising children.",
+            "Many Christians, especially Catholics, call marriage a sacrament — a way God's grace reaches the couple. Cohabitation, living together without marrying, divides opinion: some liberal Christians accept it, while others say it falls short of God's plan. That divergence is exactly what examiners are looking for."
+          ],
+          "deck": {
+            "key": "deck_MR_L01",
+            "rel": "../../Unit%205%20-%20Marriage%20and%20Relationships/MR_L01_Marriage.pptx",
+            "sp": "Unit%205%20-%20Marriage%20and%20Relationships/MR_L01_Marriage.pptx",
+            "icon": "&#9635;",
+            "label": "Open the lesson",
+            "sub": "MR_L01_Marriage.pptx"
+          },
+          "kws": [
+            "marriage",
+            "cohabitation",
+            "sacrament",
+            "one flesh"
+          ],
+          "quote": {
+            "q": "united to his wife, and they become one flesh"
+          }
+        },
+        {
+          "title": "Sexual relationships",
+          "bq": "Who decides what is right in a relationship?",
+          "sum": [
+            "Adultery is sex with someone other than your husband or wife, and it is forbidden by the Ten Commandments. Jesus went further, teaching that even looking at someone lustfully is adultery in the heart. Faithfulness, for Christians, starts in the mind.",
+            "Christians diverge on sex before marriage. Catholics and many evangelicals teach chastity until marriage. Some liberal Christians accept a faithful, loving relationship outside it. Humanists judge it differently again: what matters is protection from harm, genuine consent, and a stable committed relationship — happiness and wellbeing rather than religious rules. Learn one religious and one non-religious view."
+          ],
+          "deck": {
+            "key": "deck_MR_L02",
+            "rel": "../../Unit%205%20-%20Marriage%20and%20Relationships/MR_L02_Sexual_relationships.pptx",
+            "sp": "Unit%205%20-%20Marriage%20and%20Relationships/MR_L02_Sexual_relationships.pptx",
+            "icon": "&#9635;",
+            "label": "Open the lesson",
+            "sub": "MR_L02_Sexual_relationships.pptx"
+          },
+          "kws": [
+            "adultery",
+            "chastity",
+            "fidelity",
+            "divergent"
+          ],
+          "quote": {
+            "q": "You shall not commit adultery"
+          }
+        }
+      ],
+      "podcasts": [
+        {
+          "key": "pod_C09_w18",
+          "rel": "Podcast_Audio/Christianity/C09_Marriage.mp3",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Christianity/C09_Marriage.mp3",
+          "series": "c",
+          "code": "C09",
+          "name": "Marriage",
+          "kind": "Christianity"
+        },
+        {
+          "key": "pod_C10_w18",
+          "rel": "Podcast_Audio/Christianity/C10_Sexual_Relationships.mp3",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Christianity/C10_Sexual_Relationships.mp3",
+          "series": "c",
+          "code": "C10",
+          "name": "Sexual Relationships",
+          "kind": "Christianity"
+        }
+      ],
+      "reads": [
+        {
+          "key": "comp_w18",
+          "rel": "../4%20-%20Mock%202%20Companion/Mock2_Companion_FE.docx",
+          "sp": "Year%2011/4%20-%20Mock%202%20Companion/Mock2_Companion_FE.docx",
+          "icon": "&#9670;",
+          "label": "Companion 2 · page 2",
+          "sub": "Mock2_Companion_FE.docx"
+        }
+      ],
+      "ticks": "listen"
+    },
+    {
+      "n": 19,
+      "type": "teach",
+      "paper": "p1",
+      "title": "Marriage and the Family",
+      "say": "Marriage and the Family is now complete.",
+      "lessons": [
+        {
+          "title": "Support for the family",
+          "bq": "How does the church hold families together?",
+          "sum": [
+            "The local church supports families in practical ways as well as spiritual ones. Baptisms and dedications welcome children. Marriage preparation classes get couples ready for their vows. Family services and Sunday schools teach the faith. Counselling, food banks and parent-and-toddler groups carry families through hard weeks.",
+            "Jesus said, 'Love one another. As I have loved you, so you must love one another.' Christians believe the church is itself a family, there to carry each other's burdens, so no family should struggle alone. A common exam argument is whether real support now comes from the state instead."
+          ],
+          "deck": {
+            "key": "deck_MR_L04",
+            "rel": "../../Unit%205%20-%20Marriage%20and%20Relationships/MR_L04_Support_for_the_family.pptx",
+            "sp": "Unit%205%20-%20Marriage%20and%20Relationships/MR_L04_Support_for_the_family.pptx",
+            "icon": "&#9635;",
+            "label": "Open the lesson",
+            "sub": "MR_L04_Support_for_the_family.pptx"
+          },
+          "kws": [
+            "parish",
+            "baptism",
+            "counselling",
+            "community"
+          ],
+          "quote": {
+            "q": "love one another. As I have loved you",
+            "cite": "John 13:34"
+          }
+        },
+        {
+          "title": "Men and women in the family",
+          "bq": "Did God design different roles — or equal ones?",
+          "sum": [
+            "Christians agree that men and women are equally valuable to God — both are made in his image, as Genesis 1:27 says. What they disagree about is whether equal value means identical roles inside the family.",
+            "Complementarian Christians read Ephesians 5 as giving husbands loving leadership and wives support: different roles, equal worth. Egalitarian Christians point to Galatians 3:28 — 'neither male nor female, for you are all one in Christ Jesus' — and share every role equally. Naming both positions, and the verse each one rests on, is what lifts an answer."
+          ],
+          "deck": {
+            "key": "deck_MR_L07",
+            "rel": "../../Unit%205%20-%20Marriage%20and%20Relationships/MR_L07_Men_and_women_in_the_family.pptx",
+            "sp": "Unit%205%20-%20Marriage%20and%20Relationships/MR_L07_Men_and_women_in_the_family.pptx",
+            "icon": "&#9635;",
+            "label": "Open the lesson",
+            "sub": "MR_L07_Men_and_women_in_the_family.pptx"
+          },
+          "kws": [
+            "equality",
+            "traditional roles",
+            "submission",
+            "Galatians"
+          ],
+          "quote": {
+            "q": "neither… male nor female, for you are all one in Christ Jesus",
+            "cite": "Galatians 3:28"
+          }
+        }
+      ],
+      "podcasts": [
+        {
+          "key": "pod_C12_w19",
+          "rel": "Podcast_Audio/Christianity/C12_Parish_Support.mp3",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Christianity/C12_Parish_Support.mp3",
+          "series": "c",
+          "code": "C12",
+          "name": "Parish Support",
+          "kind": "Christianity"
+        },
+        {
+          "key": "pod_C15_w19",
+          "rel": "Podcast_Audio/Christianity/C15_Gender_Equality.mp3",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Christianity/C15_Gender_Equality.mp3",
+          "series": "c",
+          "code": "C15",
+          "name": "Gender Equality",
+          "kind": "Christianity"
+        }
+      ],
+      "reads": [
+        {
+          "key": "comp_w19",
+          "rel": "../4%20-%20Mock%202%20Companion/Mock2_Companion_FE.docx",
+          "sp": "Year%2011/4%20-%20Mock%202%20Companion/Mock2_Companion_FE.docx",
+          "icon": "&#9670;",
+          "label": "Companion 2 · page 3",
+          "sub": "Mock2_Companion_FE.docx"
+        }
+      ],
+      "ticks": "listen"
+    },
+    {
+      "n": 20,
+      "type": "teach",
+      "paper": "p2",
+      "title": "Crime and Punishment",
+      "say": "The half of Crime and Punishment you have not met yet.",
+      "lessons": [
+        {
+          "title": "Aims of punishment",
+          "bq": "Which aim of punishment matters most?",
+          "sum": [
+            "There are four aims of punishment. Protection keeps society safe. Retribution makes criminals pay for what they did. Deterrence puts other people off offending. Reformation changes the criminal so they do not do it again.",
+            "Muslims diverge over which matters most. Some argue for retribution — in some Muslim countries offenders are punished publicly as payback for crimes such as theft. Others emphasise reformation, because Allah is merciful and forgiving, so people should be given the chance to change. Surah 4:26-31 speaks of God wishing to turn towards people in mercy. Retribution against reformation is the argument to be ready for."
+          ],
+          "deck": {
+            "key": "deck_CP_L05",
+            "rel": "../../Unit%206%20-%20Crime%20and%20Punishment/CP_L05_Aims_of_punishment.pptx",
+            "sp": "Unit%206%20-%20Crime%20and%20Punishment/CP_L05_Aims_of_punishment.pptx",
+            "icon": "&#9635;",
+            "label": "Open the lesson",
+            "sub": "CP_L05_Aims_of_punishment.pptx"
+          },
+          "kws": [
+            "deterrence",
+            "retribution",
+            "reformation",
+            "protection"
+          ],
+          "quote": {
+            "q": "He wishes to turn towards you in mercy… We shall wipe out your minor misdeeds",
+            "cite": "Surah 4:26-31"
+          }
+        },
+        {
+          "title": "Forgiveness",
+          "bq": "Can forgiveness and justice live together?",
+          "sum": [
+            "Forgiveness means pardoning someone for a wrong they have done, and mercy sits at the very heart of Islam. Muslims begin 113 Surahs, and almost everything else, with 'In the name of God, the Lord of Mercy, the Giver of Mercy'. The Prophet Muhammad is the model: he forgave his persecutors when he returned to Makkah.",
+            "Islam puts forgiveness to work through restorative justice, in three steps: repentance from the offender, forgiveness from the victim or their family, and reconciliation between the two. Surah 64:14 promises that God is forgiving to those who forgive others. The hard question, and the usual debate, is whether some crimes are simply unforgivable."
+          ],
+          "deck": {
+            "key": "deck_CP_L06",
+            "rel": "../../Unit%206%20-%20Crime%20and%20Punishment/CP_L06_Forgiveness.pptx",
+            "sp": "Unit%206%20-%20Crime%20and%20Punishment/CP_L06_Forgiveness.pptx",
+            "icon": "&#9635;",
+            "label": "Open the lesson",
+            "sub": "CP_L06_Forgiveness.pptx"
+          },
+          "kws": [
+            "forgiveness",
+            "restorative justice",
+            "mercy",
+            "reconciliation"
+          ],
+          "quote": {
+            "q": "if you overlook their offences, forgive them, pardon them, then God is all forgiving, all merciful",
+            "cite": "Surah 64:14"
+          }
+        }
+      ],
+      "podcasts": [
+        {
+          "key": "pod_I13_w20",
+          "rel": "Podcast_Audio/Islam/I13_Aims_of_Punishment.mp3",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Islam/I13_Aims_of_Punishment.mp3",
+          "series": "i",
+          "code": "I13",
+          "name": "Aims of Punishment",
+          "kind": "Islam"
+        },
+        {
+          "key": "pod_I14_w20",
+          "rel": "Podcast_Audio/Islam/I14_Forgiveness.mp3",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Islam/I14_Forgiveness.mp3",
+          "series": "i",
+          "code": "I14",
+          "name": "Forgiveness",
+          "kind": "Islam"
+        }
+      ],
+      "reads": [
+        {
+          "key": "comp_w20",
+          "rel": "../4%20-%20Mock%202%20Companion/Mock2_Companion_FE.docx",
+          "sp": "Year%2011/4%20-%20Mock%202%20Companion/Mock2_Companion_FE.docx",
+          "icon": "&#9670;",
+          "label": "Companion 2 · page 6",
+          "sub": "Mock2_Companion_FE.docx"
+        }
+      ],
+      "ticks": "listen"
+    },
+    {
+      "n": 21,
+      "type": "teach",
+      "paper": "p2",
+      "title": "Crime and Punishment",
+      "say": "THE WHOLE COURSE IS NOW TAUGHT. Everything from here is revision.",
+      "lessons": [
+        {
+          "title": "Treatment of criminals",
+          "bq": "Do the guilty deserve rights at all?",
+          "sum": [
+            "Islam teaches that criminals must be treated humanely. Before the Prophet Muhammad, prisoners often had to work or beg for food. The Qur'an made feeding captives an act of charity — Surah 76:8 praises those who give food to the poor, the orphan and the captive.",
+            "Most Muslims believe the accused deserve a fair trial: public, timely, before an independent court, with a jury for serious crimes. On torture they diverge — groups such as IS have used it, but the majority reject it outright, because the Prophet never did. Two non-religious views are useful here: situation ethics, which asks what the most loving action is, and utilitarianism, which asks what brings the greatest good to the greatest number."
+          ],
+          "deck": {
+            "key": "deck_CP_L07",
+            "rel": "../../Unit%206%20-%20Crime%20and%20Punishment/CP_L07_Treatment_of_criminals.pptx",
+            "sp": "Unit%206%20-%20Crime%20and%20Punishment/CP_L07_Treatment_of_criminals.pptx",
+            "icon": "&#9635;",
+            "label": "Open the lesson",
+            "sub": "CP_L07_Treatment_of_criminals.pptx"
+          },
+          "kws": [
+            "human rights",
+            "fair trial",
+            "torture",
+            "utilitarianism"
+          ],
+          "quote": {
+            "q": "they give food to the poor, the orphan, and the captive",
+            "cite": "Surah 76:8"
+          }
+        },
+        {
+          "title": "Capital punishment",
+          "bq": "Should any state hold the power of life and death?",
+          "sum": [
+            "Capital punishment is the legal killing of a person for a crime. The Qur'an permits it for some offences, including murder, on the grounds that it protects society. A Hadith records the Prophet allowing it in three cases: a married adulterer, a murderer, and an apostate.",
+            "Muslims disagree sharply. Sunni and Twelver Shi'a Muslims accept that Hadith as binding. The Ahmadiyya reject it, arguing the Qur'an is the highest authority and it sets a different punishment for adultery and none at all for apostasy. Many non-religious people oppose the death penalty because mistakes cannot be undone. Naming which group holds which view is what separates a strong answer."
+          ],
+          "deck": {
+            "key": "deck_CP_L08",
+            "rel": "../../Unit%206%20-%20Crime%20and%20Punishment/CP_L08_Capital_punishment.pptx",
+            "sp": "Unit%206%20-%20Crime%20and%20Punishment/CP_L08_Capital_punishment.pptx",
+            "icon": "&#9635;",
+            "label": "Open the lesson",
+            "sub": "CP_L08_Capital_punishment.pptx"
+          },
+          "kws": [
+            "death penalty",
+            "deterrent",
+            "Hadith",
+            "divergent"
+          ],
+          "quote": {
+            "q": "the Prophet allowed the death penalty for a married adulterer, a murderer, and an apostate"
+          }
+        }
+      ],
+      "podcasts": [
+        {
+          "key": "pod_I15_w21",
+          "rel": "Podcast_Audio/Islam/I15_Treatment_of_Criminals.mp3",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Islam/I15_Treatment_of_Criminals.mp3",
+          "series": "i",
+          "code": "I15",
+          "name": "Treatment of Criminals",
+          "kind": "Islam"
+        },
+        {
+          "key": "pod_I16_w21",
+          "rel": "Podcast_Audio/Islam/I16_Death_Penalty.mp3",
+          "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Islam/I16_Death_Penalty.mp3",
+          "series": "i",
+          "code": "I16",
+          "name": "Death Penalty",
+          "kind": "Islam"
+        }
+      ],
+      "reads": [
+        {
+          "key": "comp_w21",
+          "rel": "../4%20-%20Mock%202%20Companion/Mock2_Companion_FE.docx",
+          "sp": "Year%2011/4%20-%20Mock%202%20Companion/Mock2_Companion_FE.docx",
+          "icon": "&#9670;",
+          "label": "Companion 2 · page 7",
+          "sub": "Mock2_Companion_FE.docx"
+        }
+      ],
+      "ticks": "listen"
+    },
+    {
+      "n": 22,
+      "type": "rev",
+      "title": "Mock 2 preparation — everything, shuffled",
+      "say": "Companion 2 is handed out. It covers ONLY the topics mock 1 did not test.",
+      "focuses": [
+        {
+          "title": "Everything mock 1 did not test",
+          "sum": [
+            "Everything taught since November now comes back, shuffled. From Matters of Life and Death: sanctity of life, abortion, arguments against the afterlife, euthanasia. From Marriage and the Family: marriage, sexual relationships, support for the family, and men and women's roles.",
+            "From Peace and Conflict: peacemaking, the Just War theory, holy war and weapons of mass destruction. From Crime and Punishment: the aims of punishment, forgiveness, treatment of criminals and capital punishment. Companion 2 covers exactly these — the topics mock 1 did not test. Mixing them up on purpose is the point: the real exam will not take them one unit at a time."
+          ]
+        }
+      ],
+      "podnote": "Re-listen to your two weakest episodes — you choose which.",
+      "reads": [
+        {
+          "key": "comp_w22",
+          "rel": "../4%20-%20Mock%202%20Companion/Mock2_Companion_FE.docx",
+          "sp": "Year%2011/4%20-%20Mock%202%20Companion/Mock2_Companion_FE.docx",
+          "icon": "&#9670;",
+          "label": "Companion 2 · pages 10–11 (issued this week)",
+          "sub": "Mock2_Companion_FE.docx"
+        }
+      ],
+      "ticks": "listen"
+    },
+    {
+      "n": 23,
+      "type": "mock",
+      "paper": "p1",
+      "title": "MOCK 2 · PAPER 1 — the topics mock 1 missed",
+      "say": "Paper 1 again, on the new topics: Matters of Life and Death and Marriage and the Family.",
+      "checklist": [
+        "Sanctity of life · Abortion",
+        "Arguments against the afterlife · Euthanasia",
+        "Marriage · Sexual relationships",
+        "Support for the family · Men and women"
+      ],
+      "ticks": "exam"
+    },
+    {
+      "n": 24,
+      "type": "mock",
+      "paper": "p2",
+      "title": "MOCK 2 · PAPER 2 — the topics mock 1 missed",
+      "say": "Paper 2 on Peace and Conflict and Crime and Punishment. After this, the whole course has been examined.",
+      "checklist": [
+        "Peacemaking · Just War",
+        "Holy war · Weapons of mass destruction",
+        "Aims of punishment · Forgiveness",
+        "Treatment of criminals · Capital punishment"
+      ],
+      "ticks": "exam"
+    },
+    {
+      "n": 25,
+      "type": "fb",
+      "title": "MOCK 2 FEEDBACK · both papers",
+      "say": "Both papers walked through. Your gap analysis tells you exactly what to revise first.",
+      "checklist": [
+        "Bring both mock papers",
+        "Green pen",
+        "Companion 2"
+      ],
+      "ticks": "feedback"
+    },
+    {
+      "n": 26,
+      "type": "fb",
+      "title": "Your personal revision plan",
+      "say": "You build your own plan for the summer: weakest topic first. Nobody leaves without one written down.",
+      "checklist": [
+        "Gap analysis sheet",
+        "Your planner"
+      ],
+      "ticks": "feedback"
+    },
+    {
+      "n": 27,
+      "type": "ret",
+      "paper": "p1",
+      "title": "Paper 1 — retrieval blitz",
+      "say": "No new content from now on. Every lesson is practice from memory.",
+      "activities": [
+        {
+          "title": "Retrieval roulette",
+          "body": "A grid of questions from every unit. Spin, answer in silence, mark your own."
+        },
+        {
+          "title": "Brain dump",
+          "body": "Blank page, one topic, five minutes. Then add what you missed in another colour."
+        },
+        {
+          "title": "Keyword Taboo",
+          "body": "Define the key word without using any word from the definition. 30 seconds."
+        }
+      ],
+      "reads": [
+        {
+          "key": "res_w27_0",
+          "rel": "../6%20-%20Summer%20Retrieval%20Kit/Roulette_Grids.docx",
+          "sp": "Year%2011/6%20-%20Summer%20Retrieval%20Kit/Roulette_Grids.docx",
+          "icon": "&#9679;",
+          "label": "Retrieval roulette grids",
+          "sub": "Roulette_Grids.docx"
+        },
+        {
+          "key": "res_w27_1",
+          "rel": "../6%20-%20Summer%20Retrieval%20Kit/Quote_Cards.docx",
+          "sp": "Year%2011/6%20-%20Summer%20Retrieval%20Kit/Quote_Cards.docx",
+          "icon": "&#9679;",
+          "label": "Quote cards",
+          "sub": "Quote_Cards.docx"
+        }
+      ],
+      "ticks": "listen"
+    },
+    {
+      "n": 28,
+      "type": "ret",
+      "paper": "p2",
+      "title": "Paper 2 — retrieval blitz",
+      "say": "Same three moves, this time on Islam and Paper 2.",
+      "activities": [
+        {
+          "title": "Retrieval roulette",
+          "body": "All four Paper 2 units mixed together on one grid."
+        },
+        {
+          "title": "Blurting",
+          "body": "Two minutes writing everything you know. Check. Then blurt again — the second go is the learning."
+        },
+        {
+          "title": "Loop cards and quote relay",
+          "body": "Play until the loop closes. It cannot close if anyone is wrong."
+        }
+      ],
+      "reads": [
+        {
+          "key": "res_w28_0",
+          "rel": "../6%20-%20Summer%20Retrieval%20Kit/Loop_Cards.docx",
+          "sp": "Year%2011/6%20-%20Summer%20Retrieval%20Kit/Loop_Cards.docx",
+          "icon": "&#9679;",
+          "label": "Loop cards",
+          "sub": "Loop_Cards.docx"
+        },
+        {
+          "key": "res_w28_1",
+          "rel": "../6%20-%20Summer%20Retrieval%20Kit/Quote_Cards.docx",
+          "sp": "Year%2011/6%20-%20Summer%20Retrieval%20Kit/Quote_Cards.docx",
+          "icon": "&#9679;",
+          "label": "Quote cards",
+          "sub": "Quote_Cards.docx"
+        }
+      ],
+      "ticks": "listen"
+    },
+    {
+      "n": 29,
+      "type": "ret",
+      "title": "Question analysis I — reading the question",
+      "say": "This week is about the command word: ways means actions, reasons means because, beliefs means teachings.",
+      "activities": [
+        {
+          "title": "Deconstruct (a) to (c)",
+          "body": "What is the question actually asking you to do?"
+        },
+        {
+          "title": "Mark scheme sorting",
+          "body": "Rank four real answers, then match them to levels. If you can grade an answer you can write one."
+        }
+      ],
+      "reads": [
+        {
+          "key": "res_w29_0",
+          "rel": "../6%20-%20Summer%20Retrieval%20Kit/Question_Banks.docx",
+          "sp": "Year%2011/6%20-%20Summer%20Retrieval%20Kit/Question_Banks.docx",
+          "icon": "&#9679;",
+          "label": "Question banks",
+          "sub": "Question_Banks.docx"
+        }
+      ],
+      "ticks": "listen"
+    },
+    {
+      "n": 30,
+      "type": "ret",
+      "title": "Question analysis II — the (d) answer, and a live mock",
+      "say": "MAY DAY on Monday 3 May, so one slot is lost. We use what is left on the 12-mark answer.",
+      "activities": [
+        {
+          "title": "Brainstorm walls",
+          "body": "One (d) statement per wall. Add arguments, teachings and the non-religious view."
+        },
+        {
+          "title": "Steelman relay",
+          "body": "Write the strongest argument AGAINST your own view. Pass it on."
+        },
+        {
+          "title": "Walking-talking mock",
+          "body": "Your teacher sits the paper live and thinks out loud. You write alongside."
+        }
+      ],
+      "reads": [
+        {
+          "key": "res_w30_0",
+          "rel": "../6%20-%20Summer%20Retrieval%20Kit/Question_Banks.docx",
+          "sp": "Year%2011/6%20-%20Summer%20Retrieval%20Kit/Question_Banks.docx",
+          "icon": "&#9679;",
+          "label": "Question banks",
+          "sub": "Question_Banks.docx"
+        },
+        {
+          "key": "res_w30_1",
+          "rel": "../6%20-%20Summer%20Retrieval%20Kit/Roulette_Grids.docx",
+          "sp": "Year%2011/6%20-%20Summer%20Retrieval%20Kit/Roulette_Grids.docx",
+          "icon": "&#9679;",
+          "label": "Roulette grids",
+          "sub": "Roulette_Grids.docx"
+        }
+      ],
+      "ticks": "listen"
+    },
+    {
+      "n": 31,
+      "type": "ex",
+      "paper": "p1",
+      "title": "★ PAPER 1 — Thursday 13 May, morning",
+      "say": "Monday to Wednesday: the final Christianity clinic. Thursday morning: the real thing.",
+      "checklist": [
+        "Paper 1 · Religion and Ethics (1RB0/1B)",
+        "1 hour 45 minutes · 102 marks",
+        "Companion 1 + your quote sheet",
+        "Two black pens, be early"
+      ],
+      "ticks": "final"
+    },
+    {
+      "n": 32,
+      "type": "ex",
+      "paper": "p2",
+      "title": "★ PAPER 2 — Friday 21 May, morning",
+      "say": "Eight days between the papers, and one focus: Islam, all week.",
+      "checklist": [
+        "Paper 2 · Religion, Peace and Conflict (1RB0/2C)",
+        "1 hour 45 minutes · 102 marks",
+        "All four Paper 2 units",
+        "Two black pens, be early"
+      ],
+      "ticks": "final"
+    },
+    {
+      "n": 33,
+      "type": "ex",
+      "title": "DONE — both papers sat",
+      "say": "Your GCSE Religious Studies is complete. Well done.",
+      "checklist": [
+        "Post-exam review",
+        "Nothing left to revise"
+      ],
+      "ticks": "final"
+    }
+  ],
+  "shelf": {
+    "num": "03",
+    "title": "Everything, in one place",
+    "lead": "The Supported workbooks, the FE companions and the practice kit. Same files as the ones linked inside each week.",
+    "note": "<b>Teacher setup:</b> right now every button opens the file sitting next to this page in the Year 11 folder &#8212; which works on the classroom machine but not for a student at home. To serve the whole page from SharePoint, upload the Year 11 folder, open this file in a text editor and paste the folder&#8217;s address into <code>RESOURCE_BASE</code> at the bottom. One line re-points all 156 buttons and players. A tick in the corner of the page confirms the files can be reached.",
+    "columns": [
+      {
+        "cls": "g1",
+        "eyebrow": "Your shelf",
+        "title": "Workbooks — Supported edition",
+        "items": [
+          {
+            "key": "wb7",
+            "rel": "../Unit7_Matters_of_Life_and_Death_Workbook_Supported.docx",
+            "sp": "Year%2011/Unit7_Matters_of_Life_and_Death_Workbook_Supported.docx",
+            "icon": "&#9632;",
+            "label": "Unit 7 · Matters of Life and Death",
+            "sub": "Supported edition"
+          },
+          {
+            "key": "wb8",
+            "rel": "../Unit8_Peace_and_Conflict_Workbook_Supported.docx",
+            "sp": "Year%2011/Unit8_Peace_and_Conflict_Workbook_Supported.docx",
+            "icon": "&#9632;",
+            "label": "Unit 8 · Peace and Conflict",
+            "sub": "Supported edition"
+          }
+        ]
+      },
+      {
+        "cls": "g2",
+        "eyebrow": "Your shelf",
+        "title": "Companions — FE edition",
+        "items": [
+          {
+            "key": "c1",
+            "rel": "Mock_Exam_Companion_FE.docx",
+            "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Mock_Exam_Companion_FE.docx",
+            "icon": "&#9670;",
+            "label": "Companion 1 · for Mock 1",
+            "sub": "Weeks 1–11 · FE"
+          },
+          {
+            "key": "c2",
+            "rel": "../4%20-%20Mock%202%20Companion/Mock2_Companion_FE.docx",
+            "sp": "Year%2011/4%20-%20Mock%202%20Companion/Mock2_Companion_FE.docx",
+            "icon": "&#9670;",
+            "label": "Companion 2 · for Mock 2",
+            "sub": "Weeks 12–24 · FE"
+          }
+        ]
+      },
+      {
+        "cls": "g3",
+        "eyebrow": "Your shelf",
+        "title": "Revision and practice kit",
+        "items": [
+          {
+            "key": "rev1",
+            "rel": "../5%20-%20Revision%20Lessons/REV_W7_Paper1_Christian_Beliefs_LCL.pptx",
+            "sp": "Year%2011/5%20-%20Revision%20Lessons/REV_W7_Paper1_Christian_Beliefs_LCL.pptx",
+            "icon": "&#9635;",
+            "label": "Week 7 revision — Paper 1",
+            "sub": "Christian Beliefs · LCL"
+          },
+          {
+            "key": "rev2",
+            "rel": "../5%20-%20Revision%20Lessons/REV_W8_Paper2_Muslim_Beliefs_LML.pptx",
+            "sp": "Year%2011/5%20-%20Revision%20Lessons/REV_W8_Paper2_Muslim_Beliefs_LML.pptx",
+            "icon": "&#9635;",
+            "label": "Week 8 revision — Paper 2",
+            "sub": "Muslim Beliefs · LML"
+          },
+          {
+            "key": "rev3",
+            "rel": "../5%20-%20Revision%20Lessons/REV_W9_Crime_Punishment_D_Clinic.pptx",
+            "sp": "Year%2011/5%20-%20Revision%20Lessons/REV_W9_Crime_Punishment_D_Clinic.pptx",
+            "icon": "&#9635;",
+            "label": "Week 9 revision — C&P + (d) clinic",
+            "sub": "The boss battle"
+          },
+          {
+            "key": "kit1",
+            "rel": "../6%20-%20Summer%20Retrieval%20Kit/Roulette_Grids.docx",
+            "sp": "Year%2011/6%20-%20Summer%20Retrieval%20Kit/Roulette_Grids.docx",
+            "icon": "&#9679;",
+            "label": "Retrieval roulette grids",
+            "sub": "Summer kit"
+          },
+          {
+            "key": "kit2",
+            "rel": "../6%20-%20Summer%20Retrieval%20Kit/Loop_Cards.docx",
+            "sp": "Year%2011/6%20-%20Summer%20Retrieval%20Kit/Loop_Cards.docx",
+            "icon": "&#9679;",
+            "label": "Loop cards",
+            "sub": "Summer kit"
+          },
+          {
+            "key": "kit3",
+            "rel": "../6%20-%20Summer%20Retrieval%20Kit/Quote_Cards.docx",
+            "sp": "Year%2011/6%20-%20Summer%20Retrieval%20Kit/Quote_Cards.docx",
+            "icon": "&#9679;",
+            "label": "Quote cards",
+            "sub": "Summer kit"
+          },
+          {
+            "key": "kit4",
+            "rel": "../6%20-%20Summer%20Retrieval%20Kit/Question_Banks.docx",
+            "sp": "Year%2011/6%20-%20Summer%20Retrieval%20Kit/Question_Banks.docx",
+            "icon": "&#9679;",
+            "label": "Question banks",
+            "sub": "Summer kit"
+          }
+        ]
+      }
+    ],
+    "wide": [
+      {
+        "key": "start_here",
+        "rel": "Podcast_Audio/Mock_Countdown/E00_How_To_Use_Your_Companion.mp3",
+        "sp": "Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Mock_Countdown/E00_How_To_Use_Your_Companion.mp3",
+        "icon": "&#9654;",
+        "label": "START HERE — how to use your Companion",
+        "sub": "E00 · listen once, in week 1"
+      },
+      {
+        "key": "y11_revision",
+        "rel": "../Y11_Revision_Ecosystem.html",
+        "sp": "Year%2011/Y11_Revision_Ecosystem.html",
+        "localonly": true,
+        "icon": "&#9968;",
+        "label": "The Final Run-In — revision and summer kit page",
+        "sub": "Y11_Revision_Ecosystem.html"
+      },
+      {
+        "key": "mock2_page",
+        "rel": "../4%20-%20Mock%202%20Companion/Mock2_Ecosystem.html",
+        "sp": "Year%2011/4%20-%20Mock%202%20Companion/Mock2_Ecosystem.html",
+        "localonly": true,
+        "icon": "&#9635;",
+        "label": "The Mock 2 page",
+        "sub": "Mock2_Ecosystem.html"
+      }
+    ]
+  },
+  "map": {
+    "num": "04",
+    "title": "What the exam looks like",
+    "lead": "Two papers. Same shape in both. Once you know the shape, no question is a surprise.",
+    "cards": [
+      {
+        "cls": "e1",
+        "head": "Paper 1 &#183; Religion and Ethics &#8212; Christianity",
+        "lines": [
+          "Q1 Christian Beliefs &#183; Q2 Marriage and the Family &#183; Q3 Living the Christian Life &#183; Q4 Matters of Life and Death",
+          "Every question: (a) 3 marks &#183; (b) 4 &#183; (c) 5 + a source &#183; (d) 12 evaluation",
+          "1 hour 45 minutes &#183; 102 marks &#183; spelling counts (+3) on 1(d) and 3(d)"
+        ],
+        "examDay": "Thursday 13 May 2027 &#183; morning"
+      },
+      {
+        "cls": "e2",
+        "head": "Paper 2 &#183; Religion, Peace and Conflict &#8212; Islam",
+        "lines": [
+          "Q1 Muslim Beliefs &#183; Q2 Crime and Punishment &#183; Q3 Living the Muslim Life &#183; Q4 Peace and Conflict",
+          "Every question: (a) 3 marks &#183; (b) 4 &#183; (c) 5 + a source &#183; (d) 12 evaluation",
+          "1 hour 45 minutes &#183; 102 marks &#183; spelling counts (+3) on 1(d) and 3(d)"
+        ],
+        "examDay": "Friday 21 May 2027 &#183; morning"
+      }
+    ]
+  },
+  "labels": {
+    "phases": {
+      "teach": "Lessons",
+      "rev": "Revision",
+      "mock": "Mock exam",
+      "fb": "Feedback",
+      "ret": "Practice",
+      "ex": "The real exam"
+    },
+    "papers": {
+      "p1": "Paper 1 · Christianity",
+      "p2": "Paper 2 · Islam"
+    },
+    "homeNavAria": "Harlington RE navigation",
+    "goToWeek": "Go to week",
+    "holidayGlyph": "&#9670;",
+    "week": "Week %NN%",
+    "copyTitle": "Copy the link to this week",
+    "copyLink": "Copy week link",
+    "lesson": "Lesson %N%",
+    "bigQuestion": "Big question",
+    "summary": "What this is about",
+    "keyWords": "Key words",
+    "quote": "Learn this quote",
+    "podcast": "Podcast — press play",
+    "shelf": "What you read and bring",
+    "ticks": "Tick when done",
+    "focus": "Focus %N%",
+    "relisten": "Re-listen this week — %N% episodes",
+    "tickSets": {
+      "listen": [
+        [
+          "listen",
+          "1. Listen"
+        ],
+        [
+          "read",
+          "2. Read"
+        ],
+        [
+          "practise",
+          "3. Practise"
+        ]
+      ],
+      "exam": [
+        [
+          "revised",
+          "1. Revised for it"
+        ],
+        [
+          "sat",
+          "2. Sat the paper"
+        ],
+        [
+          "timing",
+          "3. Checked my timings"
+        ]
+      ],
+      "feedback": [
+        [
+          "marks",
+          "1. Read every mark"
+        ],
+        [
+          "rewrite",
+          "2. Rewrote one answer"
+        ],
+        [
+          "target",
+          "3. Wrote my target down"
+        ]
+      ],
+      "final": [
+        [
+          "revised",
+          "1. Revised for it"
+        ],
+        [
+          "sat",
+          "2. Sat the paper"
+        ],
+        [
+          "done",
+          "3. Nothing left to do"
+        ]
+      ]
+    },
+    "thisWeek": "THIS WEEK",
+    "copied": "✓ Link copied",
+    "copyPrompt": "Copy this link:",
+    "toastCopied": "Week %W% link copied — paste it into Teams or an email",
+    "toastPlaying": "Playing %E% — click again to stop",
+    "progress": "%D% of %N% ticked",
+    "checkOk": "&#10003; Resources connected",
+    "checkOkOnline": "reading from SharePoint",
+    "checkOkLocal": "reading from this folder",
+    "checkBad": "&#9888; The files cannot be reached",
+    "checkBadOnline": "Check RESOURCE_BASE at the bottom of this file, and that you are signed in to SharePoint.",
+    "checkBadNoBase": "This page is online but no resource address has been set. Put the SharePoint Year 11 folder address into RESOURCE_BASE at the bottom of this file.",
+    "checkBadLocal": "This copy of the page is not inside the &lsquo;3 - Mock Exam Companion&rsquo; folder. Open the copy that sits next to Podcast_Audio."
+  }
+}
