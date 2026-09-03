@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<!--
+  Edu.Ai Ecosystem — digital layer
+  Designed and built by Dr Vitor Carvalho.
+  Held by Edu.Ai SV Digital. © Edu.Ai SV Digital, 2026. All rights reserved.
+
+  Record of how this page was made, stated contemporaneously:
+  — Built during school holidays, outside directed hours.
+  — The tools, subscriptions and source texts used were paid for personally by the author.
+  — Creating a digital ecosystem does not form part of the duties of the post of
+    Head of Philosophy, Religious Education and Lead on EPQ.
+  — The version history of the repository holding this file records every file,
+    every change, the date of each and the account that made it.
+
+  This page is part of the digital layer — navigation, structure and interface.
+  The teaching materials it links to (lesson decks, booklets, companions,
+  assessments, podcasts) are separate artefacts held by the school.
+-->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Year 11 RS · Week by Week · The Summit</title>
+<style>
+  :root{--ink:#1F2233;--ink-2:#12141f;--mint:#EEF0F7;--mint-2:#D9DCE8;--amber:#F2B705;--amber-soft:#FFD95C;
+    --p1:#3E1163;--p2:#0A5638;--red:#A32219;--slate:#46506B;--teal:#0F766E;
+    --paper:#F7F7FA;--line:rgba(31,34,51,.15);--lead:#4a4d5c;--muted:#7b7e8f;--sans:"Trebuchet MS",Verdana,sans-serif;
+    /* orange scale: soft = topic summary · mid/deep = the lesson-file button */
+    --or-soft:#FFF3E2;--or-line:#F0BE85;--or-rule:#EE8B1F;--or-ink:#9A5407;--or-body:#5C4630;
+    --or-mid:#F8DCB8;--or-mid-line:#DD8F32;--or-deep:#B4530A;--or-hover:#F4CE9B}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;scroll-padding-top:88px}
+  body{background:var(--paper);color:var(--ink);font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;line-height:1.5;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+
+  /* ---------- hero ---------- */
+  .hero{background:
+      radial-gradient(900px 360px at 15% -10%, rgba(62,17,99,.55), transparent 60%),
+      radial-gradient(900px 360px at 85% -10%, rgba(10,86,56,.5), transparent 60%),
+      linear-gradient(180deg,var(--ink) 0%, var(--ink-2) 100%);
+    color:var(--mint);padding:54px 0 40px;position:relative;overflow:hidden;border-bottom:3px solid var(--amber)}
+  .hero::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.05;background:repeating-linear-gradient(180deg,transparent 0 38px,#fff 38px 39px)}
+  .hero .wrap{position:relative;z-index:2}
+  .crest{display:flex;align-items:center;gap:16px;margin-bottom:26px}
+  .crest svg{width:54px;height:54px;flex:none}
+  .crest .who{font-family:var(--sans);font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;color:var(--amber-soft)}
+  .crest .who b{color:var(--mint);display:block;letter-spacing:.12em;font-size:.86rem;margin-top:3px}
+  .pill{display:inline-block;font-family:var(--sans);font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;font-weight:700;background:var(--amber);color:var(--ink-2);padding:6px 12px;border-radius:6px;margin-bottom:14px}
+  h1{font-size:clamp(2rem,5vw,3.4rem);line-height:1.06;font-weight:700;letter-spacing:-.01em}
+  .tagline{margin-top:8px;font-family:var(--sans);font-size:.86rem;letter-spacing:.24em;text-transform:uppercase;color:var(--amber-soft)}
+  .sub{margin-top:16px;max-width:60ch;font-size:1.08rem;color:var(--mint-2)}
+  .heroband{margin-top:28px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;max-width:720px}
+  .heroband div{border:1px solid rgba(255,255,255,.16);border-radius:10px;padding:10px 12px;background:rgba(255,255,255,.04)}
+  .heroband b{display:block;font-size:1.25rem;color:var(--amber-soft)}
+  .heroband span{font-family:var(--sans);font-size:.66rem;letter-spacing:.04em;text-transform:uppercase;color:var(--mint-2);white-space:nowrap}
+
+  /* ---------- sticky week nav ---------- */
+  .wknav{position:sticky;top:0;z-index:40;background:rgba(247,247,250,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);box-shadow:0 6px 18px -16px rgba(0,0,0,.6)}
+  .nav-in{display:flex;align-items:center;gap:14px;padding-top:9px;padding-bottom:9px}
+  .nav-l{font-family:var(--sans);font-size:.64rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);flex:none}
+  .nchips{display:flex;gap:4px;overflow-x:auto;flex:1;padding:2px 0;scrollbar-width:thin}
+  .nch{flex:none;width:26px;height:26px;display:grid;place-items:center;border-radius:6px;text-decoration:none;
+    font-family:var(--sans);font-size:.72rem;font-weight:700;color:#fff;opacity:.62;transition:.15s}
+  .nch:hover,.nch.on{opacity:1;transform:translateY(-1px)}
+  .nch.on{outline:2px solid var(--ink);outline-offset:1px}
+  .nch.ph-teach{background:var(--p1)} .nch.ph-rev{background:var(--amber);color:var(--ink-2)}
+  .nch.ph-mock{background:var(--red)} .nch.ph-fb{background:var(--slate)}
+  .nch.ph-ret{background:var(--teal)} .nch.ph-ex{background:var(--ink-2)}
+  .prog{display:flex;align-items:center;gap:9px;flex:none}
+  .prog .bar{width:110px;height:7px;border-radius:99px;background:var(--mint-2);overflow:hidden}
+  .prog .bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--amber),#E08A00);transition:width .25s}
+  .prog span{font-family:var(--sans);font-size:.68rem;color:var(--muted);white-space:nowrap}
+
+  /* ---------- sections ---------- */
+  section{padding:52px 0}
+  .sec-head{display:flex;align-items:baseline;gap:16px;margin-bottom:8px}
+  .sec-head .num{font-family:var(--sans);color:var(--amber);font-weight:700;font-size:.9rem;letter-spacing:.15em}
+  .sec-head h2{font-size:clamp(1.5rem,3.2vw,2.1rem);letter-spacing:-.01em}
+  .sec-lead{color:var(--lead);max-width:70ch;margin-bottom:28px;font-size:1.02rem}
+
+  .how3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .h3c{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px 20px 18px;position:relative;box-shadow:0 18px 40px -34px rgba(0,0,0,.5)}
+  .h3c .hn{position:absolute;top:-13px;left:20px;width:28px;height:28px;border-radius:50%;background:var(--amber);color:var(--ink-2);
+    font-family:var(--sans);font-weight:700;display:grid;place-items:center;font-size:.9rem}
+  .h3c h4{margin-top:6px;font-size:1.15rem}
+  .h3c p{font-size:.94rem;color:var(--lead);margin-top:6px}
+  .h3c em{display:block;margin-top:9px;font-size:.84rem;color:var(--muted)}
+
+  /* ---------- week cards ---------- */
+  .term-band{display:flex;align-items:center;gap:14px;margin:34px 0 18px}
+  .term-band span{font-family:var(--sans);font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700;color:var(--ink);
+    background:var(--mint-2);border-radius:6px;padding:5px 11px}
+  .term-band i{flex:1;height:1px;background:var(--line)}
+  .hol{font-family:var(--sans);font-size:.76rem;letter-spacing:.06em;color:#8a6d0c;background:#FCF3D6;border:1px dashed var(--amber);
+    border-radius:9px;padding:9px 14px;margin:14px 0;text-align:center}
+  .weeks{display:flex;flex-direction:column;gap:16px}
+  .wk{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 20px 16px;border-left:5px solid var(--ink);
+    box-shadow:0 18px 40px -34px rgba(0,0,0,.45);scroll-margin-top:92px}
+  .wk.ph-teach{border-left-color:var(--p1)} .wk.ph-rev{border-left-color:var(--amber)}
+  .wk.ph-mock{border-left-color:var(--red)} .wk.ph-fb{border-left-color:var(--slate)}
+  .wk.ph-ret{border-left-color:var(--teal)} .wk.ph-ex{border-left-color:var(--ink-2)}
+  .wk.now{outline:2px solid var(--amber);outline-offset:2px}
+  .wk.target{animation:flash 1.6s ease-out}
+  @keyframes flash{0%{background:#FFF7DD}100%{background:#fff}}
+  .wk-h{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:8px}
+  .wno{font-family:var(--sans);font-weight:700;font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink)}
+  .phase{font-family:var(--sans);font-size:.62rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#fff;border-radius:5px;padding:3px 9px}
+  .phase.ph-teach{background:var(--p1)} .phase.ph-rev{background:var(--amber);color:var(--ink-2)}
+  .phase.ph-mock{background:var(--red)} .phase.ph-fb{background:var(--slate)}
+  .phase.ph-ret{background:var(--teal)} .phase.ph-ex{background:var(--ink-2)}
+  .wdate{font-family:var(--sans);font-size:.78rem;color:var(--muted)}
+  .wlink{margin-left:auto;font-family:var(--sans);font-size:.7rem;color:var(--lead);background:var(--mint);border:1px solid var(--line);
+    border-radius:6px;padding:4px 10px;cursor:pointer;transition:.15s}
+  .wlink:hover{background:var(--ink);color:var(--mint);border-color:var(--ink)}
+  .wlink.done{background:#DCF0E4;border-color:#0A5638;color:#0A5638}
+  .chip{display:inline-block;font-family:var(--sans);font-size:.6rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+    color:#fff;border-radius:5px;padding:2px 8px;margin-bottom:8px}
+  .chip.p1{background:var(--p1)} .chip.p2{background:var(--p2)}
+  .wk-t{font-size:1.3rem;letter-spacing:-.01em}
+  .say{color:var(--lead);font-size:.98rem;margin-top:5px;max-width:80ch}
+
+  .lessons{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px}
+  .les{border:1px solid var(--line);border-radius:11px;padding:13px 14px;background:#FCFCFE;display:flex;flex-direction:column}
+  .les-h{display:flex;align-items:baseline;gap:9px}
+  .lnum{font-family:var(--sans);font-size:.6rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#fff;background:var(--ink);border-radius:4px;padding:2px 7px}
+  .les-h h4{font-size:1.03rem}
+  .bq{font-size:.92rem;color:var(--lead);margin:7px 0 9px;font-style:italic}
+  .bq span{font-style:normal;font-family:var(--sans);font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);display:block}
+  .kws{margin-top:10px;display:flex;flex-wrap:wrap;gap:5px;align-items:center}
+  .kws-l,.quo-l,.blk-l,.tl{font-family:var(--sans);font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+  .kws-l{width:100%}
+  .kw{font-family:var(--sans);font-size:.74rem;background:#FFF3C9;border:1px solid var(--amber-soft);border-radius:5px;padding:2px 8px}
+  .quo{margin-top:11px;border-left:3px solid var(--amber);background:#FCF3D6;border-radius:0 8px 8px 0;padding:8px 12px}
+  .quo q{display:block;font-size:.92rem;color:#5a4a10}
+  .quo cite{display:block;margin-top:3px;font-style:normal;font-family:var(--sans);font-size:.7rem;color:#8a6d0c}
+
+  .acts{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px;margin-top:14px}
+  .act{border:1px solid var(--line);border-radius:11px;padding:12px 14px;background:#FCFCFE}
+  .act h5{font-size:.98rem} .act p{font-size:.88rem;color:var(--lead);margin-top:4px}
+  .chklist{margin-top:12px;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:6px;list-style:none}
+  .chklist li{font-family:var(--sans);font-size:.86rem;color:var(--lead);border:1px solid var(--line);border-radius:8px;padding:7px 11px;background:#FCFCFE}
+  .chklist li::before{content:"\25B8";color:var(--amber);font-weight:700;margin-right:7px}
+
+  .podwrap,.shelf,.podset{margin-top:14px}
+  .pods{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:10px;margin-top:6px}
+  .pod{border:1px solid var(--line);border-radius:11px;padding:10px 12px;background:#F4F1FA}
+  .pod-h{display:flex;align-items:center;gap:7px;margin-bottom:7px;flex-wrap:wrap}
+  .pcode{font-family:var(--sans);font-size:.63rem;font-weight:700;letter-spacing:.06em;color:#fff;border-radius:4px;padding:2px 7px}
+  .pc-e{background:var(--amber);color:var(--ink-2)} .pc-c{background:var(--p1)} .pc-i{background:var(--p2)}
+  .pname{font-size:.9rem}
+  .pkind{font-family:var(--sans);font-size:.62rem;color:var(--muted);margin-left:auto}
+  .pod audio{width:100%;height:34px}
+  .pod.missing{opacity:.6}
+  .podnote{margin-top:10px;font-size:.9rem;color:var(--lead);font-style:italic}
+  .pchips{display:flex;flex-wrap:wrap;gap:5px;margin-top:6px}
+  .pchip{font-family:var(--sans);font-size:.72rem;font-weight:700;text-decoration:none;color:var(--ink);background:var(--mint);
+    border:1px solid var(--line);border-radius:5px;padding:3px 9px;cursor:pointer}
+  .pchip:hover{background:var(--ink);color:var(--mint)}
+  .pchip.playing{background:var(--amber);border-color:var(--amber);color:var(--ink-2)}
+
+  .shelf-g{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:8px;margin-top:6px}
+  .res-btn{display:flex;align-items:center;gap:11px;padding:11px 13px;border:1px solid var(--line);border-radius:10px;background:#fff;
+    font-family:var(--sans);font-size:.88rem;color:var(--ink);text-decoration:none;cursor:pointer;transition:background .15s}
+  .res-btn em{display:block;font-style:normal;font-size:.7rem;color:var(--muted);margin-top:2px;word-break:break-word}
+  .res-btn:hover{background:var(--mint)}
+  .res-btn .ic{width:26px;height:26px;flex:none;display:grid;place-items:center;border-radius:6px;background:var(--ink);color:var(--amber);font-size:.86rem}
+  .res-btn .go{margin-left:auto;color:var(--amber);font-weight:700;opacity:0;transition:.15s}
+  .res-btn:hover .go{opacity:1}
+  .res-btn.slim{padding:9px 11px;font-size:.84rem;background:var(--or-mid);border-color:var(--or-mid-line);font-weight:700}
+  .res-btn.slim .ic{background:var(--or-deep);color:#FFE7C6}
+  .res-btn.slim em{font-weight:400;color:#8A6236}
+  .res-btn.slim .go{color:var(--or-deep)}
+  .res-btn.slim:hover{background:var(--or-hover)}
+  .res-btn.unset{opacity:.55;cursor:not-allowed}
+  .res-btn.unset .go{display:none}
+
+  .ticks{margin-top:14px;padding-top:12px;border-top:1px dashed var(--line);display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+  .tk{display:flex;align-items:center;gap:7px;font-family:var(--sans);font-size:.84rem;color:var(--lead);cursor:pointer;user-select:none}
+  .tk input{width:17px;height:17px;accent-color:#0A5638;cursor:pointer}
+  .tk input:checked + span{color:#0A5638;font-weight:700;text-decoration:line-through}
+
+  /* ---------- shelf section ---------- */
+  .res-note{background:#FCF3D6;border:1px solid var(--amber);border-left:4px solid var(--amber);border-radius:8px;
+    padding:12px 16px;margin-bottom:20px;font-size:.9rem;color:#5a4a10;font-family:var(--sans)}
+  .res-note code{background:#fff;border:1px solid var(--line);border-radius:4px;padding:1px 6px;font-size:.85em}
+  .res-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:18px;align-items:start}
+  .res-col{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fff}
+  .res-col .res-btn{border:0;border-top:1px solid var(--line);border-radius:0}
+  .rc-head{padding:14px 16px;color:#fff}
+  .res-col.g1 .rc-head{background:linear-gradient(135deg,var(--p1),#2A0B45)}
+  .res-col.g2 .rc-head{background:linear-gradient(135deg,var(--p2),#053526)}
+  .res-col.g3 .rc-head{background:linear-gradient(135deg,var(--ink),var(--ink-2))}
+  .rc-head .rc-n{font-family:var(--sans);font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;opacity:.85}
+  .rc-head h3{font-size:1.08rem;margin-top:2px}
+  .res-wide{display:grid;grid-template-columns:1fr;gap:10px;margin-top:18px}
+  .res-btn.big{padding:15px 17px;border-radius:12px}
+  .res-btn.big .ic{width:34px;height:34px;font-size:1.05rem}
+
+  .ecards2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  .ecard{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fff}
+  .ecard .eh{padding:12px 16px;font-family:var(--sans);font-weight:700;font-size:.84rem;color:#fff}
+  .ecard.e1 .eh{background:var(--p1)} .ecard.e2 .eh{background:var(--p2)}
+  .ecard .eb{padding:13px 16px;font-size:.92rem;display:flex;flex-direction:column;gap:8px}
+  .ecard .eb p{border-bottom:1px dashed var(--line);padding-bottom:8px}
+  .ecard .eb p:last-child{border-bottom:0;padding-bottom:0}
+  .exday{font-family:var(--sans);font-weight:700;color:var(--red)!important}
+
+  footer{background:var(--ink-2);color:var(--mint-2);padding:24px 0;font-family:var(--sans);font-size:.8rem}
+  footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+  footer .amber{color:var(--amber)}
+
+  .toast{position:fixed;left:50%;bottom:26px;transform:translateX(-50%) translateY(20px);background:var(--ink-2);color:var(--mint);
+    font-family:var(--sans);font-size:.84rem;padding:10px 18px;border-radius:8px;opacity:0;pointer-events:none;transition:.22s;z-index:80;
+    border:1px solid var(--amber)}
+  .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+  @media(max-width:900px){.lessons{grid-template-columns:1fr}.how3{grid-template-columns:1fr}.ecards2{grid-template-columns:1fr}
+    .heroband{grid-template-columns:repeat(2,1fr)}.prog{display:none}}
+  @media print{.wknav,.res-note,.wlink,.ticks{display:none}.hero{padding:20px 0}section{padding:16px 0}
+    .wk{break-inside:avoid;box-shadow:none}}
+  @media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto}}
+
+  /* ---------- resource self-check pill ---------- */
+  .check{position:fixed;left:18px;bottom:18px;z-index:70;max-width:340px;font-family:var(--sans);
+    border-radius:10px;padding:10px 14px;box-shadow:0 14px 30px -18px rgba(0,0,0,.6);transition:opacity .5s}
+  .check b{display:block;font-size:.82rem}
+  .check span{display:block;font-size:.74rem;margin-top:2px;opacity:.9}
+  .check.ok{background:#DCF0E4;border:1px solid #0A5638;color:#0A5638}
+  .check.bad{background:#FBE3E1;border:1px solid var(--red);color:#7d1a13}
+  .check.fade{opacity:0;pointer-events:none}
+  @media print{.check{display:none}}
+
+  /* ---------- topic summary box ---------- */
+  .sum{margin-top:11px;border:1px solid var(--or-line);border-left:4px solid var(--or-rule);border-radius:0 9px 9px 0;
+    background:var(--or-soft);padding:10px 13px 11px}
+  .sum-l{display:block;font-family:var(--sans);font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;
+    font-weight:700;color:var(--or-ink);margin-bottom:5px}
+  .sum p{font-size:.9rem;color:var(--or-body);line-height:1.55}
+  .sum p + p{margin-top:8px}
+  .les .sum{flex:1 0 auto}
+  .les-rev .sum{margin-top:9px}
+  .lessons-one{grid-template-columns:1fr}
+
+
+  .cnav{background:#14101f;border-bottom:2px solid #F2B705}
+  .cnav-wrap{max-width:1120px;margin:0 auto;padding:8px 24px;font-family:"Trebuchet MS",Verdana,sans-serif}
+  .cnav-home{color:#FFD95C;text-decoration:none;font-size:.82rem;letter-spacing:.06em}
+  .cnav-home b{color:#fff}
+  .cnav-home:hover{color:#fff}
+  @media print{.cnav{display:none}}
+</style>
+</head>
+<body>
+<nav class="cnav" aria-label="Harlington RE navigation"><div class="cnav-wrap"><a class="cnav-home" href="summit-grade9.html">◂ <b>The Grade 9 Summit</b> · course home</a></div></nav>
+<header class="hero">
+  <div class="wrap">
+    <div class="crest">
+      <svg viewBox="0 0 64 64" aria-hidden="true">
+        <rect x="2" y="2" width="60" height="60" rx="13" fill="#12141f" stroke="#F2B705" stroke-width="1.5"/>
+        <g fill="none" stroke="#EEF0F7" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M32 12 L14 46 h36 z"/><path d="M25 33 l7-8 7 8"/>
+        </g>
+        <circle cx="32" cy="20" r="3" fill="#F2B705"/>
+      </svg>
+      <div class="who">Edexcel GCSE (9&#8211;1) Religious Studies B &#183; Papers 1 &amp; 2<b>Harlington School &#183; Year 11 &#183; 2026&#8211;27</b></div>
+    </div>
+    <span class="pill">Summit · Grade 9 edition</span>
+    <h1>Your year, week by week</h1>
+    <div class="tagline">listen &#183; read &#183; practise</div>
+    <p class="sub">Thirty-three weeks, from the first lesson in September to the last exam in May. Same spine as every class — but every deck, workbook and summary here is the Grade 9 Summit edition. Find your week. Master it.</p>
+    <div class="heroband">
+      <div><b>13 May</b><span>Paper 1 &#183; Christianity</span></div>
+      <div><b>21 May</b><span>Paper 2 &#183; Islam</span></div>
+      <div><b>2</b><span>mocks before then</span></div>
+      <div><b>28</b><span>topics to know</span></div>
+    </div>
+  </div>
+</header>
+
+<nav class="wknav" id="wknav">
+  <div class="wrap nav-in">
+    <span class="nav-l">Go to week</span>
+    <div class="nchips"><a class="nch ph-teach" href="#w1" data-w="1">1</a><a class="nch ph-teach" href="#w2" data-w="2">2</a><a class="nch ph-teach" href="#w3" data-w="3">3</a><a class="nch ph-teach" href="#w4" data-w="4">4</a><a class="nch ph-teach" href="#w5" data-w="5">5</a><a class="nch ph-teach" href="#w6" data-w="6">6</a><a class="nch ph-rev" href="#w7" data-w="7">7</a><a class="nch ph-rev" href="#w8" data-w="8">8</a><a class="nch ph-rev" href="#w9" data-w="9">9</a><a class="nch ph-mock" href="#w10" data-w="10">10</a><a class="nch ph-mock" href="#w11" data-w="11">11</a><a class="nch ph-teach" href="#w12" data-w="12">12</a><a class="nch ph-teach" href="#w13" data-w="13">13</a><a class="nch ph-fb" href="#w14" data-w="14">14</a><a class="nch ph-fb" href="#w15" data-w="15">15</a><a class="nch ph-teach" href="#w16" data-w="16">16</a><a class="nch ph-teach" href="#w17" data-w="17">17</a><a class="nch ph-teach" href="#w18" data-w="18">18</a><a class="nch ph-teach" href="#w19" data-w="19">19</a><a class="nch ph-teach" href="#w20" data-w="20">20</a><a class="nch ph-teach" href="#w21" data-w="21">21</a><a class="nch ph-rev" href="#w22" data-w="22">22</a><a class="nch ph-mock" href="#w23" data-w="23">23</a><a class="nch ph-mock" href="#w24" data-w="24">24</a><a class="nch ph-fb" href="#w25" data-w="25">25</a><a class="nch ph-fb" href="#w26" data-w="26">26</a><a class="nch ph-ret" href="#w27" data-w="27">27</a><a class="nch ph-ret" href="#w28" data-w="28">28</a><a class="nch ph-ret" href="#w29" data-w="29">29</a><a class="nch ph-ret" href="#w30" data-w="30">30</a><a class="nch ph-ex" href="#w31" data-w="31">31</a><a class="nch ph-ex" href="#w32" data-w="32">32</a><a class="nch ph-ex" href="#w33" data-w="33">33</a></div>
+    <div class="prog"><div class="bar"><i id="pbar"></i></div><span id="ptxt">0 of 99 ticked</span></div>
+  </div>
+</nav>
+
+<section id="how"><div class="wrap">
+  <div class="sec-head"><span class="num">01</span><h2>Three things, every week</h2></div>
+  <p class="sec-lead">Every week on this page asks for the same three things, in the same order. Nothing else. If you do these three, you are revising properly.</p>
+  <div class="how3">
+    <div class="h3c"><span class="hn">1</span><h4>Listen</h4><p>Press play on the week's podcast and capture as it runs: one claim, one source, one counter. The episode is the lesson's first pass — arrive having heard it.</p><em>Capture or it did not happen.</em></div>
+    <div class="h3c"><span class="hn">2</span><h4>Read</h4><p>Open your Companion on the page shown and do its two tasks — BEFORE the lesson, so class time lands on ground you have already walked. That is what preparation means at this tier.</p><em>The lesson assumes the Companion. Arrive ready to argue.</em></div>
+    <div class="h3c"><span class="hn">3</span><h4>Practise</h4><p>Write the key words from memory with the four-step deep explanation — mean, develop, example, link. Then the quote, with its source named. Check, fix, and finish with one two-sided weigh.</p><em>A key word you cannot deploy in a (d) is not yet yours.</em></div>
+  </div>
+</div></section>
+
+<section id="weeks"><div class="wrap">
+  <div class="sec-head"><span class="num">02</span><h2>The thirty-three weeks</h2></div>
+  <p class="sec-lead">Your teacher can send you straight to any week &#8212; press <b>Copy week link</b> on a week and paste it into Teams or an email. The link opens this page at that exact week.</p>
+  <div class="weeks">
+<div class="term-band"><span>Autumn 1</span><i></i></div>
+<article class="wk ph-teach" id="w1" data-iso="2026-08-31"><div class="wk-h">
+      <span class="wno">Week 01</span>
+      <span class="phase ph-teach">Lessons</span>
+      <span class="wdate">Mon 31 Aug 2026</span>
+      <button class="wlink" data-w="1" title="Copy the link to this week">&#128279; Copy week link</button>
+    </div><span class="chip p1">Paper 1 · Christianity</span><h3 class="wk-t">Matters of Life and Death</h3><p class="say">Year 11 opens. You take away your Grade 9 workbook and your Companion today — the Companion&#x27;s two tasks per week come BEFORE the lesson, and that discipline starts now.</p><div class="lessons"><div class="les">
+      <div class="les-h"><span class="lnum">Lesson 1</span><h4>The origins and value of the universe</h4></div>
+      <p class="bq"><span>Big question</span> How do Christians respond to the Big Bang and the origins of the universe? <span class="spec" style="opacity:.55;font-size:.85em;white-space:nowrap">· spec 1.4.1</span></p>
+      <div class="sum"><span class="sum-l">What this is about</span><p>The Big Bang is not a guess — redshift, cosmic background radiation, gravitational waves and the Higgs boson all point back to it. The sharper question is what follows. Three Christian responses diverge: creationism holds Genesis is right and science wrong (with Apparent Age explaining an old-looking young universe); intelligent design argues the universe&#x27;s irreducible complexity demands a designer; the compatibility response says Genesis teaches WHO created and WHY, science the HOW — and notes the theory&#x27;s own author, Georges Lemaître, was a Catholic priest.</p><p>For the (d), do not treat the three as rivals only: all agree God is the ultimate cause, that creation is good, and that humans are stewards, not owners of a commodity. Pope Francis told the Pontifical Academy the Big Bang &#x27;does not contradict the intervention of the divine creator, but requires it&#x27; — set that against the atheist claim that a self-starting universe leaves God with nothing to do, then weigh which survives.</p></div>
+      <a class="res-btn slim" data-key="deck_MLD_L01" data-rel="../../Summit%20-%20Grade%209%20Strand/4%20-%20Matters%20of%20Life%20and%20Death/G9_MOLD_L01_The_origins_and_value_of_the_universe.pptx" data-sp="Summit%20-%20Grade%209%20Strand/4%20-%20Matters%20of%20Life%20and%20Death/G9_MOLD_L01_The_origins_and_value_of_the_universe.pptx"><span class="ic">&#9635;</span><span class="lb">Open the lesson<em>G9_MOLD_L01_The_origins_and_value_of_the_universe.pptx</em></span><span class="go">&#8599;</span></a>
+      <div class="kws"><span class="kws-l">Key words</span><span class="kw">Creationism</span><span class="kw">Apparent Age</span><span class="kw">Commodity</span><span class="kw">Conservation</span></div>
+      <div class="quo"><span class="quo-l">Learn this quote</span><q>Be fruitful and increase in number; fill the earth and subdue it. Rule over the fish of the sea and the birds of the air…</q><cite>Genesis 1:28</cite></div>
+    </div><div class="les">
+      <div class="les-h"><span class="lnum">Lesson 2</span><h4>The origins and value of human life</h4></div>
+      <p class="bq"><span>Big question</span> How do Christians respond to evolution? <span class="spec" style="opacity:.55;font-size:.85em;white-space:nowrap">· spec 1.4.3</span></p>
+      <div class="sum"><span class="sum-l">What this is about</span><p>Evolution by natural selection is the strongest-evidenced account of how life developed — and each Christian response pays a different price for its answer. New-age creationists reject it outright, reading fossils as remains of Noah&#x27;s flood. Intelligent design allows change within species but says complexity demands a creator. The compatibility view, voiced by Pope Francis, holds that God &#x27;created human beings and let them develop according to the internal laws that he gave to each one&#x27;.</p><p>The Grade 9 move is to see what hangs on Adam: touch that first domino and original sin, the Fall and the logic of salvation move with it — which is exactly why the debate matters beyond biology. Against all three stands Dawkins&#x27; claim that evolved life &#x27;has no special value other than what humans choose to give to it&#x27;; answer it with Genesis 1:27, humans made in the image of God, and weigh whether value needs a giver.</p></div>
+      <a class="res-btn slim" data-key="deck_MLD_L02" data-rel="../../Summit%20-%20Grade%209%20Strand/4%20-%20Matters%20of%20Life%20and%20Death/G9_MOLD_L03_The_origins_and_value_of_human_life.pptx" data-sp="Summit%20-%20Grade%209%20Strand/4%20-%20Matters%20of%20Life%20and%20Death/G9_MOLD_L03_The_origins_and_value_of_human_life.pptx"><span class="ic">&#9635;</span><span class="lb">Open the lesson<em>G9_MOLD_L03_The_origins_and_value_of_human_life.pptx</em></span><span class="go">&#8599;</span></a>
+      <div class="kws"><span class="kws-l">Key words</span><span class="kw">Natural selection</span><span class="kw">Original sin</span><span class="kw">Fall of Man</span><span class="kw">Fossil record</span></div>
+      <div class="quo"><span class="quo-l">Learn this quote</span><q>Sin entered the world through one man, and death through sin, and in this way death came to all people…</q><cite>Romans 5:12</cite></div>
+    </div></div><div class="podwrap"><span class="blk-l">Podcast — press play</span><div class="pods"><div class="pod" data-key="pod_E01_w1" data-rel="Podcast_Audio/Mock_Countdown/E01_Wk1_Origins.mp3" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Mock_Countdown/E01_Wk1_Origins.mp3"><div class="pod-h"><span class="pcode pc-e">E01</span><span class="pname">Wk1 Origins</span><span class="pkind">Countdown episode</span></div><audio controls preload="none" src="Podcast_Audio/Mock_Countdown/E01_Wk1_Origins.mp3"></audio></div><div class="pod" data-key="pod_C25_w1" data-rel="Podcast_Audio/Christianity/C25_Origins_Universe.mp3" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Christianity/C25_Origins_Universe.mp3"><div class="pod-h"><span class="pcode pc-c">C25</span><span class="pname">Origins Universe</span><span class="pkind">Christianity</span></div><audio controls preload="none" src="Podcast_Audio/Christianity/C25_Origins_Universe.mp3"></audio></div><div class="pod" data-key="pod_C27_w1" data-rel="Podcast_Audio/Christianity/C27_Origins_Human_Life.mp3" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Christianity/C27_Origins_Human_Life.mp3"><div class="pod-h"><span class="pcode pc-c">C27</span><span class="pname">Origins Human Life</span><span class="pkind">Christianity</span></div><audio controls preload="none" src="Podcast_Audio/Christianity/C27_Origins_Human_Life.mp3"></audio></div></div></div><div class="shelf"><span class="blk-l">What you read and bring</span><div class="shelf-g"><a class="res-btn" data-key="g9page_w1" data-rel="G9_MOLD_Ecosystem.html" href="G9_MOLD_Ecosystem.html"><span class="ic">&#9968;</span><span class="lb">The Summit unit page — Matters of Life and Death<em>divergent views · key ideas · flashcards</em></span><span class="go">&#8599;</span></a><a class="res-btn" data-key="comp_w1" data-rel="Mock_Exam_Companion_HE.docx" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Mock_Exam_Companion_HE.docx"><span class="ic">&#9670;</span><span class="lb">Companion 1 · page 8<em>Mock_Exam_Companion_HE.docx</em></span><span class="go">&#8599;</span></a><a class="res-btn" data-key="book_w1" data-rel="../Unit7_Matters_of_Life_and_Death_Workbook_Grade9.docx" data-sp="Year%2011/Unit7_Matters_of_Life_and_Death_Workbook_Grade9.docx"><span class="ic">&#9632;</span><span class="lb">Unit 7 workbook — Grade 9<em>Unit7_Matters_of_Life_and_Death_Workbook_Grade9.docx</em></span><span class="go">&#8599;</span></a></div></div><div class="ticks"><span class="tl">Tick when done</span><label class="tk"><input type="checkbox" data-t="w1_listen"><span>1. Listen</span></label><label class="tk"><input type="checkbox" data-t="w1_read"><span>2. Read</span></label><label class="tk"><input type="checkbox" data-t="w1_practise"><span>3. Practise</span></label></div></article>
+<article class="wk ph-teach" id="w2" data-iso="2026-09-07"><div class="wk-h">
+      <span class="wno">Week 02</span>
+      <span class="phase ph-teach">Lessons</span>
+      <span class="wdate">Mon 7 Sep 2026</span>
+      <button class="wlink" data-w="2" title="Copy the link to this week">&#128279; Copy week link</button>
+    </div><span class="chip p1">Paper 1 · Christianity</span><h3 class="wk-t">Matters of Life and Death</h3><p class="say">Four mock topics down. Everything this week is examinable in November — and the summaries below are arguments to master, not stories to remember.</p><div class="lessons"><div class="les">
+      <div class="les-h"><span class="lnum">Lesson 1</span><h4>Death and the afterlife</h4></div>
+      <p class="bq"><span>Big question</span> Why do people believe in life after death? <span class="spec" style="opacity:.55;font-size:.85em;white-space:nowrap">· spec 1.4.5</span></p>
+      <div class="sum"><span class="sum-l">What this is about</span><p>Why believe in life after death at all? The Christian case starts from evidence, not wishful thinking: all four Gospels record the empty tomb, and Paul argues in 1 Corinthians 15 that as &#x27;in Adam all die, so in Christ all will be made alive&#x27;. Around it sit other cases: near-death experiences studied by Parnia and van Lommel, mediums, and reincarnation evidence such as remembered past lives — each weaker than it first looks, and the textbook says so.</p><p>Analyse the reasons in two families: evidence-based (resurrection, NDEs, the paranormal) and need-based (meaning, comfort for the bereaved, and justice — the demand that the good are finally rewarded). A top answer tests each on its own terms: an NDE proves an experience, not a destination; the justice argument proves a desire, not a fact. Then weigh whether the resurrection is history or faith — that is where the marks live.</p></div>
+      <a class="res-btn slim" data-key="deck_MLD_L03" data-rel="../../Summit%20-%20Grade%209%20Strand/4%20-%20Matters%20of%20Life%20and%20Death/G9_MOLD_L05_Death_and_the_afterlife.pptx" data-sp="Summit%20-%20Grade%209%20Strand/4%20-%20Matters%20of%20Life%20and%20Death/G9_MOLD_L05_Death_and_the_afterlife.pptx"><span class="ic">&#9635;</span><span class="lb">Open the lesson<em>G9_MOLD_L05_Death_and_the_afterlife.pptx</em></span><span class="go">&#8599;</span></a>
+      <div class="kws"><span class="kws-l">Key words</span><span class="kw">Immortality of the soul</span><span class="kw">Paranormal</span><span class="kw">Near-death experiences</span><span class="kw">Reincarnation</span></div>
+      <div class="quo"><span class="quo-l">Learn this quote</span><q>Because of his great love for us, God… made us alive with Christ… And God raised us up with Christ and seated us with him in the heavenly realms.</q><cite>Ephesians 2:4–6</cite></div>
+    </div><div class="les">
+      <div class="les-h"><span class="lnum">Lesson 2</span><h4>The natural world</h4></div>
+      <p class="bq"><span>Big question</span> What are Christian and non-religious attitudes to animals and the natural world? <span class="spec" style="opacity:.55;font-size:.85em;white-space:nowrap">· spec 1.4.8</span></p>
+      <div class="sum"><span class="sum-l">What this is about</span><p>Every side in the environment debate quotes Genesis — the argument is over which verse governs. Dominion readings stress &#x27;fill the earth and subdue it&#x27;; stewardship readings answer that a steward is a tenant, not an owner, and the landlord checks the state of the place. Christians split over animals too: some say only humans bear God&#x27;s image, so research and food use are acceptable; others reply that not one sparrow &#x27;will fall to the ground apart from the will of your Father&#x27;.</p><p>Non-religious positions run from conservationist Humanism to pure cost-benefit reasoning about finite resources and global warming. Note the deep agreement before you evaluate: the Assisi Declaration&#x27;s line that dominion means &#x27;to protect, not destroy&#x27; is common ground between the divergent views — so the strongest (d) answers argue about motive (obedience to God vs prudence for our grandchildren), not about whether to recycle.</p></div>
+      <a class="res-btn slim" data-key="deck_MLD_L04" data-rel="../../Summit%20-%20Grade%209%20Strand/4%20-%20Matters%20of%20Life%20and%20Death/G9_MOLD_L08_The_natural_world.pptx" data-sp="Summit%20-%20Grade%209%20Strand/4%20-%20Matters%20of%20Life%20and%20Death/G9_MOLD_L08_The_natural_world.pptx"><span class="ic">&#9635;</span><span class="lb">Open the lesson<em>G9_MOLD_L08_The_natural_world.pptx</em></span><span class="go">&#8599;</span></a>
+      <div class="kws"><span class="kws-l">Key words</span><span class="kw">Stewardship</span><span class="kw">Global warming</span><span class="kw">Finite resources</span><span class="kw">Environment</span></div>
+      <div class="quo"><span class="quo-l">Learn this quote</span><q>I give you every seed-bearing plant on the face of the whole earth and every tree that has fruit with seed in it. They will be yours for food.</q><cite>Genesis 1:29–30</cite></div>
+    </div></div><div class="podwrap"><span class="blk-l">Podcast — press play</span><div class="pods"><div class="pod" data-key="pod_E02_w2" data-rel="Podcast_Audio/Mock_Countdown/E02_Wk2_Afterlife_Natural_World.mp3" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Mock_Countdown/E02_Wk2_Afterlife_Natural_World.mp3"><div class="pod-h"><span class="pcode pc-e">E02</span><span class="pname">Wk2 Afterlife Natural World</span><span class="pkind">Countdown episode</span></div><audio controls preload="none" src="Podcast_Audio/Mock_Countdown/E02_Wk2_Afterlife_Natural_World.mp3"></audio></div><div class="pod" data-key="pod_C29_w2" data-rel="Podcast_Audio/Christianity/C29_Afterlife.mp3" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Christianity/C29_Afterlife.mp3"><div class="pod-h"><span class="pcode pc-c">C29</span><span class="pname">Afterlife</span><span class="pkind">Christianity</span></div><audio controls preload="none" src="Podcast_Audio/Christianity/C29_Afterlife.mp3"></audio></div><div class="pod" data-key="pod_C32_w2" data-rel="Podcast_Audio/Christianity/C32_Natural_World.mp3" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Christianity/C32_Natural_World.mp3"><div class="pod-h"><span class="pcode pc-c">C32</span><span class="pname">Natural World</span><span class="pkind">Christianity</span></div><audio controls preload="none" src="Podcast_Audio/Christianity/C32_Natural_World.mp3"></audio></div></div></div><div class="shelf"><span class="blk-l">What you read and bring</span><div class="shelf-g"><a class="res-btn" data-key="g9page_w2" data-rel="G9_MOLD_Ecosystem.html" href="G9_MOLD_Ecosystem.html"><span class="ic">&#9968;</span><span class="lb">The Summit unit page — Matters of Life and Death<em>divergent views · key ideas · flashcards</em></span><span class="go">&#8599;</span></a><a class="res-btn" data-key="comp_w2" data-rel="Mock_Exam_Companion_HE.docx" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Mock_Exam_Companion_HE.docx"><span class="ic">&#9670;</span><span class="lb">Companion 1 · page 9<em>Mock_Exam_Companion_HE.docx</em></span><span class="go">&#8599;</span></a><a class="res-btn" data-key="book_w2" data-rel="../Unit7_Matters_of_Life_and_Death_Workbook_Grade9.docx" data-sp="Year%2011/Unit7_Matters_of_Life_and_Death_Workbook_Grade9.docx"><span class="ic">&#9632;</span><span class="lb">Unit 7 workbook — Grade 9<em>Unit7_Matters_of_Life_and_Death_Workbook_Grade9.docx</em></span><span class="go">&#8599;</span></a></div></div><div class="ticks"><span class="tl">Tick when done</span><label class="tk"><input type="checkbox" data-t="w2_listen"><span>1. Listen</span></label><label class="tk"><input type="checkbox" data-t="w2_read"><span>2. Read</span></label><label class="tk"><input type="checkbox" data-t="w2_practise"><span>3. Practise</span></label></div></article>
+<article class="wk ph-teach" id="w3" data-iso="2026-09-14"><div class="wk-h">
+      <span class="wno">Week 03</span>
+      <span class="phase ph-teach">Lessons</span>
+      <span class="wdate">Mon 14 Sep 2026</span>
+      <button class="wlink" data-w="3" title="Copy the link to this week">&#128279; Copy week link</button>
+    </div><span class="chip p2">Paper 2 · Islam</span><h3 class="wk-t">Peace and Conflict</h3><p class="say">We cross to Islam and Paper 2. Your Unit 8 Grade 9 workbook is issued today; the analytical register stays the same.</p><div class="lessons"><div class="les">
+      <div class="les-h"><span class="lnum">Lesson 1</span><h4>Muslim attitudes towards peace</h4></div>
+      <p class="bq"><span>Big question</span> Is Islam a religion of peace? <span class="spec" style="opacity:.55;font-size:.85em;white-space:nowrap">· spec 2.4.1a</span></p>
+      <div class="sum"><span class="sum-l">What this is about</span><p>Is Islam a religion of peace? Start with the word: Islam is linked to salaam, the greeting is &#x27;salaam alaykum&#x27;, and the Qur&#x27;an calls the faith Dar as Salaam, the House of Peace. Surah 2:208 commands believers to &#x27;enter into peace wholeheartedly&#x27;, and Surah 25:63 praises those who answer the ignorant with &#x27;Peace&#x27;. Peace here is not passivity but a state of justice — which is why the tradition insists on putting wrongs right.</p><p>The divergence is real: some Muslims choose confrontation, and Islam debates whether they can claim the name of a faith whose meaning they contradict. The Grade 9 move is to refuse the false choice — quote the texts, acknowledge the minority, and argue that a religion is defined by its sources and mainstream practice, not by its most violent members. Then weigh whether that defence would satisfy a sceptic.</p></div>
+      <a class="res-btn slim" data-key="deck_PAC_L01" data-rel="../../Summit%20-%20Grade%209%20Strand/8%20-%20Peace%20and%20Conflict/G9_PC_L01_Muslim_attitudes_towards_peace.pptx" data-sp="Summit%20-%20Grade%209%20Strand/8%20-%20Peace%20and%20Conflict/G9_PC_L01_Muslim_attitudes_towards_peace.pptx"><span class="ic">&#9635;</span><span class="lb">Open the lesson<em>G9_PC_L01_Muslim_attitudes_towards_peace.pptx</em></span><span class="go">&#8599;</span></a>
+      <div class="kws"><span class="kws-l">Key words</span><span class="kw">Salaam</span><span class="kw">Dar as Salaam</span><span class="kw">Non-confrontational</span><span class="kw">Justice</span></div>
+      <div class="quo"><span class="quo-l">Learn this quote</span><q>O You who believe! Enter into peace (Islam) wholeheartedly; and follow not the footsteps of the Evil One.</q><cite>Surah 2:208</cite></div>
+    </div><div class="les">
+      <div class="les-h"><span class="lnum">Lesson 2</span><h4>Why wars occur</h4></div>
+      <p class="bq"><span>Big question</span> Responses to the causes of war — should religious people fight? <span class="spec" style="opacity:.55;font-size:.85em;white-space:nowrap">· spec 2.4.3</span></p>
+      <div class="sum"><span class="sum-l">What this is about</span><p>Wars rise from nationalism and ethnicity, from resources, and sometimes from religion — but should religious people fight? Muslim teaching is double-edged: if a war is just (self-defence, ending injustice) a Muslim MUST fight, because the Qur&#x27;an commands it and Muhammad himself fought in self-defence; but a war of aggression is forbidden. Humanists split: many are pacifists who would strengthen the UN, while some atheists accept fighting for a just cause.</p><p>For evaluation, use Archbishop Fitzgerald&#x27;s analysis: religion &#x27;isn&#x27;t usually the cause&#x27; of conflict but &#x27;an added factor&#x27; — the real roots are social and political. That is the steelman-killer for &#x27;religion causes wars&#x27;. Notice too how many traditions reach for Situation Ethics here, asking whether NOT fighting would be the greater injustice. Judge the underlying cause, not the banner.</p></div>
+      <a class="res-btn slim" data-key="deck_PAC_L02" data-rel="../../Summit%20-%20Grade%209%20Strand/8%20-%20Peace%20and%20Conflict/G9_PC_L02_Why_wars_occur.pptx" data-sp="Summit%20-%20Grade%209%20Strand/8%20-%20Peace%20and%20Conflict/G9_PC_L02_Why_wars_occur.pptx"><span class="ic">&#9635;</span><span class="lb">Open the lesson<em>G9_PC_L02_Why_wars_occur.pptx</em></span><span class="go">&#8599;</span></a>
+      <div class="kws"><span class="kws-l">Key words</span><span class="kw">Nationalism</span><span class="kw">Ethnicity</span><span class="kw">Aggressor</span><span class="kw">Situation Ethics</span></div>
+      <div class="quo"><span class="quo-l">Learn this quote</span><q>Fight in the cause of God those who fight you, but do not transgress the limits; for God loveth not the transgressors.</q><cite>Surah 2:190</cite></div>
+    </div></div><div class="podwrap"><span class="blk-l">Podcast — press play</span><div class="pods"><div class="pod" data-key="pod_E03_w3" data-rel="Podcast_Audio/Mock_Countdown/E03_Wk3_Peace_Conflict.mp3" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Mock_Countdown/E03_Wk3_Peace_Conflict.mp3"><div class="pod-h"><span class="pcode pc-e">E03</span><span class="pname">Wk3 Peace Conflict</span><span class="pkind">Countdown episode</span></div><audio controls preload="none" src="Podcast_Audio/Mock_Countdown/E03_Wk3_Peace_Conflict.mp3"></audio></div><div class="pod" data-key="pod_I25_w3" data-rel="Podcast_Audio/Islam/I25_Muslim_Peace.mp3" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Islam/I25_Muslim_Peace.mp3"><div class="pod-h"><span class="pcode pc-i">I25</span><span class="pname">Muslim Peace</span><span class="pkind">Islam</span></div><audio controls preload="none" src="Podcast_Audio/Islam/I25_Muslim_Peace.mp3"></audio></div><div class="pod" data-key="pod_I27_w3" data-rel="Podcast_Audio/Islam/I27_Attitudes_Conflict.mp3" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Islam/I27_Attitudes_Conflict.mp3"><div class="pod-h"><span class="pcode pc-i">I27</span><span class="pname">Attitudes Conflict</span><span class="pkind">Islam</span></div><audio controls preload="none" src="Podcast_Audio/Islam/I27_Attitudes_Conflict.mp3"></audio></div></div></div><div class="shelf"><span class="blk-l">What you read and bring</span><div class="shelf-g"><a class="res-btn" data-key="g9page_w3" data-rel="G9_PC_Ecosystem.html" href="G9_PC_Ecosystem.html"><span class="ic">&#9968;</span><span class="lb">The Summit unit page — Peace and Conflict<em>divergent views · key ideas · flashcards</em></span><span class="go">&#8599;</span></a><a class="res-btn" data-key="comp_w3" data-rel="Mock_Exam_Companion_HE.docx" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Mock_Exam_Companion_HE.docx"><span class="ic">&#9670;</span><span class="lb">Companion 1 · page 16<em>Mock_Exam_Companion_HE.docx</em></span><span class="go">&#8599;</span></a><a class="res-btn" data-key="book_w3" data-rel="../Unit8_Peace_and_Conflict_Workbook_Grade9.docx" data-sp="Year%2011/Unit8_Peace_and_Conflict_Workbook_Grade9.docx"><span class="ic">&#9632;</span><span class="lb">Unit 8 workbook — Grade 9<em>Unit8_Peace_and_Conflict_Workbook_Grade9.docx</em></span><span class="go">&#8599;</span></a></div></div><div class="ticks"><span class="tl">Tick when done</span><label class="tk"><input type="checkbox" data-t="w3_listen"><span>1. Listen</span></label><label class="tk"><input type="checkbox" data-t="w3_read"><span>2. Read</span></label><label class="tk"><input type="checkbox" data-t="w3_practise"><span>3. Practise</span></label></div></article>
+<article class="wk ph-teach" id="w4" data-iso="2026-09-21"><div class="wk-h">
+      <span class="wno">Week 04</span>
+      <span class="phase ph-teach">Lessons</span>
+      <span class="wdate">Mon 21 Sep 2026</span>
+      <button class="wlink" data-w="4" title="Copy the link to this week">&#128279; Copy week link</button>
+    </div><span class="chip p2">Paper 2 · Islam</span><h3 class="wk-t">Peace and Conflict</h3><p class="say">The Peace and Conflict mock topics are complete — half the mock is now taught. If a divergent view still blurs, this is the week to sharpen it.</p><div class="lessons"><div class="les">
+      <div class="les-h"><span class="lnum">Lesson 1</span><h4>Pacifism</h4></div>
+      <p class="bq"><span>Big question</span> Should religion and pacifism go together? <span class="spec" style="opacity:.55;font-size:.85em;white-space:nowrap">· spec 2.4.4</span></p>
+      <div class="sum"><span class="sum-l">What this is about</span><p>Pacifism is the refusal to fight — but its roots differ by tradition, and the differences are the exam. Christian pacifism starts at the Sermon on the Mount: no resistance, turn the other cheek; the early Church refused arms for three centuries and the peace Churches still do. Most Muslims reject that — jihad means struggle, and Muslims under attack are expected to fight back; there is no turning the other cheek in Islam — yet a genuine Muslim tradition of passive resistance to injustice exists.</p><p>Humanist pacifism runs from Erasmus through Kant and Bentham to CND: war as waste, judged by reason not revelation. The subtle point that earns the ninth grade: pacifism in Islam and Judaism is a minority tradition, not an absent one — sweeping claims fail. Weigh whether pacifism is the highest form of faith or, as its critics say, a luxury paid for by those willing to fight.</p></div>
+      <a class="res-btn slim" data-key="deck_PAC_L03" data-rel="../../Summit%20-%20Grade%209%20Strand/8%20-%20Peace%20and%20Conflict/G9_PC_L05_Pacifism.pptx" data-sp="Summit%20-%20Grade%209%20Strand/8%20-%20Peace%20and%20Conflict/G9_PC_L05_Pacifism.pptx"><span class="ic">&#9635;</span><span class="lb">Open the lesson<em>G9_PC_L05_Pacifism.pptx</em></span><span class="go">&#8599;</span></a>
+      <div class="kws"><span class="kws-l">Key words</span><span class="kw">Pacifism</span><span class="kw">Passive resistance</span><span class="kw">Militarism</span><span class="kw">Conscientious objector</span></div>
+      <div class="quo"><span class="quo-l">Learn this quote</span><q>He (Moses) said, “O my Lord! I have power only over myself and my brother: so separate us from this rebellious people.</q><cite>Surah 5:28</cite></div>
+    </div><div class="les">
+      <div class="les-h"><span class="lnum">Lesson 2</span><h4>The victims of war and the work of religious organisations</h4></div>
+      <p class="bq"><span>Big question</span> Who helps the victims of war, and how? <span class="spec" style="opacity:.55;font-size:.85em;white-space:nowrap">· spec 2.4.2a &amp; 2.4.3</span></p>
+      <div class="sum"><span class="sum-l">What this is about</span><p>War&#x27;s victims are counted in casualties (over 60 million dead in the Second World War), displacement (millions of refugees and internally displaced people today) and expense. Who helps, and how? The Ahmadiyya — &#x27;Love for all, hatred for none&#x27; — run peace forums and denounce terrorism; the Muslim Peace Fellowship practises a non-violent &#x27;prophetic jihad&#x27;. Humanists helped found the United Nations and campaign to strengthen it; Christian, Jewish and Muslim agencies bandage, feed and repatriate.</p><p>The analytical edge: real peace work does both jobs — it bandages the wounded AND drains the swamp that wounded them, which is why inter-religious dialogue matters (Fitzgerald calls common ground between faiths &#x27;crucial for world peace&#x27;). Surah 41:34 supplies the theology: &#x27;repel evil with what is better&#x27;, and your enemy becomes &#x27;a friend and intimate&#x27;. Evaluate which contribution — relief or reconciliation — peace ultimately depends on.</p></div>
+      <a class="res-btn slim" data-key="deck_PAC_L04" data-rel="../../Summit%20-%20Grade%209%20Strand/8%20-%20Peace%20and%20Conflict/G9_PC_L07_The_victims_of_war_and_the_work_of_religious_organisations.pptx" data-sp="Summit%20-%20Grade%209%20Strand/8%20-%20Peace%20and%20Conflict/G9_PC_L07_The_victims_of_war_and_the_work_of_religious_organisations.pptx"><span class="ic">&#9635;</span><span class="lb">Open the lesson<em>G9_PC_L07_The_victims_of_war_and_the_work_of_religious_organisations.pptx</em></span><span class="go">&#8599;</span></a>
+      <div class="kws"><span class="kws-l">Key words</span><span class="kw">Internally displaced</span><span class="kw">Repatriate</span><span class="kw">Ahmadiyya</span><span class="kw">Inter-religious dialogue</span></div>
+      <div class="quo"><span class="quo-l">Learn this quote</span><q>Do not kill women. Do not kill children. Do not kill an aged, infirm person</q></div>
+    </div></div><div class="podwrap"><span class="blk-l">Podcast — press play</span><div class="pods"><div class="pod" data-key="pod_E04_w4" data-rel="Podcast_Audio/Mock_Countdown/E04_Wk4_Pacifism_Issues.mp3" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Mock_Countdown/E04_Wk4_Pacifism_Issues.mp3"><div class="pod-h"><span class="pcode pc-e">E04</span><span class="pname">Wk4 Pacifism Issues</span><span class="pkind">Countdown episode</span></div><audio controls preload="none" src="Podcast_Audio/Mock_Countdown/E04_Wk4_Pacifism_Issues.mp3"></audio></div><div class="pod" data-key="pod_I28_w4" data-rel="Podcast_Audio/Islam/I28_Pacifism.mp3" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Islam/I28_Pacifism.mp3"><div class="pod-h"><span class="pcode pc-i">I28</span><span class="pname">Pacifism</span><span class="pkind">Islam</span></div><audio controls preload="none" src="Podcast_Audio/Islam/I28_Pacifism.mp3"></audio></div><div class="pod" data-key="pod_I32_w4" data-rel="Podcast_Audio/Islam/I32_Issues_Conflict.mp3" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Islam/I32_Issues_Conflict.mp3"><div class="pod-h"><span class="pcode pc-i">I32</span><span class="pname">Issues Conflict</span><span class="pkind">Islam</span></div><audio controls preload="none" src="Podcast_Audio/Islam/I32_Issues_Conflict.mp3"></audio></div></div></div><div class="shelf"><span class="blk-l">What you read and bring</span><div class="shelf-g"><a class="res-btn" data-key="g9page_w4" data-rel="G9_PC_Ecosystem.html" href="G9_PC_Ecosystem.html"><span class="ic">&#9968;</span><span class="lb">The Summit unit page — Peace and Conflict<em>divergent views · key ideas · flashcards</em></span><span class="go">&#8599;</span></a><a class="res-btn" data-key="comp_w4" data-rel="Mock_Exam_Companion_HE.docx" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Mock_Exam_Companion_HE.docx"><span class="ic">&#9670;</span><span class="lb">Companion 1 · page 17<em>Mock_Exam_Companion_HE.docx</em></span><span class="go">&#8599;</span></a><a class="res-btn" data-key="book_w4" data-rel="../Unit8_Peace_and_Conflict_Workbook_Grade9.docx" data-sp="Year%2011/Unit8_Peace_and_Conflict_Workbook_Grade9.docx"><span class="ic">&#9632;</span><span class="lb">Unit 8 workbook — Grade 9<em>Unit8_Peace_and_Conflict_Workbook_Grade9.docx</em></span><span class="go">&#8599;</span></a></div></div><div class="ticks"><span class="tl">Tick when done</span><label class="tk"><input type="checkbox" data-t="w4_listen"><span>1. Listen</span></label><label class="tk"><input type="checkbox" data-t="w4_read"><span>2. Read</span></label><label class="tk"><input type="checkbox" data-t="w4_practise"><span>3. Practise</span></label></div></article>
+<article class="wk ph-teach" id="w5" data-iso="2026-09-28"><div class="wk-h">
+      <span class="wno">Week 05</span>
+      <span class="phase ph-teach">Lessons</span>
+      <span class="wdate">Mon 28 Sep 2026</span>
+      <button class="wlink" data-w="5" title="Copy the link to this week">&#128279; Copy week link</button>
+    </div><span class="chip p1">Paper 1 · Christianity</span><h3 class="wk-t">Marriage and the Family</h3><p class="say">Back to Christianity. The mock will ask about these two topics directly; know the named sources, not just the positions.</p><div class="lessons"><div class="les">
+      <div class="les-h"><span class="lnum">Lesson 1</span><h4>Families</h4></div>
+      <p class="bq"><span>Big question</span> What is the purpose of the family? <span class="spec" style="opacity:.55;font-size:.85em;white-space:nowrap">· spec 1.2.3</span></p>
+      <div class="sum"><span class="sum-l">What this is about</span><p>What is the family FOR? Christian teaching answers: it is God&#x27;s basic unit of society, the place where children are raised safely, taught moral values, and brought up &#x27;in the training and instruction of the Lord&#x27; (Ephesians 6:4). Notice the covenant is mutual, not one-way: children obey, parents nurture — and Ephesians attaches a promise, &#x27;that it may go well with you&#x27;. Some Christians dissent on one point: the family should encourage children toward faith, not manufacture it.</p><p>The secular account keeps every function except the religious one: safety, moral formation, emotional and financial support — 80% of parents expect to go on helping their adult children. So the divergence is narrow but deep: not WHETHER the family matters, but whether its purpose includes handing on faith. A sharp (d) exploits that narrowness — agreement on nurture, disagreement on nurture&#x27;s goal — and weighs whether the religious purpose adds anything the secular family lacks.</p></div>
+      <a class="res-btn slim" data-key="deck_MR_L03" data-rel="../../Summit%20-%20Grade%209%20Strand/2%20-%20Marriage%20and%20the%20Family/G9_MR_L03_Families.pptx" data-sp="Summit%20-%20Grade%209%20Strand/2%20-%20Marriage%20and%20the%20Family/G9_MR_L03_Families.pptx"><span class="ic">&#9635;</span><span class="lb">Open the lesson<em>G9_MR_L03_Families.pptx</em></span><span class="go">&#8599;</span></a>
+      <div class="kws"><span class="kws-l">Key words</span><span class="kw">Nuclear family</span><span class="kw">Extended family</span><span class="kw">Blended family</span><span class="kw">Moral values</span></div>
+      <div class="quo"><span class="quo-l">Learn this quote</span><q>Children, obey your parents in the Lord, for this is right.</q><cite>Ephesians 6:1</cite></div>
+    </div><div class="les">
+      <div class="les-h"><span class="lnum">Lesson 2</span><h4>Family planning</h4></div>
+      <p class="bq"><span>Big question</span> What are the different attitudes to contraception? <span class="spec" style="opacity:.55;font-size:.85em;white-space:nowrap">· spec 1.2.5</span></p>
+      <div class="sum"><span class="sum-l">What this is about</span><p>The contraception debate is not about whether to plan a family — even Catholic teaching commends &#x27;responsible parenthood&#x27; — but about the METHOD. Humanae Vitae reasons that sex has a unitive and a creative purpose which must not be split: artificial contraception separates what God joined, so only natural family planning is permitted. Non-Catholic Christians reply that the Bible nowhere forbids contraception, that God made sex to cement marriage as well as to make children, and that all methods are permissible to LIMIT a family rather than refuse one.</p><p>Secular reasoning judges by consequences: contraception prevents unwanted pregnancies and STDs, transforms women&#x27;s lives, and makes &#x27;every child a wanted child&#x27;. For the top marks, name the mechanism in dispute — some contraceptives act as abortifacients, which imports the abortion argument — and weigh whether the unitive/creative distinction is profound theology or a distinction without a difference.</p></div>
+      <a class="res-btn slim" data-key="deck_MR_L05" data-rel="../../Summit%20-%20Grade%209%20Strand/2%20-%20Marriage%20and%20the%20Family/G9_MR_L05_Family_planning.pptx" data-sp="Summit%20-%20Grade%209%20Strand/2%20-%20Marriage%20and%20the%20Family/G9_MR_L05_Family_planning.pptx"><span class="ic">&#9635;</span><span class="lb">Open the lesson<em>G9_MR_L05_Family_planning.pptx</em></span><span class="go">&#8599;</span></a>
+      <div class="kws"><span class="kws-l">Key words</span><span class="kw">Contraception</span><span class="kw">Unitive purpose</span><span class="kw">Creative purpose</span><span class="kw">Abortifacient</span></div>
+      <div class="quo"><span class="quo-l">Learn this quote</span><q>open to the transmission of life</q></div>
+    </div></div><div class="podwrap"><span class="blk-l">Podcast — press play</span><div class="pods"><div class="pod" data-key="pod_E05_w5" data-rel="Podcast_Audio/Mock_Countdown/E05_Wk5_Family_Planning.mp3" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Mock_Countdown/E05_Wk5_Family_Planning.mp3"><div class="pod-h"><span class="pcode pc-e">E05</span><span class="pname">Wk5 Family Planning</span><span class="pkind">Countdown episode</span></div><audio controls preload="none" src="Podcast_Audio/Mock_Countdown/E05_Wk5_Family_Planning.mp3"></audio></div><div class="pod" data-key="pod_C11_w5" data-rel="Podcast_Audio/Christianity/C11_Families.mp3" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Christianity/C11_Families.mp3"><div class="pod-h"><span class="pcode pc-c">C11</span><span class="pname">Families</span><span class="pkind">Christianity</span></div><audio controls preload="none" src="Podcast_Audio/Christianity/C11_Families.mp3"></audio></div><div class="pod" data-key="pod_C13_w5" data-rel="Podcast_Audio/Christianity/C13_Family_Planning.mp3" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Christianity/C13_Family_Planning.mp3"><div class="pod-h"><span class="pcode pc-c">C13</span><span class="pname">Family Planning</span><span class="pkind">Christianity</span></div><audio controls preload="none" src="Podcast_Audio/Christianity/C13_Family_Planning.mp3"></audio></div></div></div><div class="shelf"><span class="blk-l">What you read and bring</span><div class="shelf-g"><a class="res-btn" data-key="g9page_w5" data-rel="G9_MR_Ecosystem.html" href="G9_MR_Ecosystem.html"><span class="ic">&#9968;</span><span class="lb">The Summit unit page — Marriage and the Family<em>divergent views · key ideas · flashcards</em></span><span class="go">&#8599;</span></a><a class="res-btn" data-key="comp_w5" data-rel="Mock_Exam_Companion_HE.docx" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Mock_Exam_Companion_HE.docx"><span class="ic">&#9670;</span><span class="lb">Companion 1 · page 4<em>Mock_Exam_Companion_HE.docx</em></span><span class="go">&#8599;</span></a></div></div><div class="ticks"><span class="tl">Tick when done</span><label class="tk"><input type="checkbox" data-t="w5_listen"><span>1. Listen</span></label><label class="tk"><input type="checkbox" data-t="w5_read"><span>2. Read</span></label><label class="tk"><input type="checkbox" data-t="w5_practise"><span>3. Practise</span></label></div></article>
+<article class="wk ph-teach" id="w6" data-iso="2026-10-05"><div class="wk-h">
+      <span class="wno">Week 06</span>
+      <span class="phase ph-teach">Lessons</span>
+      <span class="wdate">Mon 5 Oct 2026</span>
+      <button class="wlink" data-w="6" title="Copy the link to this week">&#128279; Copy week link</button>
+    </div><span class="chip p1">Paper 1 · Christianity</span><h3 class="wk-t">Marriage and the Family</h3><p class="say">All new mock teaching ends this week. From here to the paper it is retrieval, argument practice and the (d).</p><div class="lessons"><div class="les">
+      <div class="les-h"><span class="lnum">Lesson 1</span><h4>Divorce and remarriage</h4></div>
+      <p class="bq"><span>Big question</span> Should Christians divorce and remarry? <span class="spec" style="opacity:.55;font-size:.85em;white-space:nowrap">· spec 1.2.6</span></p>
+      <div class="sum"><span class="sum-l">What this is about</span><p>Same Jesus, two texts — the whole divorce debate is about which verse you weight. Matthew 19:6: &#x27;what God has joined together, let no one separate&#x27; grounds the Catholic position — marriage is a sacrament only death dissolves; civil divorce may protect a spouse, but remarriage is impossible without annulment. Matthew 19:9 — divorce allowed &#x27;except for sexual immorality&#x27; — grounds the Protestant position: divorce is wrong but permitted when a marriage has truly died, because Christianity teaches forgiveness and fresh starts.</p><p>The secular view treats marriage as a legal institution with a right of exit, provided spouses part fairly and children are provided for. Argue it situationally, as many Christians in practice do: weigh peace and fresh starts against cost, hurt and lost contact. The Grade 9 point is precisely that neither Christian side ignores the Bible — they weight it differently; show that, and the &#x27;Christians just disagree&#x27; answer becomes analysis.</p></div>
+      <a class="res-btn slim" data-key="deck_MR_L06" data-rel="../../Summit%20-%20Grade%209%20Strand/2%20-%20Marriage%20and%20the%20Family/G9_MR_L06_Divorce_and_remarriage.pptx" data-sp="Summit%20-%20Grade%209%20Strand/2%20-%20Marriage%20and%20the%20Family/G9_MR_L06_Divorce_and_remarriage.pptx"><span class="ic">&#9635;</span><span class="lb">Open the lesson<em>G9_MR_L06_Divorce_and_remarriage.pptx</em></span><span class="go">&#8599;</span></a>
+      <div class="kws"><span class="kws-l">Key words</span><span class="kw">Annulment</span><span class="kw">Civil divorce</span><span class="kw">Covenant</span><span class="kw">Situation Ethics</span></div>
+      <div class="quo"><span class="quo-l">Learn this quote</span><q>So they are no longer two, but one flesh. Therefore what God has joined together, let no one separate.</q><cite>Matthew 19:6</cite></div>
+    </div><div class="les">
+      <div class="les-h"><span class="lnum">Lesson 2</span><h4>Gender prejudice and discrimination</h4></div>
+      <p class="bq"><span>Big question</span> Should Christians work against gender discrimination? <span class="spec" style="opacity:.55;font-size:.85em;white-space:nowrap">· spec 1.2.8</span></p>
+      <div class="sum"><span class="sum-l">What this is about</span><p>This topic is a live campaign, not an abstraction: one Church changed, another holds the line. The Church of England, Methodists and Baptists ordain women as ministers and bishops, arguing from Genesis 1:27 and Galatians 3:28 — &#x27;neither male nor female, for you are all one in Christ&#x27;. The Catholic Church teaches equality and condemns gender prejudice, yet ordains only men, because the priest stands in the place of Christ. Some conservative churches go further: women should not teach or lead at all, citing the New Testament order as God-ordained, not discriminatory.</p><p>Secular critics would make refusing to ordain women illegal — equality law should not stop at the church door — and surveys show prejudice persists in workplaces everywhere. The strongest (d) distinguishes prejudice (attitude), discrimination (action) and doctrine (belief about office), then asks the sharp question: can a Church consistently preach Galatians 3:28 and reserve its highest office to men? Weigh the theology of representation against the theology of equality.</p></div>
+      <a class="res-btn slim" data-key="deck_MR_L08" data-rel="../../Summit%20-%20Grade%209%20Strand/2%20-%20Marriage%20and%20the%20Family/G9_MR_L08_Gender_prejudice_and_discrimination.pptx" data-sp="Summit%20-%20Grade%209%20Strand/2%20-%20Marriage%20and%20the%20Family/G9_MR_L08_Gender_prejudice_and_discrimination.pptx"><span class="ic">&#9635;</span><span class="lb">Open the lesson<em>G9_MR_L08_Gender_prejudice_and_discrimination.pptx</em></span><span class="go">&#8599;</span></a>
+      <div class="kws"><span class="kws-l">Key words</span><span class="kw">Gender prejudice</span><span class="kw">Gender discrimination</span><span class="kw">Ordination</span><span class="kw">Extraordinary minister</span></div>
+      <div class="quo"><span class="quo-l">Learn this quote</span><q>There is neither Jew nor Gentile, neither slave nor free, nor is there male and female, for you are all one in Christ Jesus.</q><cite>Galatians 3:28</cite></div>
+    </div></div><div class="podwrap"><span class="blk-l">Podcast — press play</span><div class="pods"><div class="pod" data-key="pod_E06_w6" data-rel="Podcast_Audio/Mock_Countdown/E06_Wk6_Divorce_Gender.mp3" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Mock_Countdown/E06_Wk6_Divorce_Gender.mp3"><div class="pod-h"><span class="pcode pc-e">E06</span><span class="pname">Wk6 Divorce Gender</span><span class="pkind">Countdown episode</span></div><audio controls preload="none" src="Podcast_Audio/Mock_Countdown/E06_Wk6_Divorce_Gender.mp3"></audio></div><div class="pod" data-key="pod_C14_w6" data-rel="Podcast_Audio/Christianity/C14_Divorce.mp3" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Christianity/C14_Divorce.mp3"><div class="pod-h"><span class="pcode pc-c">C14</span><span class="pname">Divorce</span><span class="pkind">Christianity</span></div><audio controls preload="none" src="Podcast_Audio/Christianity/C14_Divorce.mp3"></audio></div><div class="pod" data-key="pod_C16_w6" data-rel="Podcast_Audio/Christianity/C16_Gender_Prejudice.mp3" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Christianity/C16_Gender_Prejudice.mp3"><div class="pod-h"><span class="pcode pc-c">C16</span><span class="pname">Gender Prejudice</span><span class="pkind">Christianity</span></div><audio controls preload="none" src="Podcast_Audio/Christianity/C16_Gender_Prejudice.mp3"></audio></div></div></div><div class="shelf"><span class="blk-l">What you read and bring</span><div class="shelf-g"><a class="res-btn" data-key="g9page_w6" data-rel="G9_MR_Ecosystem.html" href="G9_MR_Ecosystem.html"><span class="ic">&#9968;</span><span class="lb">The Summit unit page — Marriage and the Family<em>divergent views · key ideas · flashcards</em></span><span class="go">&#8599;</span></a><a class="res-btn" data-key="comp_w6" data-rel="Mock_Exam_Companion_HE.docx" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Mock_Exam_Companion_HE.docx"><span class="ic">&#9670;</span><span class="lb">Companion 1 · page 5<em>Mock_Exam_Companion_HE.docx</em></span><span class="go">&#8599;</span></a></div></div><div class="ticks"><span class="tl">Tick when done</span><label class="tk"><input type="checkbox" data-t="w6_listen"><span>1. Listen</span></label><label class="tk"><input type="checkbox" data-t="w6_read"><span>2. Read</span></label><label class="tk"><input type="checkbox" data-t="w6_practise"><span>3. Practise</span></label></div></article>
+<article class="wk ph-rev" id="w7" data-iso="2026-10-12"><div class="wk-h">
+      <span class="wno">Week 07</span>
+      <span class="phase ph-rev">Revision</span>
+      <span class="wdate">Mon 12 Oct 2026</span>
+      <button class="wlink" data-w="7" title="Copy the link to this week">&#128279; Copy week link</button>
+    </div><span class="chip p1">Paper 1 · Christianity</span><h3 class="wk-t">Paper 1 revision — Christian Beliefs · Living the Christian Life</h3><p class="say">No new content. Paper 1&#x27;s beliefs units are rebuilt this week — key words, quotes, and the connections between beliefs that (c) questions probe.</p><div class="lessons"><div class="les les-rev"><div class="les-h"><span class="lnum">Focus 1</span><h4>Christian Beliefs</h4></div><div class="sum"><span class="sum-l">What this is about</span><p>Paper 1 Question 1 is Christian Beliefs — the load-bearing wall of the whole paper. The Trinity as the Nicene Creed defines it; creation and what Genesis 1 is FOR, not just what it says; the incarnation — God become human; the last days, resurrection and ascension; and salvation — how sin is dealt with and why the cross is the hinge. Revise these as an architecture, not a list: each belief supports the next, and (c) questions love to ask for the connections.</p><p>The unit ends on the problem of evil — the strongest attack the paper lets you meet: if God is omnipotent and benevolent, why evil and suffering? Learn it as clashing propositions, then the responses — free will, soul-making, prayer and charity, the example of Jesus — and be ready to say which response carries most weight and why. Fix the key words and the quotes this week: every mark in this unit assumes them.</p></div></div><div class="les les-rev"><div class="les-h"><span class="lnum">Focus 2</span><h4>Living the Christian Life</h4></div><div class="sum"><span class="sum-l">What this is about</span><p>Paper 1 Question 3 is Living the Christian Life — doctrine made visible. Liturgical against non-liturgical worship and WHY churches differ, not just that they do; the sacraments, especially baptism and eucharist, with the divergent views on what a sacrament actually does; prayer — set forms, informal prayer, and what the Lord&#x27;s Prayer teaches about both. The examiner rewards the candidate who can explain the REASONING behind each practice from a named tradition.</p><p>Then the outward life: pilgrimage and the divergence over whether it is needful; Christmas and Easter as theology in festival form; mission, evangelism and church growth; and the Church in action — street pastors, food banks, Christian Aid and Tearfund. Named, specific examples are the currency here. Collect one per topic, and rehearse deploying each inside a (d) evaluation, not just a (b) description.</p></div></div></div><div class="podwrap"><span class="blk-l">Podcast — press play</span><div class="pods"><div class="pod" data-key="pod_E07_w7" data-rel="Podcast_Audio/Mock_Countdown/E07_Rev_Christian_Beliefs.mp3" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Mock_Countdown/E07_Rev_Christian_Beliefs.mp3"><div class="pod-h"><span class="pcode pc-e">E07</span><span class="pname">Rev Christian Beliefs</span><span class="pkind">Countdown episode</span></div><audio controls preload="none" src="Podcast_Audio/Mock_Countdown/E07_Rev_Christian_Beliefs.mp3"></audio></div><div class="pod" data-key="pod_E08_w7" data-rel="Podcast_Audio/Mock_Countdown/E08_Rev_Living_Christian_Life.mp3" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Mock_Countdown/E08_Rev_Living_Christian_Life.mp3"><div class="pod-h"><span class="pcode pc-e">E08</span><span class="pname">Rev Living Christian Life</span><span class="pkind">Countdown episode</span></div><audio controls preload="none" src="Podcast_Audio/Mock_Countdown/E08_Rev_Living_Christian_Life.mp3"></audio></div></div></div><div class="podset"><span class="blk-l">Re-listen this week — 16 episodes</span><div class="pchips"><a class="pchip" data-key="pset_C01_w7" data-rel="Podcast_Audio/Christianity/C01_The_Trinity.mp3" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Christianity/C01_The_Trinity.mp3">C01</a><a class="pchip" data-key="pset_C02_w7" data-rel="Podcast_Audio/Christianity/C02_Creation.mp3" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Christianity/C02_Creation.mp3">C02</a><a class="pchip" data-key="pset_C03_w7" data-rel="Podcast_Audio/Christianity/C03_Incarnation.mp3" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Christianity/C03_Incarnation.mp3">C03</a><a class="pchip" data-key="pset_C04_w7" data-rel="Podcast_Audio/Christianity/C04_Last_Days_of_Jesus.mp3" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Christianity/C04_Last_Days_of_Jesus.mp3">C04</a><a class="pchip" data-key="pset_C05_w7" data-rel="Podcast_Audio/Christianity/C05_Salvation.mp3" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Christianity/C05_Salvation.mp3">C05</a><a class="pchip" data-key="pset_C06_w7" data-rel="Podcast_Audio/Christianity/C06_Eschatology.mp3" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Christianity/C06_Eschatology.mp3">C06</a><a class="pchip" data-key="pset_C07_w7" data-rel="Podcast_Audio/Christianity/C07_Problem_of_Evil.mp3" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Christianity/C07_Problem_of_Evil.mp3">C07</a><a class="pchip" data-key="pset_C08_w7" data-rel="Podcast_Audio/Christianity/C08_Solutions_to_Evil.mp3" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Christianity/C08_Solutions_to_Evil.mp3">C08</a><a class="pchip" data-key="pset_C17_w7" data-rel="Podcast_Audio/Christianity/C17_Worship.mp3" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Christianity/C17_Worship.mp3">C17</a><a class="pchip" data-key="pset_C18_w7" data-rel="Podcast_Audio/Christianity/C18_Sacraments.mp3" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Christianity/C18_Sacraments.mp3">C18</a><a class="pchip" data-key="pset_C19_w7" data-rel="Podcast_Audio/Christianity/C19_Prayer.mp3" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Christianity/C19_Prayer.mp3">C19</a><a class="pchip" data-key="pset_C20_w7" data-rel="Podcast_Audio/Christianity/C20_Pilgrimage.mp3" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Christianity/C20_Pilgrimage.mp3">C20</a><a class="pchip" data-key="pset_C21_w7" data-rel="Podcast_Audio/Christianity/C21_Celebrations.mp3" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Christianity/C21_Celebrations.mp3">C21</a><a class="pchip" data-key="pset_C22_w7" data-rel="Podcast_Audio/Christianity/C22_Future_of_Church.mp3" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Christianity/C22_Future_of_Church.mp3">C22</a><a class="pchip" data-key="pset_C23_w7" data-rel="Podcast_Audio/Christianity/C23_Local_Church.mp3" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Christianity/C23_Local_Church.mp3">C23</a><a class="pchip" data-key="pset_C24_w7" data-rel="Podcast_Audio/Christianity/C24_Worldwide_Church.mp3" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Christianity/C24_Worldwide_Church.mp3">C24</a></div></div><div class="shelf"><span class="blk-l">What you read and bring</span><div class="shelf-g"><a class="res-btn" data-key="comp_w7" data-rel="Mock_Exam_Companion_HE.docx" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Mock_Exam_Companion_HE.docx"><span class="ic">&#9670;</span><span class="lb">Companion 1 · pages 2–3 and 6–7<em>Mock_Exam_Companion_HE.docx</em></span><span class="go">&#8599;</span></a><a class="res-btn" data-key="res_w7_0" data-rel="../5%20-%20Revision%20Lessons/REV_W7_Paper1_Christian_Beliefs_LCL.pptx" data-sp="Year%2011/5%20-%20Revision%20Lessons/REV_W7_Paper1_Christian_Beliefs_LCL.pptx"><span class="ic">&#9679;</span><span class="lb">Revision lesson — Paper 1<em>REV_W7_Paper1_Christian_Beliefs_LCL.pptx</em></span><span class="go">&#8599;</span></a><a class="res-btn" data-key="res_w7_1" data-rel="../5%20-%20Revision%20Lessons/A3_W7_Paper1_Sheet.docx" data-sp="Year%2011/5%20-%20Revision%20Lessons/A3_W7_Paper1_Sheet.docx"><span class="ic">&#9679;</span><span class="lb">A3 revision sheet — Paper 1<em>A3_W7_Paper1_Sheet.docx</em></span><span class="go">&#8599;</span></a></div></div><div class="ticks"><span class="tl">Tick when done</span><label class="tk"><input type="checkbox" data-t="w7_listen"><span>1. Listen</span></label><label class="tk"><input type="checkbox" data-t="w7_read"><span>2. Read</span></label><label class="tk"><input type="checkbox" data-t="w7_practise"><span>3. Practise</span></label></div></article>
+<article class="wk ph-rev" id="w8" data-iso="2026-10-19"><div class="wk-h">
+      <span class="wno">Week 08</span>
+      <span class="phase ph-rev">Revision</span>
+      <span class="wdate">Mon 19 Oct 2026</span>
+      <button class="wlink" data-w="8" title="Copy the link to this week">&#128279; Copy week link</button>
+    </div><span class="chip p2">Paper 2 · Islam</span><h3 class="wk-t">Paper 2 revision — Muslim Beliefs · Living the Muslim Life</h3><p class="say">Same discipline, other paper: Muslim Beliefs and Living the Muslim Life. Precision on Sunni and Shi&#x27;a differences is where grades separate.</p><div class="lessons"><div class="les les-rev"><div class="les-h"><span class="lnum">Focus 1</span><h4>Muslim Beliefs</h4></div><div class="sum"><span class="sum-l">What this is about</span><p>Paper 2 Question 1 is Muslim Beliefs — and precision separates the grades. The six Beliefs of Sunni Islam against the five Roots of Usul ad-Din in Shi&#x27;a Islam: know which is which and never blur them. Tawhid and the nature of Allah — the 99 names as evidence of character; Risalah, prophethood from Adam to Muhammad; the holy books and why the Qur&#x27;an stands above the earlier, corrupted revelations; Malaikah, the angels who record and reveal.</p><p>Finish with al-Qadr — predestination — and Akhirah, judgement and the afterlife, where belief becomes motive: every deed weighed, so every deed matters. The Sunni/Shi&#x27;a divergences are not trivia; they are exactly what (b) and (c) questions probe. This week is for locking the key words and the quotes so that next week&#x27;s paper-writing is retrieval, not archaeology.</p></div></div><div class="les les-rev"><div class="les-h"><span class="lnum">Focus 2</span><h4>Living the Muslim Life</h4></div><div class="sum"><span class="sum-l">What this is about</span><p>Paper 2 Question 3 is Living the Muslim Life — the Five Pillars and beyond, each practice carrying its reasoning. Shahadah as the foundation the rest stand on; Salah five times daily and the divergences over how and when; Sawm in Ramadan and who is excused, and why the exemptions themselves teach mercy; Zakah as purification of wealth, with the Shi&#x27;a khums alongside; Hajj and what the rites re-enact.</p><p>Add the Ten Obligatory Acts of Shi&#x27;a Islam, jihad in both senses — the greater struggle within, the lesser without — and the festivals: Id-ul-Adha, Id-ul-Fitr, and Ashura with its different meaning for Shi&#x27;a Muslims. The trap in this unit is vagueness: &#x27;Muslims pray&#x27; earns nothing; &#x27;Salah performed at set times, facing the qiblah, because the Qur&#x27;an commands it&#x27; earns everything. Precision this week, marks next week.</p></div></div></div><div class="podwrap"><span class="blk-l">Podcast — press play</span><div class="pods"><div class="pod" data-key="pod_E09_w8" data-rel="Podcast_Audio/Mock_Countdown/E09_Rev_Muslim_Beliefs.mp3" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Mock_Countdown/E09_Rev_Muslim_Beliefs.mp3"><div class="pod-h"><span class="pcode pc-e">E09</span><span class="pname">Rev Muslim Beliefs</span><span class="pkind">Countdown episode</span></div><audio controls preload="none" src="Podcast_Audio/Mock_Countdown/E09_Rev_Muslim_Beliefs.mp3"></audio></div><div class="pod" data-key="pod_E10_w8" data-rel="Podcast_Audio/Mock_Countdown/E10_Rev_Living_Muslim_Life.mp3" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Mock_Countdown/E10_Rev_Living_Muslim_Life.mp3"><div class="pod-h"><span class="pcode pc-e">E10</span><span class="pname">Rev Living Muslim Life</span><span class="pkind">Countdown episode</span></div><audio controls preload="none" src="Podcast_Audio/Mock_Countdown/E10_Rev_Living_Muslim_Life.mp3"></audio></div></div></div><div class="podset"><span class="blk-l">Re-listen this week — 16 episodes</span><div class="pchips"><a class="pchip" data-key="pset_I01_w8" data-rel="Podcast_Audio/Islam/I01_Six_Beliefs.mp3" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Islam/I01_Six_Beliefs.mp3">I01</a><a class="pchip" data-key="pset_I02_w8" data-rel="Podcast_Audio/Islam/I02_Five_Roots_Shia.mp3" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Islam/I02_Five_Roots_Shia.mp3">I02</a><a class="pchip" data-key="pset_I03_w8" data-rel="Podcast_Audio/Islam/I03_Nature_of_Allah.mp3" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Islam/I03_Nature_of_Allah.mp3">I03</a><a class="pchip" data-key="pset_I04_w8" data-rel="Podcast_Audio/Islam/I04_Risalah.mp3" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Islam/I04_Risalah.mp3">I04</a><a class="pchip" data-key="pset_I05_w8" data-rel="Podcast_Audio/Islam/I05_Holy_Books.mp3" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Islam/I05_Holy_Books.mp3">I05</a><a class="pchip" data-key="pset_I06_w8" data-rel="Podcast_Audio/Islam/I06_Malaikah.mp3" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Islam/I06_Malaikah.mp3">I06</a><a class="pchip" data-key="pset_I07_w8" data-rel="Podcast_Audio/Islam/I07_Al_Qadr.mp3" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Islam/I07_Al_Qadr.mp3">I07</a><a class="pchip" data-key="pset_I08_w8" data-rel="Podcast_Audio/Islam/I08_Akhirah.mp3" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Islam/I08_Akhirah.mp3">I08</a><a class="pchip" data-key="pset_I17_w8" data-rel="Podcast_Audio/Islam/I17_Ten_Obligatory_Acts.mp3" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Islam/I17_Ten_Obligatory_Acts.mp3">I17</a><a class="pchip" data-key="pset_I18_w8" data-rel="Podcast_Audio/Islam/I18_Shahadah.mp3" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Islam/I18_Shahadah.mp3">I18</a><a class="pchip" data-key="pset_I19_w8" data-rel="Podcast_Audio/Islam/I19_Salah.mp3" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Islam/I19_Salah.mp3">I19</a><a class="pchip" data-key="pset_I20_w8" data-rel="Podcast_Audio/Islam/I20_Sawm.mp3" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Islam/I20_Sawm.mp3">I20</a><a class="pchip" data-key="pset_I21_w8" data-rel="Podcast_Audio/Islam/I21_Zakah_Khums.mp3" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Islam/I21_Zakah_Khums.mp3">I21</a><a class="pchip" data-key="pset_I22_w8" data-rel="Podcast_Audio/Islam/I22_Hajj.mp3" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Islam/I22_Hajj.mp3">I22</a><a class="pchip" data-key="pset_I23_w8" data-rel="Podcast_Audio/Islam/I23_Jihad.mp3" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Islam/I23_Jihad.mp3">I23</a><a class="pchip" data-key="pset_I24_w8" data-rel="Podcast_Audio/Islam/I24_Celebrations.mp3" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Islam/I24_Celebrations.mp3">I24</a></div></div><div class="shelf"><span class="blk-l">What you read and bring</span><div class="shelf-g"><a class="res-btn" data-key="comp_w8" data-rel="Mock_Exam_Companion_HE.docx" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Mock_Exam_Companion_HE.docx"><span class="ic">&#9670;</span><span class="lb">Companion 1 · pages 10–11 and 14–15<em>Mock_Exam_Companion_HE.docx</em></span><span class="go">&#8599;</span></a><a class="res-btn" data-key="res_w8_0" data-rel="../5%20-%20Revision%20Lessons/REV_W8_Paper2_Muslim_Beliefs_LML.pptx" data-sp="Year%2011/5%20-%20Revision%20Lessons/REV_W8_Paper2_Muslim_Beliefs_LML.pptx"><span class="ic">&#9679;</span><span class="lb">Revision lesson — Paper 2<em>REV_W8_Paper2_Muslim_Beliefs_LML.pptx</em></span><span class="go">&#8599;</span></a><a class="res-btn" data-key="res_w8_1" data-rel="../5%20-%20Revision%20Lessons/A3_W8_Paper2_Sheet.docx" data-sp="Year%2011/5%20-%20Revision%20Lessons/A3_W8_Paper2_Sheet.docx"><span class="ic">&#9679;</span><span class="lb">A3 revision sheet — Paper 2<em>A3_W8_Paper2_Sheet.docx</em></span><span class="go">&#8599;</span></a></div></div><div class="ticks"><span class="tl">Tick when done</span><label class="tk"><input type="checkbox" data-t="w8_listen"><span>1. Listen</span></label><label class="tk"><input type="checkbox" data-t="w8_read"><span>2. Read</span></label><label class="tk"><input type="checkbox" data-t="w8_practise"><span>3. Practise</span></label></div></article>
+<div class="term-band"><span>Autumn 2</span><i></i></div>
+<div class="hol">&#9670; Half term · 26–30 October 2026</div>
+<article class="wk ph-rev" id="w9" data-iso="2026-11-02"><div class="wk-h">
+      <span class="wno">Week 09</span>
+      <span class="phase ph-rev">Revision</span>
+      <span class="wdate">Mon 2 Nov 2026</span>
+      <button class="wlink" data-w="9" title="Copy the link to this week">&#128279; Copy week link</button>
+    </div><span class="chip p2">Paper 2 · Islam</span><h3 class="wk-t">Crime and Punishment · then the (d) clinic</h3><p class="say">Final week before the mock. The five steps of the 12-mark (d) get drilled until the structure is reflex, not effort.</p><div class="lessons"><div class="les les-rev"><div class="les-h"><span class="lnum">Focus 1</span><h4>Crime and Punishment — the Year 10 half</h4></div><div class="sum"><span class="sum-l">What this is about</span><p>Half of the Crime and Punishment content was taught in Year 10 — the mock assumes it, so this week reclaims it. Justice as the base concept: why it matters to society, and why Surah after Surah makes it God&#x27;s own demand. Crime and its causes — poverty, upbringing, addiction, greed — and the Muslim insistence that explanation is not excuse. Good, evil and suffering: why people do evil, and how belief in judgement reframes the question.</p><p>Then attitudes to punishment, where the divergent views sharpen: severity as deterrence against reform as purpose, with the aims of punishment vocabulary — retribution, deterrence, reformation, protection — doing the analytical work. Retrieve it with the episodes and the key-word drill, because in the mock this material must surface on demand, faster than you re-learned it.</p></div></div><div class="les les-rev"><div class="les-h"><span class="lnum">Focus 2</span><h4>The (d) clinic — the 12-mark answer</h4></div><div class="sum"><span class="sum-l">What this is about</span><p>The 12-mark (d) is a third of each question, and it is won by structure, not inspiration. The five steps, drilled until they are reflex: state the divergent views precisely; develop the strongest case FOR with source and reasoning; steelman the case AGAINST — at its strongest, including the genuine non-religious voice where the question invites it; weigh both sides explicitly, strength against limit; conclude with a judgement that says WHY the winner survives the strongest counter.</p><p>SPaG rides on Q1(d) and Q3(d), so accuracy is marks, not manners. This week every practice answer ends with a two-sided weigh and a justified verdict — paragraphs that end with a LINK back to the question, a WEIGH closing each evaluation. By Friday the shape should be automatic, because in the mock you will have about thirteen minutes to build it.</p></div></div></div><div class="podwrap"><span class="blk-l">Podcast — press play</span><div class="pods"><div class="pod" data-key="pod_E11_w9" data-rel="Podcast_Audio/Mock_Countdown/E11_Rev_Crime_Punishment.mp3" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Mock_Countdown/E11_Rev_Crime_Punishment.mp3"><div class="pod-h"><span class="pcode pc-e">E11</span><span class="pname">Rev Crime Punishment</span><span class="pkind">Countdown episode</span></div><audio controls preload="none" src="Podcast_Audio/Mock_Countdown/E11_Rev_Crime_Punishment.mp3"></audio></div></div></div><div class="podset"><span class="blk-l">Re-listen this week — 4 episodes</span><div class="pchips"><a class="pchip" data-key="pset_I09_w9" data-rel="Podcast_Audio/Islam/I09_Justice.mp3" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Islam/I09_Justice.mp3">I09</a><a class="pchip" data-key="pset_I10_w9" data-rel="Podcast_Audio/Islam/I10_Crime.mp3" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Islam/I10_Crime.mp3">I10</a><a class="pchip" data-key="pset_I11_w9" data-rel="Podcast_Audio/Islam/I11_Muslim_Evil_Suffering.mp3" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Islam/I11_Muslim_Evil_Suffering.mp3">I11</a><a class="pchip" data-key="pset_I12_w9" data-rel="Podcast_Audio/Islam/I12_Punishment_Attitudes.mp3" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Islam/I12_Punishment_Attitudes.mp3">I12</a></div></div><div class="shelf"><span class="blk-l">What you read and bring</span><div class="shelf-g"><a class="res-btn" data-key="comp_w9" data-rel="Mock_Exam_Companion_HE.docx" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Mock_Exam_Companion_HE.docx"><span class="ic">&#9670;</span><span class="lb">Companion 1 · pages 12–13 and 18<em>Mock_Exam_Companion_HE.docx</em></span><span class="go">&#8599;</span></a><a class="res-btn" data-key="res_w9_0" data-rel="../5%20-%20Revision%20Lessons/REV_W9_Crime_Punishment_D_Clinic.pptx" data-sp="Year%2011/5%20-%20Revision%20Lessons/REV_W9_Crime_Punishment_D_Clinic.pptx"><span class="ic">&#9679;</span><span class="lb">Revision lesson — C&amp;P + (d) clinic<em>REV_W9_Crime_Punishment_D_Clinic.pptx</em></span><span class="go">&#8599;</span></a><a class="res-btn" data-key="res_w9_1" data-rel="../5%20-%20Revision%20Lessons/A3_W9_CP_Clinic_Sheet.docx" data-sp="Year%2011/5%20-%20Revision%20Lessons/A3_W9_CP_Clinic_Sheet.docx"><span class="ic">&#9679;</span><span class="lb">A3 clinic sheet<em>A3_W9_CP_Clinic_Sheet.docx</em></span><span class="go">&#8599;</span></a></div></div><div class="ticks"><span class="tl">Tick when done</span><label class="tk"><input type="checkbox" data-t="w9_listen"><span>1. Listen</span></label><label class="tk"><input type="checkbox" data-t="w9_read"><span>2. Read</span></label><label class="tk"><input type="checkbox" data-t="w9_practise"><span>3. Practise</span></label></div></article>
+<article class="wk ph-mock" id="w10" data-iso="2026-11-09"><div class="wk-h">
+      <span class="wno">Week 10</span>
+      <span class="phase ph-mock">Mock exam</span>
+      <span class="wdate">Mon 9 Nov 2026</span>
+      <button class="wlink" data-w="10" title="Copy the link to this week">&#128279; Copy week link</button>
+    </div><span class="chip p1">Paper 1 · Christianity</span><h3 class="wk-t">MOCK 1 · PAPER 1 — Religion and Ethics (Christianity)</h3><p class="say">Paper 1 this week. 1 hour 45, 102 marks including SPaG. Plan the (d) before you write it — thirteen minutes, five steps.</p><ul class="chklist"><li>Christian Beliefs</li><li>Marriage and the Family</li><li>Living the Christian Life</li><li>Matters of Life and Death</li></ul><div class="ticks"><span class="tl">Tick when done</span><label class="tk"><input type="checkbox" data-t="w10_revised"><span>1. Revised for it</span></label><label class="tk"><input type="checkbox" data-t="w10_sat"><span>2. Sat the paper</span></label><label class="tk"><input type="checkbox" data-t="w10_timing"><span>3. Checked my timings</span></label></div></article>
+<article class="wk ph-mock" id="w11" data-iso="2026-11-16"><div class="wk-h">
+      <span class="wno">Week 11</span>
+      <span class="phase ph-mock">Mock exam</span>
+      <span class="wdate">Mon 16 Nov 2026</span>
+      <button class="wlink" data-w="11" title="Copy the link to this week">&#128279; Copy week link</button>
+    </div><span class="chip p2">Paper 2 · Islam</span><h3 class="wk-t">MOCK 1 · PAPER 2 — Religion, Peace and Conflict (Islam)</h3><p class="say">Paper 2 this week — same shape, same timing. When it is done, the marking begins and the gap analysis starts working for you.</p><ul class="chklist"><li>Muslim Beliefs</li><li>Crime and Punishment</li><li>Living the Muslim Life</li><li>Peace and Conflict</li></ul><div class="ticks"><span class="tl">Tick when done</span><label class="tk"><input type="checkbox" data-t="w11_revised"><span>1. Revised for it</span></label><label class="tk"><input type="checkbox" data-t="w11_sat"><span>2. Sat the paper</span></label><label class="tk"><input type="checkbox" data-t="w11_timing"><span>3. Checked my timings</span></label></div></article>
+<article class="wk ph-teach" id="w12" data-iso="2026-11-23"><div class="wk-h">
+      <span class="wno">Week 12</span>
+      <span class="phase ph-teach">Lessons</span>
+      <span class="wdate">Mon 23 Nov 2026</span>
+      <button class="wlink" data-w="12" title="Copy the link to this week">&#128279; Copy week link</button>
+    </div><span class="chip p1">Paper 1 · Christianity</span><h3 class="wk-t">Matters of Life and Death</h3><p class="say">New topics resume while the mocks are marked. The standard does not pause for results.</p><div class="lessons"><div class="les">
+      <div class="les-h"><span class="lnum">Lesson 1</span><h4>Sanctity of life</h4></div>
+      <p class="bq"><span>Big question</span> If life is sacred, may a Christian ever take a human life? <span class="spec" style="opacity:.55;font-size:.85em;white-space:nowrap">· spec 1.4.2</span></p>
+      <div class="sum"><span class="sum-l">What this is about</span><p>Sanctity of life — life as sacred because God creates it, breathes it and owns it — is not the easy answer; it is the reason the hard questions exist. Genesis 1:27 grounds it (made in God&#x27;s image), Genesis 2:7 dramatises it (God breathes life into the first human). If life is truly sacred, may a Christian ever take it? Pacifists — Quakers, Pax Christi — say never. The Catechism disagrees: legitimate defence &#x27;can be not only a right but a grave duty&#x27;.</p><p>The same principle is claimed by BOTH sides of the capital punishment debate: abolitionists argue a sacred life is never the state&#x27;s to take; retentionists reply that the Bible itself prescribes death for murder precisely because the victim&#x27;s life was sacred. That is the analytical prize of this topic — one principle, opposite conclusions — and a Grade 9 answer shows exactly where the reasoning forks.</p></div>
+      <a class="res-btn slim" data-key="deck_MLD_L05" data-rel="../../Summit%20-%20Grade%209%20Strand/4%20-%20Matters%20of%20Life%20and%20Death/G9_MOLD_L02_Sanctity_of_life.pptx" data-sp="Summit%20-%20Grade%209%20Strand/4%20-%20Matters%20of%20Life%20and%20Death/G9_MOLD_L02_Sanctity_of_life.pptx"><span class="ic">&#9635;</span><span class="lb">Open the lesson<em>G9_MOLD_L02_Sanctity_of_life.pptx</em></span><span class="go">&#8599;</span></a>
+      <div class="kws"><span class="kws-l">Key words</span><span class="kw">Sanctity of life</span><span class="kw">Sanctified</span><span class="kw">Pacifism</span><span class="kw">Capital punishment</span></div>
+      <div class="quo"><span class="quo-l">Learn this quote</span><q>So God created mankind in his own image… male and female he created them.</q><cite>Genesis 1:27</cite></div>
+    </div><div class="les">
+      <div class="les-h"><span class="lnum">Lesson 2</span><h4>The issue of abortion</h4></div>
+      <p class="bq"><span>Big question</span> What are Christian and non-religious attitudes to abortion? <span class="spec" style="opacity:.55;font-size:.85em;white-space:nowrap">· spec 1.4.4</span></p>
+      <div class="sum"><span class="sum-l">What this is about</span><p>UK law permits abortion under conditions; the ethical argument is over where the line falls. The Catholic position: life begins at conception, so abortion breaks &#x27;You shall not murder&#x27; — the only exception the doctrine of double effect, where saving the mother unintentionally costs the foetus. Liberal Protestants argue Jesus&#x27; command to love your neighbour can make abortion the most loving option after rape or fatal diagnosis. Pro-choice arguments start elsewhere: a foetus is not a separate life until viability, so the woman&#x27;s rights and quality of life come first.</p><p>Notice the debates are not symmetrical: the religious argument is about the STATUS of the foetus, the non-religious one about the RIGHTS of the woman — so the sides often talk past each other. A top (d) makes that visible, steelmans &#x27;pro-choice&#x27; with the quality-of-life case, answers it with sanctity of life, and reaches a judgement that says why one framework should govern the law rather than the other.</p></div>
+      <a class="res-btn slim" data-key="deck_MLD_L06" data-rel="../../Summit%20-%20Grade%209%20Strand/4%20-%20Matters%20of%20Life%20and%20Death/G9_MOLD_L04_The_issue_of_abortion.pptx" data-sp="Summit%20-%20Grade%209%20Strand/4%20-%20Matters%20of%20Life%20and%20Death/G9_MOLD_L04_The_issue_of_abortion.pptx"><span class="ic">&#9635;</span><span class="lb">Open the lesson<em>G9_MOLD_L04_The_issue_of_abortion.pptx</em></span><span class="go">&#8599;</span></a>
+      <div class="kws"><span class="kws-l">Key words</span><span class="kw">Conception</span><span class="kw">Doctrine of double effect</span><span class="kw">Quality of life</span><span class="kw">Abortion on demand</span></div>
+      <div class="quo"><span class="quo-l">Learn this quote</span><q>all direct abortion [is] to be absolutely excluded as lawful means of regulating the number of children</q></div>
+    </div></div><div class="podwrap"><span class="blk-l">Podcast — press play</span><div class="pods"><div class="pod" data-key="pod_C26_w12" data-rel="Podcast_Audio/Christianity/C26_Sanctity_of_Life.mp3" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Christianity/C26_Sanctity_of_Life.mp3"><div class="pod-h"><span class="pcode pc-c">C26</span><span class="pname">Sanctity of Life</span><span class="pkind">Christianity</span></div><audio controls preload="none" src="Podcast_Audio/Christianity/C26_Sanctity_of_Life.mp3"></audio></div><div class="pod" data-key="pod_C28_w12" data-rel="Podcast_Audio/Christianity/C28_Abortion.mp3" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Christianity/C28_Abortion.mp3"><div class="pod-h"><span class="pcode pc-c">C28</span><span class="pname">Abortion</span><span class="pkind">Christianity</span></div><audio controls preload="none" src="Podcast_Audio/Christianity/C28_Abortion.mp3"></audio></div></div></div><div class="shelf"><span class="blk-l">What you read and bring</span><div class="shelf-g"><a class="res-btn" data-key="g9page_w12" data-rel="G9_MOLD_Ecosystem.html" href="G9_MOLD_Ecosystem.html"><span class="ic">&#9968;</span><span class="lb">The Summit unit page — Matters of Life and Death<em>divergent views · key ideas · flashcards</em></span><span class="go">&#8599;</span></a><a class="res-btn" data-key="comp_w12" data-rel="../4%20-%20Mock%202%20Companion/Mock2_Companion_HE.docx" data-sp="Year%2011/4%20-%20Mock%202%20Companion/Mock2_Companion_HE.docx"><span class="ic">&#9670;</span><span class="lb">Companion 2 · page 4<em>Mock2_Companion_HE.docx</em></span><span class="go">&#8599;</span></a><a class="res-btn" data-key="book_w12" data-rel="../Unit7_Matters_of_Life_and_Death_Workbook_Grade9.docx" data-sp="Year%2011/Unit7_Matters_of_Life_and_Death_Workbook_Grade9.docx"><span class="ic">&#9632;</span><span class="lb">Unit 7 workbook — Grade 9<em>Unit7_Matters_of_Life_and_Death_Workbook_Grade9.docx</em></span><span class="go">&#8599;</span></a></div></div><div class="ticks"><span class="tl">Tick when done</span><label class="tk"><input type="checkbox" data-t="w12_listen"><span>1. Listen</span></label><label class="tk"><input type="checkbox" data-t="w12_read"><span>2. Read</span></label><label class="tk"><input type="checkbox" data-t="w12_practise"><span>3. Practise</span></label></div></article>
+<article class="wk ph-teach" id="w13" data-iso="2026-11-30"><div class="wk-h">
+      <span class="wno">Week 13</span>
+      <span class="phase ph-teach">Lessons</span>
+      <span class="wdate">Mon 30 Nov 2026</span>
+      <button class="wlink" data-w="13" title="Copy the link to this week">&#128279; Copy week link</button>
+    </div><span class="chip p1">Paper 1 · Christianity</span><h3 class="wk-t">Matters of Life and Death</h3><p class="say">Unit 7 complete — all eight Matters of Life and Death topics taught. The full architecture of the unit is now yours to argue with.</p><div class="lessons"><div class="les">
+      <div class="les-h"><span class="lnum">Lesson 1</span><h4>Non-religious arguments against life after death</h4></div>
+      <p class="bq"><span>Big question</span> Is there reliable evidence for life after death? <span class="spec" style="opacity:.55;font-size:.85em;white-space:nowrap">· spec 1.4.6</span></p>
+      <div class="sum"><span class="sum-l">What this is about</span><p>The non-religious case against the afterlife has two prongs. First, the evidence fails: near-death experiences rest on fallible memories, mediums have been exposed as fraudulent — Thouless&#x27;s coded message was never decoded — and the religions contradict each other about what survives. Second, and stronger: there is no ROOM for it — science finds no non-material realm, and Marx adds a motive, calling the belief &#x27;pie in the sky&#x27;, social control that keeps the poor content.</p><p>The Christian rebuttal must meet both prongs: the resurrection record and the disciples&#x27; willingness to die for it answer the evidence charge; Descartes&#x27; argument that mind is separate from body answers the no-room charge. Both sides actually agree on the hinge — everything turns on whether the evidence can be trusted and whether a soul could exist without a body. Argue THAT hinge, not the slogans, and weigh which side carries the burden of proof.</p></div>
+      <a class="res-btn slim" data-key="deck_MLD_L07" data-rel="../../Summit%20-%20Grade%209%20Strand/4%20-%20Matters%20of%20Life%20and%20Death/G9_MOLD_L06_Non_religious_arguments_against_life_after_death.pptx" data-sp="Summit%20-%20Grade%209%20Strand/4%20-%20Matters%20of%20Life%20and%20Death/G9_MOLD_L06_Non_religious_arguments_against_life_after_death.pptx"><span class="ic">&#9635;</span><span class="lb">Open the lesson<em>G9_MOLD_L06_Non_religious_arguments_against_life_after_death.pptx</em></span><span class="go">&#8599;</span></a>
+      <div class="kws"><span class="kws-l">Key words</span><span class="kw">Fallible memories</span><span class="kw">Bereaved</span><span class="kw">Non-material</span><span class="kw">Social control</span></div>
+      <div class="quo"><span class="quo-l">Learn this quote</span><q>[You are saved] by the resurrection of Jesus Christ, who has gone into heaven and is at God&#x27;s right hand</q></div>
+    </div><div class="les">
+      <div class="les-h"><span class="lnum">Lesson 2</span><h4>Euthanasia</h4></div>
+      <p class="bq"><span>Big question</span> What are Christian and non-religious attitudes to euthanasia? <span class="spec" style="opacity:.55;font-size:.85em;white-space:nowrap">· spec 1.4.7</span></p>
+      <div class="sum"><span class="sum-l">What this is about</span><p>Euthanasia is not one question but a line-drawing exercise: the debate is where law and Church divide acting from letting go. UK law bans active euthanasia and assisted suicide but allows switching off a machine after brain death and refusing extraordinary treatment. Catholic teaching tracks that line closely, adding the doctrine of double effect for pain relief that may shorten life. Stricter Christians reject even that — Job&#x27;s &#x27;shall we accept good from God, and not trouble?&#x27; makes endurance itself faithful.</p><p>The liberal minority argues modern medicine blurs God&#x27;s wishes, and love of neighbour could justify a requested death; secular advocates add autonomy — my life, my decision. Against them stand palliative care (the hospice movement asks whether the demand for death is really a demand for better care) and the slippery-slope worry about pressure on the vulnerable. Weigh autonomy against protection, and say which risk a society should rather run.</p></div>
+      <a class="res-btn slim" data-key="deck_MLD_L08" data-rel="../../Summit%20-%20Grade%209%20Strand/4%20-%20Matters%20of%20Life%20and%20Death/G9_MOLD_L07_Euthanasia.pptx" data-sp="Summit%20-%20Grade%209%20Strand/4%20-%20Matters%20of%20Life%20and%20Death/G9_MOLD_L07_Euthanasia.pptx"><span class="ic">&#9635;</span><span class="lb">Open the lesson<em>G9_MOLD_L07_Euthanasia.pptx</em></span><span class="go">&#8599;</span></a>
+      <div class="kws"><span class="kws-l">Key words</span><span class="kw">Euthanasia</span><span class="kw">Voluntary euthanasia</span><span class="kw">Non-voluntary euthanasia</span><span class="kw">Palliative care</span></div>
+      <div class="quo"><span class="quo-l">Learn this quote</span><q>Shall we accept good from God, and not trouble?</q><cite>Job 2:10</cite></div>
+    </div></div><div class="podwrap"><span class="blk-l">Podcast — press play</span><div class="pods"><div class="pod" data-key="pod_C30_w13" data-rel="Podcast_Audio/Christianity/C30_Non_religious_vs_Afterlife.mp3" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Christianity/C30_Non_religious_vs_Afterlife.mp3"><div class="pod-h"><span class="pcode pc-c">C30</span><span class="pname">Non religious vs Afterlife</span><span class="pkind">Christianity</span></div><audio controls preload="none" src="Podcast_Audio/Christianity/C30_Non_religious_vs_Afterlife.mp3"></audio></div><div class="pod" data-key="pod_C31_w13" data-rel="Podcast_Audio/Christianity/C31_Euthanasia.mp3" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Christianity/C31_Euthanasia.mp3"><div class="pod-h"><span class="pcode pc-c">C31</span><span class="pname">Euthanasia</span><span class="pkind">Christianity</span></div><audio controls preload="none" src="Podcast_Audio/Christianity/C31_Euthanasia.mp3"></audio></div></div></div><div class="shelf"><span class="blk-l">What you read and bring</span><div class="shelf-g"><a class="res-btn" data-key="g9page_w13" data-rel="G9_MOLD_Ecosystem.html" href="G9_MOLD_Ecosystem.html"><span class="ic">&#9968;</span><span class="lb">The Summit unit page — Matters of Life and Death<em>divergent views · key ideas · flashcards</em></span><span class="go">&#8599;</span></a><a class="res-btn" data-key="comp_w13" data-rel="../4%20-%20Mock%202%20Companion/Mock2_Companion_HE.docx" data-sp="Year%2011/4%20-%20Mock%202%20Companion/Mock2_Companion_HE.docx"><span class="ic">&#9670;</span><span class="lb">Companion 2 · page 5<em>Mock2_Companion_HE.docx</em></span><span class="go">&#8599;</span></a><a class="res-btn" data-key="book_w13" data-rel="../Unit7_Matters_of_Life_and_Death_Workbook_Grade9.docx" data-sp="Year%2011/Unit7_Matters_of_Life_and_Death_Workbook_Grade9.docx"><span class="ic">&#9632;</span><span class="lb">Unit 7 workbook — Grade 9<em>Unit7_Matters_of_Life_and_Death_Workbook_Grade9.docx</em></span><span class="go">&#8599;</span></a></div></div><div class="ticks"><span class="tl">Tick when done</span><label class="tk"><input type="checkbox" data-t="w13_listen"><span>1. Listen</span></label><label class="tk"><input type="checkbox" data-t="w13_read"><span>2. Read</span></label><label class="tk"><input type="checkbox" data-t="w13_practise"><span>3. Practise</span></label></div></article>
+<article class="wk ph-fb" id="w14" data-iso="2026-12-07"><div class="wk-h">
+      <span class="wno">Week 14</span>
+      <span class="phase ph-fb">Feedback</span>
+      <span class="wdate">Mon 7 Dec 2026</span>
+      <button class="wlink" data-w="14" title="Copy the link to this week">&#128279; Copy week link</button>
+    </div><span class="chip p1">Paper 1 · Christianity</span><h3 class="wk-t">MOCK 1 FEEDBACK · Paper 1</h3><p class="say">Paper 1 returns. We walk it question by question; you rewrite one answer in green pen — properly, with the weigh your first version missed.</p><ul class="chklist"><li>Bring your mock paper</li><li>Green pen</li><li>Companion 1</li></ul><div class="ticks"><span class="tl">Tick when done</span><label class="tk"><input type="checkbox" data-t="w14_marks"><span>1. Read every mark</span></label><label class="tk"><input type="checkbox" data-t="w14_rewrite"><span>2. Rewrote one answer</span></label><label class="tk"><input type="checkbox" data-t="w14_target"><span>3. Wrote my target down</span></label></div></article>
+<article class="wk ph-fb" id="w15" data-iso="2026-12-14"><div class="wk-h">
+      <span class="wno">Week 15</span>
+      <span class="phase ph-fb">Feedback</span>
+      <span class="wdate">Mon 14 Dec 2026</span>
+      <button class="wlink" data-w="15" title="Copy the link to this week">&#128279; Copy week link</button>
+    </div><span class="chip p2">Paper 2 · Islam</span><h3 class="wk-t">MOCK 1 FEEDBACK · Paper 2 and the (d) rewrite</h3><p class="say">Paper 2 returns, and everyone rebuilds ONE 12-mark (d) to the full five-step shape. You leave with a personal target, in writing.</p><ul class="chklist"><li>Bring your mock paper</li><li>Green pen</li><li>Your target sheet</li></ul><div class="ticks"><span class="tl">Tick when done</span><label class="tk"><input type="checkbox" data-t="w15_marks"><span>1. Read every mark</span></label><label class="tk"><input type="checkbox" data-t="w15_rewrite"><span>2. Rewrote one answer</span></label><label class="tk"><input type="checkbox" data-t="w15_target"><span>3. Wrote my target down</span></label></div></article>
+<div class="term-band"><span>Spring 1</span><i></i></div>
+<div class="hol">&#9670; Christmas holiday · 21 December 2026 – 1 January 2027</div>
+<article class="wk ph-teach" id="w16" data-iso="2027-01-04"><div class="wk-h">
+      <span class="wno">Week 16</span>
+      <span class="phase ph-teach">Lessons</span>
+      <span class="wdate">Mon 4 Jan 2027</span>
+      <button class="wlink" data-w="16" title="Copy the link to this week">&#128279; Copy week link</button>
+    </div><span class="chip p2">Paper 2 · Islam</span><h3 class="wk-t">Peace and Conflict</h3><p class="say">New term. The routine is unchanged because it works: listen, read, practise — then argue.</p><div class="lessons"><div class="les">
+      <div class="les-h"><span class="lnum">Lesson 1</span><h4>Forgiveness and reconciliation</h4></div>
+      <p class="bq"><span>Big question</span> No peace without justice — or no peace without forgiveness? <span class="spec" style="opacity:.55;font-size:.85em;white-space:nowrap">· spec 2.4.2a</span></p>
+      <div class="sum"><span class="sum-l">What this is about</span><p>No peace without justice — or no peace without forgiveness? Islam insists on both ends of the chain. Justice first: where laws are unjust people rebel, as Syria showed, so peace built on injustice cannot last. But God is &#x27;the Merciful, the Compassionate&#x27; at the head of every surah but one, and Muslims who want God&#x27;s forgiveness on the Day of Judgement must extend their own: Surah 49:9–10 commands believers to &#x27;make peace between your brothers&#x27;.</p><p>The Grade 9 formulation: justice without mercy is cold, mercy without justice is blind — genuine peacemaking removes the CAUSE of conflict and heals the RELATIONSHIP. Use South Africa&#x27;s truth-and-reconciliation model or the Qur&#x27;anic &#x27;repel evil with what is better&#x27; as your worked example, then evaluate the hard case: when justice and forgiveness pull in opposite directions, which should a peacemaker sacrifice first?</p></div>
+      <a class="res-btn slim" data-key="deck_PAC_L05" data-rel="../../Summit%20-%20Grade%209%20Strand/8%20-%20Peace%20and%20Conflict/G9_PC_L08_Forgiveness_and_reconciliation.pptx" data-sp="Summit%20-%20Grade%209%20Strand/8%20-%20Peace%20and%20Conflict/G9_PC_L08_Forgiveness_and_reconciliation.pptx"><span class="ic">&#9635;</span><span class="lb">Open the lesson<em>G9_PC_L08_Forgiveness_and_reconciliation.pptx</em></span><span class="go">&#8599;</span></a>
+      <div class="kws"><span class="kws-l">Key words</span><span class="kw">Reconciliation</span><span class="kw">Forgiveness</span><span class="kw">Justice</span><span class="kw">Peacemaking</span></div>
+      <div class="quo"><span class="quo-l">Learn this quote</span><q>If two parties among the believers fall into a quarrel, make ye peace between them… so make peace and reconciliation between your two contending brothers; and fear God.</q><cite>Surah 49:9–10</cite></div>
+    </div><div class="les">
+      <div class="les-h"><span class="lnum">Lesson 2</span><h4>Just War theory</h4></div>
+      <p class="bq"><span>Big question</span> Can a war ever be just — and must a Muslim fight it? <span class="spec" style="opacity:.55;font-size:.85em;white-space:nowrap">· spec 2.4.5</span></p>
+      <div class="sum"><span class="sum-l">What this is about</span><p>Just War theory is a checklist, and it works like one: just cause, proper authority, last resort, proportional methods, civilians protected — a war passes only if it ticks EVERY box; one miss and it is not just. Muslim teaching adds force: if a war genuinely meets the conditions, fighting in it is a duty, because Surah 4:75 demands the defence of the oppressed — &#x27;why should ye not fight in the cause of those who, being weak, are ill-treated?&#x27;</p><p>Two attacks earn the evaluation marks. Some Muslims argue modern weapons have made the theory obsolete — civilians cannot be protected, so no modern war qualifies. Humanists largely ACCEPT the theory precisely because it rests on reason rather than revelation — an unusual convergence worth naming. Weigh whether a checklist no modern war can pass is a working moral tool or a polite fiction; Surah 8:61 (&#x27;if the enemy incline towards peace, do thou also incline&#x27;) supplies the tie-breaker.</p></div>
+      <a class="res-btn slim" data-key="deck_PAC_L06" data-rel="../../Summit%20-%20Grade%209%20Strand/8%20-%20Peace%20and%20Conflict/G9_PC_L03_Just_War_theory.pptx" data-sp="Summit%20-%20Grade%209%20Strand/8%20-%20Peace%20and%20Conflict/G9_PC_L03_Just_War_theory.pptx"><span class="ic">&#9635;</span><span class="lb">Open the lesson<em>G9_PC_L03_Just_War_theory.pptx</em></span><span class="go">&#8599;</span></a>
+      <div class="kws"><span class="kws-l">Key words</span><span class="kw">Just War</span><span class="kw">Last resort</span><span class="kw">Proportional methods</span><span class="kw">Aggressor</span></div>
+      <div class="quo"><span class="quo-l">Learn this quote</span><q>And why should ye not fight in the cause of God and of those who, being weak and ill-treated — men, women and children… whose cry is ‘Our Lord! Rescue us’.</q><cite>Surah 4:75</cite></div>
+    </div></div><div class="podwrap"><span class="blk-l">Podcast — press play</span><div class="pods"><div class="pod" data-key="pod_I26_w16" data-rel="Podcast_Audio/Islam/I26_Muslim_Peacemaking.mp3" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Islam/I26_Muslim_Peacemaking.mp3"><div class="pod-h"><span class="pcode pc-i">I26</span><span class="pname">Muslim Peacemaking</span><span class="pkind">Islam</span></div><audio controls preload="none" src="Podcast_Audio/Islam/I26_Muslim_Peacemaking.mp3"></audio></div><div class="pod" data-key="pod_I29_w16" data-rel="Podcast_Audio/Islam/I29_Just_War.mp3" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Islam/I29_Just_War.mp3"><div class="pod-h"><span class="pcode pc-i">I29</span><span class="pname">Just War</span><span class="pkind">Islam</span></div><audio controls preload="none" src="Podcast_Audio/Islam/I29_Just_War.mp3"></audio></div></div></div><div class="shelf"><span class="blk-l">What you read and bring</span><div class="shelf-g"><a class="res-btn" data-key="g9page_w16" data-rel="G9_PC_Ecosystem.html" href="G9_PC_Ecosystem.html"><span class="ic">&#9968;</span><span class="lb">The Summit unit page — Peace and Conflict<em>divergent views · key ideas · flashcards</em></span><span class="go">&#8599;</span></a><a class="res-btn" data-key="comp_w16" data-rel="../4%20-%20Mock%202%20Companion/Mock2_Companion_HE.docx" data-sp="Year%2011/4%20-%20Mock%202%20Companion/Mock2_Companion_HE.docx"><span class="ic">&#9670;</span><span class="lb">Companion 2 · page 8<em>Mock2_Companion_HE.docx</em></span><span class="go">&#8599;</span></a><a class="res-btn" data-key="book_w16" data-rel="../Unit8_Peace_and_Conflict_Workbook_Grade9.docx" data-sp="Year%2011/Unit8_Peace_and_Conflict_Workbook_Grade9.docx"><span class="ic">&#9632;</span><span class="lb">Unit 8 workbook — Grade 9<em>Unit8_Peace_and_Conflict_Workbook_Grade9.docx</em></span><span class="go">&#8599;</span></a></div></div><div class="ticks"><span class="tl">Tick when done</span><label class="tk"><input type="checkbox" data-t="w16_listen"><span>1. Listen</span></label><label class="tk"><input type="checkbox" data-t="w16_read"><span>2. Read</span></label><label class="tk"><input type="checkbox" data-t="w16_practise"><span>3. Practise</span></label></div></article>
+<article class="wk ph-teach" id="w17" data-iso="2027-01-11"><div class="wk-h">
+      <span class="wno">Week 17</span>
+      <span class="phase ph-teach">Lessons</span>
+      <span class="wdate">Mon 11 Jan 2027</span>
+      <button class="wlink" data-w="17" title="Copy the link to this week">&#128279; Copy week link</button>
+    </div><span class="chip p2">Paper 2 · Islam</span><h3 class="wk-t">Peace and Conflict</h3><p class="say">Unit 8 complete — all eight Peace and Conflict topics taught. Just War, Holy War, WMD: the hardest evaluations in the course are now on the table.</p><div class="lessons"><div class="les">
+      <div class="les-h"><span class="lnum">Lesson 1</span><h4>Holy War and jihad</h4></div>
+      <p class="bq"><span>Big question</span> When, if ever, is a war holy? <span class="spec" style="opacity:.55;font-size:.85em;white-space:nowrap">· spec 2.4.6</span></p>
+      <div class="sum"><span class="sum-l">What this is about</span><p>Distinguish or die: every Holy War is jihad, but almost no jihad is Holy War. The greater jihad — the inner struggle to be a good Muslim — involves no fighting at all; Holy War (Harb al-Muqadis) is only ever the lesser jihad, permitted to defend Islam, protect Muslims&#x27; freedom of worship, or right a wrong. Even then modern Islamic lawyers confine it: last resort, proper authority, prospect of success, minimum suffering — and the hadith forbid killing &#x27;any child, any woman, or any elder or sick person&#x27;.</p><p>Handle Surah 9:5 (&#x27;fight and slay the pagans wherever you find them&#x27;) like a scholar: read it in context, against the restrictions that surround it — that is the difference between analysis and quotation. Atheists and Humanists reject the whole category: no God, so no war can be holy. Weigh whether the concept, so hedged that it barely applies, still does moral work — or whether &#x27;holy war&#x27; is a contradiction in terms.</p></div>
+      <a class="res-btn slim" data-key="deck_PAC_L07" data-rel="../../Summit%20-%20Grade%209%20Strand/8%20-%20Peace%20and%20Conflict/G9_PC_L04_Holy_War_and_jihad.pptx" data-sp="Summit%20-%20Grade%209%20Strand/8%20-%20Peace%20and%20Conflict/G9_PC_L04_Holy_War_and_jihad.pptx"><span class="ic">&#9635;</span><span class="lb">Open the lesson<em>G9_PC_L04_Holy_War_and_jihad.pptx</em></span><span class="go">&#8599;</span></a>
+      <div class="kws"><span class="kws-l">Key words</span><span class="kw">Harb al-Muqadis</span><span class="kw">Greater jihad</span><span class="kw">Lesser jihad</span><span class="kw">Crusade</span></div>
+      <div class="quo"><span class="quo-l">Learn this quote</span><q>…fight and slay the pagans wherever you find them… but if they repent and establish regular prayers… then open the way for them; for God is Oft-forgiving, Most Merciful.</q><cite>Surah 9:5</cite></div>
+    </div><div class="les">
+      <div class="les-h"><span class="lnum">Lesson 2</span><h4>Weapons of mass destruction</h4></div>
+      <p class="bq"><span>Big question</span> Should countries possess weapons of mass destruction? <span class="spec" style="opacity:.55;font-size:.85em;white-space:nowrap">· spec 2.4.7</span></p>
+      <div class="sum"><span class="sum-l">What this is about</span><p>Weapons of mass destruction put the Just War theory under its heaviest load. By its own rules a good Muslim cannot USE them — they deliberately target the civilians Islam forbids harming, and Ayatollah Khamenei condemned them outright — yet Pakistan keeps nuclear weapons, which shows the possession/use distinction doing real work. Jewish law runs parallel: Lord Jakobovits argued a defensive nuclear ATTACK &#x27;can never be justified&#x27;, while threatening one might be.</p><p>The strongest secular defence is mutually assured destruction: because both sides would die, no nuclear power attacks, and there has been no world war since 1945. Steelman it properly, then push: peace that lasts only until someone miscalculates is not peace but postponement — and the money is a moral fact too. Weigh deterrence against Surah 5:32&#x27;s arithmetic that to kill one innocent is &#x27;as if he slew the whole people&#x27;.</p></div>
+      <a class="res-btn slim" data-key="deck_PAC_L08" data-rel="../../Summit%20-%20Grade%209%20Strand/8%20-%20Peace%20and%20Conflict/G9_PC_L06_Weapons_of_mass_destruction.pptx" data-sp="Summit%20-%20Grade%209%20Strand/8%20-%20Peace%20and%20Conflict/G9_PC_L06_Weapons_of_mass_destruction.pptx"><span class="ic">&#9635;</span><span class="lb">Open the lesson<em>G9_PC_L06_Weapons_of_mass_destruction.pptx</em></span><span class="go">&#8599;</span></a>
+      <div class="kws"><span class="kws-l">Key words</span><span class="kw">Weapons of mass destruction</span><span class="kw">Mutually assured destruction (MAD)</span><span class="kw">Nuclear weapons</span><span class="kw">Deterrent</span></div>
+      <div class="quo"><span class="quo-l">Learn this quote</span><q>For me, I intend to let thee (an unjust murderer) draw on thyself my sin as well as thine… that is the reward of those who do wrong.</q><cite>Surah 5:32</cite></div>
+    </div></div><div class="podwrap"><span class="blk-l">Podcast — press play</span><div class="pods"><div class="pod" data-key="pod_I30_w17" data-rel="Podcast_Audio/Islam/I30_Holy_War.mp3" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Islam/I30_Holy_War.mp3"><div class="pod-h"><span class="pcode pc-i">I30</span><span class="pname">Holy War</span><span class="pkind">Islam</span></div><audio controls preload="none" src="Podcast_Audio/Islam/I30_Holy_War.mp3"></audio></div><div class="pod" data-key="pod_I31_w17" data-rel="Podcast_Audio/Islam/I31_WMD.mp3" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Islam/I31_WMD.mp3"><div class="pod-h"><span class="pcode pc-i">I31</span><span class="pname">WMD</span><span class="pkind">Islam</span></div><audio controls preload="none" src="Podcast_Audio/Islam/I31_WMD.mp3"></audio></div></div></div><div class="shelf"><span class="blk-l">What you read and bring</span><div class="shelf-g"><a class="res-btn" data-key="g9page_w17" data-rel="G9_PC_Ecosystem.html" href="G9_PC_Ecosystem.html"><span class="ic">&#9968;</span><span class="lb">The Summit unit page — Peace and Conflict<em>divergent views · key ideas · flashcards</em></span><span class="go">&#8599;</span></a><a class="res-btn" data-key="comp_w17" data-rel="../4%20-%20Mock%202%20Companion/Mock2_Companion_HE.docx" data-sp="Year%2011/4%20-%20Mock%202%20Companion/Mock2_Companion_HE.docx"><span class="ic">&#9670;</span><span class="lb">Companion 2 · page 9<em>Mock2_Companion_HE.docx</em></span><span class="go">&#8599;</span></a><a class="res-btn" data-key="book_w17" data-rel="../Unit8_Peace_and_Conflict_Workbook_Grade9.docx" data-sp="Year%2011/Unit8_Peace_and_Conflict_Workbook_Grade9.docx"><span class="ic">&#9632;</span><span class="lb">Unit 8 workbook — Grade 9<em>Unit8_Peace_and_Conflict_Workbook_Grade9.docx</em></span><span class="go">&#8599;</span></a></div></div><div class="ticks"><span class="tl">Tick when done</span><label class="tk"><input type="checkbox" data-t="w17_listen"><span>1. Listen</span></label><label class="tk"><input type="checkbox" data-t="w17_read"><span>2. Read</span></label><label class="tk"><input type="checkbox" data-t="w17_practise"><span>3. Practise</span></label></div></article>
+<article class="wk ph-teach" id="w18" data-iso="2027-01-18"><div class="wk-h">
+      <span class="wno">Week 18</span>
+      <span class="phase ph-teach">Lessons</span>
+      <span class="wdate">Mon 18 Jan 2027</span>
+      <button class="wlink" data-w="18" title="Copy the link to this week">&#128279; Copy week link</button>
+    </div><span class="chip p1">Paper 1 · Christianity</span><h3 class="wk-t">Marriage and the Family</h3><p class="say">The four Marriage and the Family topics mock 1 left untouched. The three-text analysis of gender roles starts here.</p><div class="lessons"><div class="les">
+      <div class="les-h"><span class="lnum">Lesson 1</span><h4>Marriage</h4></div>
+      <p class="bq"><span>Big question</span> How important is marriage — and is cohabitation acceptable? <span class="spec" style="opacity:.55;font-size:.85em;white-space:nowrap">· spec 1.2.1</span></p>
+      <div class="sum"><span class="sum-l">What this is about</span><p>For Christians marriage is not a social contract but part of creation&#x27;s design: &#x27;at the beginning of creation God made them male and female… and the two will become one flesh&#x27; (Mark 10:6–8). Each link follows from the last — design, union, God&#x27;s bond, so &#x27;what God has joined together, let no one separate&#x27;. That chain is why Catholic teaching treats marriage as the only right place for sex, and why cohabitation falls short of what marriage IS, not just what it looks like.</p><p>Liberal Protestants accept cohabitation as &#x27;a step along the way&#x27;, expecting marriage when children come; secular views treat the whole question as private, while still mostly valuing marriage for stability and public commitment. In the exam, argue the chain: if you grant the creation design, the strict conclusion follows; the real divergence is over whether Genesis describes every couple or an ideal. Weigh what is lost — and what is honestly admitted — when marriage becomes optional.</p></div>
+      <a class="res-btn slim" data-key="deck_MR_L01" data-rel="../../Summit%20-%20Grade%209%20Strand/2%20-%20Marriage%20and%20the%20Family/G9_MR_L01_Marriage.pptx" data-sp="Summit%20-%20Grade%209%20Strand/2%20-%20Marriage%20and%20the%20Family/G9_MR_L01_Marriage.pptx"><span class="ic">&#9635;</span><span class="lb">Open the lesson<em>G9_MR_L01_Marriage.pptx</em></span><span class="go">&#8599;</span></a>
+      <div class="kws"><span class="kws-l">Key words</span><span class="kw">Sacred bond</span><span class="kw">Monogamy</span><span class="kw">Cohabitation</span><span class="kw">Procreation</span></div>
+      <div class="quo"><span class="quo-l">Learn this quote</span><q>united to his wife, and they become one flesh</q></div>
+    </div><div class="les">
+      <div class="les-h"><span class="lnum">Lesson 2</span><h4>Sexual relationships</h4></div>
+      <p class="bq"><span>Big question</span> What are the different attitudes to homosexuality? <span class="spec" style="opacity:.55;font-size:.85em;white-space:nowrap">· spec 1.2.2</span></p>
+      <div class="sum"><span class="sum-l">What this is about</span><p>Christian sexual ethics rests on one premise: &#x27;your bodies are temples of the Holy Spirit… you are not your own&#x27; (1 Corinthians 6:19). Sexual sin is uniquely &#x27;against your own body&#x27; because the body is sacred — that is the logic under every rule. On homosexuality the divergence is threefold: Catholic teaching distinguishes orientation (not sinful) from acts (sinful, because sex must be open to life); Evangelicals read the biblical prohibitions as God&#x27;s direct word; liberal Christians answer that those texts reflect the culture of their time and that love and acceptance are the gospel&#x27;s core.</p><p>Humanists and most atheists see no moral issue at all — sexuality is private unless it harms others, and the religious objections are religion&#x27;s own business. The Grade 9 answer keeps the three Christian positions distinct instead of blurring them into &#x27;Christians disagree&#x27;, quotes the seventh commandment where it belongs (adultery — where ALL Christians agree), and weighs whether a sacred-body ethic can survive contact with a rights-based one.</p></div>
+      <a class="res-btn slim" data-key="deck_MR_L02" data-rel="../../Summit%20-%20Grade%209%20Strand/2%20-%20Marriage%20and%20the%20Family/G9_MR_L02_Sexual_relationships.pptx" data-sp="Summit%20-%20Grade%209%20Strand/2%20-%20Marriage%20and%20the%20Family/G9_MR_L02_Sexual_relationships.pptx"><span class="ic">&#9635;</span><span class="lb">Open the lesson<em>G9_MR_L02_Sexual_relationships.pptx</em></span><span class="go">&#8599;</span></a>
+      <div class="kws"><span class="kws-l">Key words</span><span class="kw">Premarital sex</span><span class="kw">Extramarital sex</span><span class="kw">Homosexuality</span><span class="kw">Homophobia</span></div>
+      <div class="quo"><span class="quo-l">Learn this quote</span><q>You shall not commit adultery</q></div>
+    </div></div><div class="podwrap"><span class="blk-l">Podcast — press play</span><div class="pods"><div class="pod" data-key="pod_C09_w18" data-rel="Podcast_Audio/Christianity/C09_Marriage.mp3" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Christianity/C09_Marriage.mp3"><div class="pod-h"><span class="pcode pc-c">C09</span><span class="pname">Marriage</span><span class="pkind">Christianity</span></div><audio controls preload="none" src="Podcast_Audio/Christianity/C09_Marriage.mp3"></audio></div><div class="pod" data-key="pod_C10_w18" data-rel="Podcast_Audio/Christianity/C10_Sexual_Relationships.mp3" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Christianity/C10_Sexual_Relationships.mp3"><div class="pod-h"><span class="pcode pc-c">C10</span><span class="pname">Sexual Relationships</span><span class="pkind">Christianity</span></div><audio controls preload="none" src="Podcast_Audio/Christianity/C10_Sexual_Relationships.mp3"></audio></div></div></div><div class="shelf"><span class="blk-l">What you read and bring</span><div class="shelf-g"><a class="res-btn" data-key="g9page_w18" data-rel="G9_MR_Ecosystem.html" href="G9_MR_Ecosystem.html"><span class="ic">&#9968;</span><span class="lb">The Summit unit page — Marriage and the Family<em>divergent views · key ideas · flashcards</em></span><span class="go">&#8599;</span></a><a class="res-btn" data-key="comp_w18" data-rel="../4%20-%20Mock%202%20Companion/Mock2_Companion_HE.docx" data-sp="Year%2011/4%20-%20Mock%202%20Companion/Mock2_Companion_HE.docx"><span class="ic">&#9670;</span><span class="lb">Companion 2 · page 2<em>Mock2_Companion_HE.docx</em></span><span class="go">&#8599;</span></a></div></div><div class="ticks"><span class="tl">Tick when done</span><label class="tk"><input type="checkbox" data-t="w18_listen"><span>1. Listen</span></label><label class="tk"><input type="checkbox" data-t="w18_read"><span>2. Read</span></label><label class="tk"><input type="checkbox" data-t="w18_practise"><span>3. Practise</span></label></div></article>
+<article class="wk ph-teach" id="w19" data-iso="2027-01-25"><div class="wk-h">
+      <span class="wno">Week 19</span>
+      <span class="phase ph-teach">Lessons</span>
+      <span class="wdate">Mon 25 Jan 2027</span>
+      <button class="wlink" data-w="19" title="Copy the link to this week">&#128279; Copy week link</button>
+    </div><span class="chip p1">Paper 1 · Christianity</span><h3 class="wk-t">Marriage and the Family</h3><p class="say">Marriage and the Family is complete. Every divergent view in the unit now has a named source attached — check yours do.</p><div class="lessons"><div class="les">
+      <div class="les-h"><span class="lnum">Lesson 1</span><h4>Support for the family in the local parish</h4></div>
+      <p class="bq"><span>Big question</span> Do families need the support of the local parish? <span class="spec" style="opacity:.55;font-size:.85em;white-space:nowrap">· spec 1.2.4</span></p>
+      <div class="sum"><span class="sum-l">What this is about</span><p>Does a family need the parish? Catholic logic runs: the parish baptised the child, so it owes the family help in keeping the baptism promises — church schools, First Communion classes, youth work; the family in turn is the nursery of the faith, which is why the system is not optional but survival. Jesus&#x27; welcome — &#x27;let the little children come to me&#x27; (Matthew 19:14) — anchors it. Non-parish churches (Baptist, Methodist, Pentecostal) run family worship, Messy Church and counselling: no parish STRUCTURE, same SUPPORT.</p><p>The non-religious answer: a family can raise children safely and morally with no church at all — schools, clubs and grandparents do the same jobs. Meet it honestly: what the parish adds is not childcare but formation in a community of belief, plus support at the hinges of life (birth, marriage, death). Evaluate whether that is a service families need, or one the Church needs families to want.</p></div>
+      <a class="res-btn slim" data-key="deck_MR_L04" data-rel="../../Summit%20-%20Grade%209%20Strand/2%20-%20Marriage%20and%20the%20Family/G9_MR_L04_Support_for_the_family_in_the_local_parish.pptx" data-sp="Summit%20-%20Grade%209%20Strand/2%20-%20Marriage%20and%20the%20Family/G9_MR_L04_Support_for_the_family_in_the_local_parish.pptx"><span class="ic">&#9635;</span><span class="lb">Open the lesson<em>G9_MR_L04_Support_for_the_family_in_the_local_parish.pptx</em></span><span class="go">&#8599;</span></a>
+      <div class="kws"><span class="kws-l">Key words</span><span class="kw">Parish</span><span class="kw">Diocese</span><span class="kw">Clergy</span><span class="kw">First Communion</span></div>
+      <div class="quo"><span class="quo-l">Learn this quote</span><q>Let the little children come to me, and do not hinder them, for the kingdom of heaven belongs to such as these.</q><cite>Matthew 19:14</cite></div>
+    </div><div class="les">
+      <div class="les-h"><span class="lnum">Lesson 2</span><h4>Equality of men and women in the family</h4></div>
+      <p class="bq"><span>Big question</span> Should men and women have equal roles in the family? <span class="spec" style="opacity:.55;font-size:.85em;white-space:nowrap">· spec 1.2.7</span></p>
+      <div class="sum"><span class="sum-l">What this is about</span><p>There is no single &#x27;biblical view&#x27; of men and women — there are three texts, and the argument is over which wins. Genesis 2 (Adam first) plus Ephesians 5:22 (&#x27;wives, submit… the husband is the head&#x27;) grounds the traditional case for separate roles. Genesis 1:27 — male and female both made in God&#x27;s image — grounds the Catholic teaching of equal STATUS, though the Church still frames roles within marriage. Galatians and Jesus&#x27; own treatment of women ground full egalitarianism: equal status AND equal roles.</p><p>Non-religious &#x27;equalists&#x27; point to the data: in 1965, 85% of men thought a woman&#x27;s place was the home; attitudes transformed within two generations, suggesting the roles were culture, not creation. The exam skill is to run the three-text analysis explicitly — name each text, say what it proves and what it cannot prove — then weigh whether Ephesians should be read as timeless command or first-century context.</p></div>
+      <a class="res-btn slim" data-key="deck_MR_L07" data-rel="../../Summit%20-%20Grade%209%20Strand/2%20-%20Marriage%20and%20the%20Family/G9_MR_L07_Equality_of_men_and_women_in_the_family.pptx" data-sp="Summit%20-%20Grade%209%20Strand/2%20-%20Marriage%20and%20the%20Family/G9_MR_L07_Equality_of_men_and_women_in_the_family.pptx"><span class="ic">&#9635;</span><span class="lb">Open the lesson<em>G9_MR_L07_Equality_of_men_and_women_in_the_family.pptx</em></span><span class="go">&#8599;</span></a>
+      <div class="kws"><span class="kws-l">Key words</span><span class="kw">Subordinate</span><span class="kw">Dominant role</span><span class="kw">Sex discrimination</span><span class="kw">Suffragette</span></div>
+      <div class="quo"><span class="quo-l">Learn this quote</span><q>So God created man in his own image… male and female he created them.</q><cite>Genesis 1:27</cite></div>
+    </div></div><div class="podwrap"><span class="blk-l">Podcast — press play</span><div class="pods"><div class="pod" data-key="pod_C12_w19" data-rel="Podcast_Audio/Christianity/C12_Parish_Support.mp3" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Christianity/C12_Parish_Support.mp3"><div class="pod-h"><span class="pcode pc-c">C12</span><span class="pname">Parish Support</span><span class="pkind">Christianity</span></div><audio controls preload="none" src="Podcast_Audio/Christianity/C12_Parish_Support.mp3"></audio></div><div class="pod" data-key="pod_C15_w19" data-rel="Podcast_Audio/Christianity/C15_Gender_Equality.mp3" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Christianity/C15_Gender_Equality.mp3"><div class="pod-h"><span class="pcode pc-c">C15</span><span class="pname">Gender Equality</span><span class="pkind">Christianity</span></div><audio controls preload="none" src="Podcast_Audio/Christianity/C15_Gender_Equality.mp3"></audio></div></div></div><div class="shelf"><span class="blk-l">What you read and bring</span><div class="shelf-g"><a class="res-btn" data-key="g9page_w19" data-rel="G9_MR_Ecosystem.html" href="G9_MR_Ecosystem.html"><span class="ic">&#9968;</span><span class="lb">The Summit unit page — Marriage and the Family<em>divergent views · key ideas · flashcards</em></span><span class="go">&#8599;</span></a><a class="res-btn" data-key="comp_w19" data-rel="../4%20-%20Mock%202%20Companion/Mock2_Companion_HE.docx" data-sp="Year%2011/4%20-%20Mock%202%20Companion/Mock2_Companion_HE.docx"><span class="ic">&#9670;</span><span class="lb">Companion 2 · page 3<em>Mock2_Companion_HE.docx</em></span><span class="go">&#8599;</span></a></div></div><div class="ticks"><span class="tl">Tick when done</span><label class="tk"><input type="checkbox" data-t="w19_listen"><span>1. Listen</span></label><label class="tk"><input type="checkbox" data-t="w19_read"><span>2. Read</span></label><label class="tk"><input type="checkbox" data-t="w19_practise"><span>3. Practise</span></label></div></article>
+<article class="wk ph-teach" id="w20" data-iso="2027-02-01"><div class="wk-h">
+      <span class="wno">Week 20</span>
+      <span class="phase ph-teach">Lessons</span>
+      <span class="wdate">Mon 1 Feb 2027</span>
+      <button class="wlink" data-w="20" title="Copy the link to this week">&#128279; Copy week link</button>
+    </div><span class="chip p2">Paper 2 · Islam</span><h3 class="wk-t">Crime and Punishment</h3><p class="say">The half of Crime and Punishment you have not met: aims of punishment, forgiveness, treatment of criminals, the death penalty.</p><div class="lessons"><div class="les">
+      <div class="les-h"><span class="lnum">Lesson 1</span><h4>The aims of punishment</h4></div>
+      <p class="bq"><span>Big question</span> What are the four aims of punishment — and which matters most? <span class="spec" style="opacity:.55;font-size:.85em;white-space:nowrap">· spec 2.2.5</span></p>
+      <div class="sum"><span class="sum-l">What this is about</span><p>Four aims, one act of punishing: protection keeps the law-abiding safe from the violent; retribution makes criminals pay in proportion to the harm — Muslims allow the victim&#x27;s family compensation as its measure; deterrence makes crime too costly to dare — the Muslim defence of severe hudud penalties is exactly that amputation deters where six months inside does not; reformation teaches the offender to live differently, and Islamic practice lets punished offenders remain in society rather than rot outside it.</p><p>The analytical key: retribution looks BACK at the crime; the other three look FORWARD to prevent the next one — and Islam wants both, since Surah 4:26 speaks of God making the ordinances clear. Genesis 9:6 (&#x27;whoever sheds human blood, by humans shall their blood be shed&#x27;) shows scripture grounding retribution in the image of God itself. Evaluate by asking which aim should win when they conflict — deterrence demands severity, reformation mercy — and defend your ordering.</p></div>
+      <a class="res-btn slim" data-key="deck_CP_L05" data-rel="../../Summit%20-%20Grade%209%20Strand/6%20-%20Crime%20and%20Punishment/G9_CP_L05_The_aims_of_punishment.pptx" data-sp="Summit%20-%20Grade%209%20Strand/6%20-%20Crime%20and%20Punishment/G9_CP_L05_The_aims_of_punishment.pptx"><span class="ic">&#9635;</span><span class="lb">Open the lesson<em>G9_CP_L05_The_aims_of_punishment.pptx</em></span><span class="go">&#8599;</span></a>
+      <div class="kws"><span class="kws-l">Key words</span><span class="kw">Retribution</span><span class="kw">Deterrence</span><span class="kw">Reformation</span><span class="kw">Protection</span></div>
+      <div class="quo"><span class="quo-l">Learn this quote</span><q>God doth wish to make clear to you and to show you the ordinances of those before you; and He doth wish to turn to you in mercy.</q><cite>Surah 4:26</cite></div>
+    </div><div class="les">
+      <div class="les-h"><span class="lnum">Lesson 2</span><h4>Forgiveness</h4></div>
+      <p class="bq"><span>Big question</span> Who forgives and reintegrates criminals — and why? <span class="spec" style="opacity:.55;font-size:.85em;white-space:nowrap">· spec 2.2.6</span></p>
+      <div class="sum"><span class="sum-l">What this is about</span><p>Forgiveness in Islam is not optional kindness — it is the mercy you must give to have any right to ask for it. Every surah but one opens &#x27;In the name of God, the Merciful, the Compassionate&#x27;; on the Day of Judgement Muslims will need that mercy, so Surah 64:14 commands: &#x27;if ye forgive and overlook and cover up their faults, verily God is Oft-forgiving&#x27;. Judaism builds forgiveness into the calendar — between Rosh Hashanah and Yom Kippur, wrongs must be put right with the person before God will hear the prayer.</p><p>Society forgives structurally: the Rehabilitation of Offenders Act spends convictions; Timpson employs 400 ex-offenders with three reoffenders in twelve years — evidence that reintegration works as policy, not just as piety. The Grade 9 move is to connect forgiveness to the aims of punishment: it is reformation&#x27;s engine. Then weigh the limit case — are some crimes, or some victims&#x27; losses, beyond the duty to forgive?</p></div>
+      <a class="res-btn slim" data-key="deck_CP_L06" data-rel="../../Summit%20-%20Grade%209%20Strand/6%20-%20Crime%20and%20Punishment/G9_CP_L06_Forgiveness.pptx" data-sp="Summit%20-%20Grade%209%20Strand/6%20-%20Crime%20and%20Punishment/G9_CP_L06_Forgiveness.pptx"><span class="ic">&#9635;</span><span class="lb">Open the lesson<em>G9_CP_L06_Forgiveness.pptx</em></span><span class="go">&#8599;</span></a>
+      <div class="kws"><span class="kws-l">Key words</span><span class="kw">Forgiveness</span><span class="kw">Reconciliation</span><span class="kw">Reintegrate</span><span class="kw">Rehabilitation</span></div>
+      <div class="quo"><span class="quo-l">Learn this quote</span><q>But if ye forgive and overlook and cover up their faults, verily God is Oft-forgiving, Most-merciful.</q><cite>Surah 64:14</cite></div>
+    </div></div><div class="podwrap"><span class="blk-l">Podcast — press play</span><div class="pods"><div class="pod" data-key="pod_I13_w20" data-rel="Podcast_Audio/Islam/I13_Aims_of_Punishment.mp3" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Islam/I13_Aims_of_Punishment.mp3"><div class="pod-h"><span class="pcode pc-i">I13</span><span class="pname">Aims of Punishment</span><span class="pkind">Islam</span></div><audio controls preload="none" src="Podcast_Audio/Islam/I13_Aims_of_Punishment.mp3"></audio></div><div class="pod" data-key="pod_I14_w20" data-rel="Podcast_Audio/Islam/I14_Forgiveness.mp3" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Islam/I14_Forgiveness.mp3"><div class="pod-h"><span class="pcode pc-i">I14</span><span class="pname">Forgiveness</span><span class="pkind">Islam</span></div><audio controls preload="none" src="Podcast_Audio/Islam/I14_Forgiveness.mp3"></audio></div></div></div><div class="shelf"><span class="blk-l">What you read and bring</span><div class="shelf-g"><a class="res-btn" data-key="g9page_w20" data-rel="G9_CP_Ecosystem.html" href="G9_CP_Ecosystem.html"><span class="ic">&#9968;</span><span class="lb">The Summit unit page — Crime and Punishment<em>divergent views · key ideas · flashcards</em></span><span class="go">&#8599;</span></a><a class="res-btn" data-key="comp_w20" data-rel="../4%20-%20Mock%202%20Companion/Mock2_Companion_HE.docx" data-sp="Year%2011/4%20-%20Mock%202%20Companion/Mock2_Companion_HE.docx"><span class="ic">&#9670;</span><span class="lb">Companion 2 · page 6<em>Mock2_Companion_HE.docx</em></span><span class="go">&#8599;</span></a></div></div><div class="ticks"><span class="tl">Tick when done</span><label class="tk"><input type="checkbox" data-t="w20_listen"><span>1. Listen</span></label><label class="tk"><input type="checkbox" data-t="w20_read"><span>2. Read</span></label><label class="tk"><input type="checkbox" data-t="w20_practise"><span>3. Practise</span></label></div></article>
+<article class="wk ph-teach" id="w21" data-iso="2027-02-08"><div class="wk-h">
+      <span class="wno">Week 21</span>
+      <span class="phase ph-teach">Lessons</span>
+      <span class="wdate">Mon 8 Feb 2027</span>
+      <button class="wlink" data-w="21" title="Copy the link to this week">&#128279; Copy week link</button>
+    </div><span class="chip p2">Paper 2 · Islam</span><h3 class="wk-t">Crime and Punishment</h3><p class="say">THE WHOLE COURSE IS NOW TAUGHT. Every week from here is revision, retrieval and argument — the Summit run-in.</p><div class="lessons"><div class="les">
+      <div class="les-h"><span class="lnum">Lesson 1</span><h4>The treatment of criminals</h4></div>
+      <p class="bq"><span>Big question</span> How should criminals be treated — and can torture ever be justified? <span class="spec" style="opacity:.55;font-size:.85em;white-space:nowrap">· spec 2.2.7</span></p>
+      <div class="sum"><span class="sum-l">What this is about</span><p>Rights for criminals are not softness — they are the only shield an innocent suspect has. The mainstream position across Islam, Judaism and secular human-rights law converges: fair trial, legal representation, humane treatment, no torture. The Cairo Declaration forbids torture; the hadith warns &#x27;Allah will torture those who torture people&#x27;; Surah 76:8 praises feeding &#x27;the indigent, the orphan, and the captive&#x27;. The UN Declaration says the same without God.</p><p>The exam wants the pressure points, not the consensus: the ticking-bomb argument for torture in extremis, and Judaism&#x27;s rodef (pursuer) principle, which some stretch toward preventive harshness. Steelman the ticking bomb, then dismantle it — unreliable information, corrupted institutions, and the certainty that torturing the guilty will sometimes mean torturing the innocent. Weigh whether a right that bends under pressure was ever a right at all.</p></div>
+      <a class="res-btn slim" data-key="deck_CP_L07" data-rel="../../Summit%20-%20Grade%209%20Strand/6%20-%20Crime%20and%20Punishment/G9_CP_L07_The_treatment_of_criminals.pptx" data-sp="Summit%20-%20Grade%209%20Strand/6%20-%20Crime%20and%20Punishment/G9_CP_L07_The_treatment_of_criminals.pptx"><span class="ic">&#9635;</span><span class="lb">Open the lesson<em>G9_CP_L07_The_treatment_of_criminals.pptx</em></span><span class="go">&#8599;</span></a>
+      <div class="kws"><span class="kws-l">Key words</span><span class="kw">United Nations (UN)</span><span class="kw">Legal representation</span><span class="kw">Humane</span><span class="kw">Mentor</span></div>
+      <div class="quo"><span class="quo-l">Learn this quote</span><q>And they feed, for the love of Allah, the indigent, the orphan, and the captive.” — captives are to be treated humanely.</q><cite>Surah 76:8</cite></div>
+    </div><div class="les">
+      <div class="les-h"><span class="lnum">Lesson 2</span><h4>The death penalty</h4></div>
+      <p class="bq"><span>Big question</span> Can capital punishment be justified? <span class="spec" style="opacity:.55;font-size:.85em;white-space:nowrap">· spec 2.2.8</span></p>
+      <div class="sum"><span class="sum-l">What this is about</span><p>Can capital punishment be justified? Islam&#x27;s sources say yes, within law: Surah 5:36 prescribes it for waging war against God, Surah 6:151 forbids taking life &#x27;except by way of justice and the law&#x27;, and Muhammad sentenced murderers — yet some Muslims note the Qur&#x27;an ALLOWS death without REQUIRING it, and prefer mercy. Judaism accepts it in principle but the Talmud&#x27;s restrictions — prior warning, two witnesses — made execution almost impossible in practice, which is its own kind of verdict.</p><p>The Humanist case (IHEU 1989) attacks on three fronts: the right to life is absolute; no court is infallible, so the innocent are executed; and the statistics show no deterrent effect. That last point is structural: if deterrence fails, the strongest retentionist argument collapses into pure retribution. A Grade 9 conclusion names its decisive criterion — irreversibility against justice — and defends it against the strongest counter, not the weakest.</p></div>
+      <a class="res-btn slim" data-key="deck_CP_L08" data-rel="../../Summit%20-%20Grade%209%20Strand/6%20-%20Crime%20and%20Punishment/G9_CP_L08_The_death_penalty.pptx" data-sp="Summit%20-%20Grade%209%20Strand/6%20-%20Crime%20and%20Punishment/G9_CP_L08_The_death_penalty.pptx"><span class="ic">&#9635;</span><span class="lb">Open the lesson<em>G9_CP_L08_The_death_penalty.pptx</em></span><span class="go">&#8599;</span></a>
+      <div class="kws"><span class="kws-l">Key words</span><span class="kw">Death penalty</span><span class="kw">Capital offence</span><span class="kw">Apostasy</span><span class="kw">Retribution</span></div>
+      <div class="quo"><span class="quo-l">Learn this quote</span><q>the Prophet allowed the death penalty for a married adulterer, a murderer, and an apostate</q></div>
+    </div></div><div class="podwrap"><span class="blk-l">Podcast — press play</span><div class="pods"><div class="pod" data-key="pod_I15_w21" data-rel="Podcast_Audio/Islam/I15_Treatment_of_Criminals.mp3" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Islam/I15_Treatment_of_Criminals.mp3"><div class="pod-h"><span class="pcode pc-i">I15</span><span class="pname">Treatment of Criminals</span><span class="pkind">Islam</span></div><audio controls preload="none" src="Podcast_Audio/Islam/I15_Treatment_of_Criminals.mp3"></audio></div><div class="pod" data-key="pod_I16_w21" data-rel="Podcast_Audio/Islam/I16_Death_Penalty.mp3" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Islam/I16_Death_Penalty.mp3"><div class="pod-h"><span class="pcode pc-i">I16</span><span class="pname">Death Penalty</span><span class="pkind">Islam</span></div><audio controls preload="none" src="Podcast_Audio/Islam/I16_Death_Penalty.mp3"></audio></div></div></div><div class="shelf"><span class="blk-l">What you read and bring</span><div class="shelf-g"><a class="res-btn" data-key="g9page_w21" data-rel="G9_CP_Ecosystem.html" href="G9_CP_Ecosystem.html"><span class="ic">&#9968;</span><span class="lb">The Summit unit page — Crime and Punishment<em>divergent views · key ideas · flashcards</em></span><span class="go">&#8599;</span></a><a class="res-btn" data-key="comp_w21" data-rel="../4%20-%20Mock%202%20Companion/Mock2_Companion_HE.docx" data-sp="Year%2011/4%20-%20Mock%202%20Companion/Mock2_Companion_HE.docx"><span class="ic">&#9670;</span><span class="lb">Companion 2 · page 7<em>Mock2_Companion_HE.docx</em></span><span class="go">&#8599;</span></a></div></div><div class="ticks"><span class="tl">Tick when done</span><label class="tk"><input type="checkbox" data-t="w21_listen"><span>1. Listen</span></label><label class="tk"><input type="checkbox" data-t="w21_read"><span>2. Read</span></label><label class="tk"><input type="checkbox" data-t="w21_practise"><span>3. Practise</span></label></div></article>
+<div class="term-band"><span>Spring 2</span><i></i></div>
+<div class="hol">&#9670; Half term · 15–19 February 2027</div>
+<article class="wk ph-rev" id="w22" data-iso="2027-02-22"><div class="wk-h">
+      <span class="wno">Week 22</span>
+      <span class="phase ph-rev">Revision</span>
+      <span class="wdate">Mon 22 Feb 2027</span>
+      <button class="wlink" data-w="22" title="Copy the link to this week">&#128279; Copy week link</button>
+    </div><h3 class="wk-t">Mock 2 preparation — everything, shuffled</h3><p class="say">Companion 2 is issued: only the topics mock 1 did not test, shuffled on purpose. Mixed retrieval is the real exam&#x27;s shape — train in it.</p><div class="lessons lessons-one"><div class="les les-rev"><div class="les-h"><span class="lnum">Focus 1</span><h4>Everything mock 1 did not test</h4></div><div class="sum"><span class="sum-l">What this is about</span><p>Companion 2 covers ONLY what mock 1 could not reach: the second half of Matters of Life and Death and Marriage and the Family on Paper 1; the second half of Peace and Conflict and Crime and Punishment on Paper 2. Everything is shuffled deliberately — retrieval in mixed order is what the real exam demands, and it is precisely what massed revision never trains.</p><p>Work the Companion as designed: two tasks per page, before the lesson, so the class time lands on ground you have already walked. The mock-2 topics carry the hardest evaluative questions in the course — euthanasia, the death penalty, WMD, gender equality — which is exactly why they were held back. Treat this fortnight as the dress rehearsal for May: same three moves, same discipline, no gaps.</p></div></div></div><p class="podnote">Re-listen to your two weakest episodes — you choose which.</p><div class="shelf"><span class="blk-l">What you read and bring</span><div class="shelf-g"><a class="res-btn" data-key="comp_w22" data-rel="../4%20-%20Mock%202%20Companion/Mock2_Companion_HE.docx" data-sp="Year%2011/4%20-%20Mock%202%20Companion/Mock2_Companion_HE.docx"><span class="ic">&#9670;</span><span class="lb">Companion 2 · pages 10–11 (issued this week)<em>Mock2_Companion_HE.docx</em></span><span class="go">&#8599;</span></a></div></div><div class="ticks"><span class="tl">Tick when done</span><label class="tk"><input type="checkbox" data-t="w22_listen"><span>1. Listen</span></label><label class="tk"><input type="checkbox" data-t="w22_read"><span>2. Read</span></label><label class="tk"><input type="checkbox" data-t="w22_practise"><span>3. Practise</span></label></div></article>
+<article class="wk ph-mock" id="w23" data-iso="2027-03-01"><div class="wk-h">
+      <span class="wno">Week 23</span>
+      <span class="phase ph-mock">Mock exam</span>
+      <span class="wdate">Mon 1 Mar 2027</span>
+      <button class="wlink" data-w="23" title="Copy the link to this week">&#128279; Copy week link</button>
+    </div><span class="chip p1">Paper 1 · Christianity</span><h3 class="wk-t">MOCK 2 · PAPER 1 — the topics mock 1 missed</h3><p class="say">Mock 2, Paper 1 — Matters of Life and Death and Marriage and the Family. The evaluative heavyweights are on this paper; that is why they were saved.</p><ul class="chklist"><li>Sanctity of life · Abortion</li><li>Arguments against the afterlife · Euthanasia</li><li>Marriage · Sexual relationships</li><li>Support for the family · Men and women</li></ul><div class="ticks"><span class="tl">Tick when done</span><label class="tk"><input type="checkbox" data-t="w23_revised"><span>1. Revised for it</span></label><label class="tk"><input type="checkbox" data-t="w23_sat"><span>2. Sat the paper</span></label><label class="tk"><input type="checkbox" data-t="w23_timing"><span>3. Checked my timings</span></label></div></article>
+<article class="wk ph-mock" id="w24" data-iso="2027-03-08"><div class="wk-h">
+      <span class="wno">Week 24</span>
+      <span class="phase ph-mock">Mock exam</span>
+      <span class="wdate">Mon 8 Mar 2027</span>
+      <button class="wlink" data-w="24" title="Copy the link to this week">&#128279; Copy week link</button>
+    </div><span class="chip p2">Paper 2 · Islam</span><h3 class="wk-t">MOCK 2 · PAPER 2 — the topics mock 1 missed</h3><p class="say">Mock 2, Paper 2 — Peace and Conflict and Crime and Punishment. After this, the entire course has been examined once.</p><ul class="chklist"><li>Peacemaking · Just War</li><li>Holy war · Weapons of mass destruction</li><li>Aims of punishment · Forgiveness</li><li>Treatment of criminals · Capital punishment</li></ul><div class="ticks"><span class="tl">Tick when done</span><label class="tk"><input type="checkbox" data-t="w24_revised"><span>1. Revised for it</span></label><label class="tk"><input type="checkbox" data-t="w24_sat"><span>2. Sat the paper</span></label><label class="tk"><input type="checkbox" data-t="w24_timing"><span>3. Checked my timings</span></label></div></article>
+<article class="wk ph-fb" id="w25" data-iso="2027-03-15"><div class="wk-h">
+      <span class="wno">Week 25</span>
+      <span class="phase ph-fb">Feedback</span>
+      <span class="wdate">Mon 15 Mar 2027</span>
+      <button class="wlink" data-w="25" title="Copy the link to this week">&#128279; Copy week link</button>
+    </div><h3 class="wk-t">MOCK 2 FEEDBACK · both papers</h3><p class="say">Both papers walked through. Your gap analysis now names your revision order — weakest topic first, no negotiation.</p><ul class="chklist"><li>Bring both mock papers</li><li>Green pen</li><li>Companion 2</li></ul><div class="ticks"><span class="tl">Tick when done</span><label class="tk"><input type="checkbox" data-t="w25_marks"><span>1. Read every mark</span></label><label class="tk"><input type="checkbox" data-t="w25_rewrite"><span>2. Rewrote one answer</span></label><label class="tk"><input type="checkbox" data-t="w25_target"><span>3. Wrote my target down</span></label></div></article>
+<article class="wk ph-fb" id="w26" data-iso="2027-03-22"><div class="wk-h">
+      <span class="wno">Week 26</span>
+      <span class="phase ph-fb">Feedback</span>
+      <span class="wdate">Mon 22 Mar 2027</span>
+      <button class="wlink" data-w="26" title="Copy the link to this week">&#128279; Copy week link</button>
+    </div><h3 class="wk-t">Your personal revision plan</h3><p class="say">You build your summer revision plan this week and leave with it written down. A Grade 9 is scheduled, not hoped for.</p><ul class="chklist"><li>Gap analysis sheet</li><li>Your planner</li></ul><div class="ticks"><span class="tl">Tick when done</span><label class="tk"><input type="checkbox" data-t="w26_marks"><span>1. Read every mark</span></label><label class="tk"><input type="checkbox" data-t="w26_rewrite"><span>2. Rewrote one answer</span></label><label class="tk"><input type="checkbox" data-t="w26_target"><span>3. Wrote my target down</span></label></div></article>
+<div class="term-band"><span>Summer 1</span><i></i></div>
+<div class="hol">&#9670; Easter holiday · 26 March – 9 April 2027</div>
+<article class="wk ph-ret" id="w27" data-iso="2027-04-12"><div class="wk-h">
+      <span class="wno">Week 27</span>
+      <span class="phase ph-ret">Practice</span>
+      <span class="wdate">Mon 12 Apr 2027</span>
+      <button class="wlink" data-w="27" title="Copy the link to this week">&#128279; Copy week link</button>
+    </div><span class="chip p1">Paper 1 · Christianity</span><h3 class="wk-t">Paper 1 — retrieval blitz</h3><p class="say">No new content from here. Paper 1 retrieval at pace — from memory, against the clock, every lesson.</p><div class="acts"><div class="act"><h5>Retrieval roulette</h5><p>A grid of questions from every unit. Spin, answer in silence, mark your own.</p></div><div class="act"><h5>Brain dump</h5><p>Blank page, one topic, five minutes. Then add what you missed in another colour.</p></div><div class="act"><h5>Keyword Taboo</h5><p>Define the key word without using any word from the definition. 30 seconds.</p></div></div><div class="shelf"><span class="blk-l">What you read and bring</span><div class="shelf-g"><a class="res-btn" data-key="res_w27_0" data-rel="../6%20-%20Summer%20Retrieval%20Kit/Roulette_Grids.docx" data-sp="Year%2011/6%20-%20Summer%20Retrieval%20Kit/Roulette_Grids.docx"><span class="ic">&#9679;</span><span class="lb">Retrieval roulette grids<em>Roulette_Grids.docx</em></span><span class="go">&#8599;</span></a><a class="res-btn" data-key="res_w27_1" data-rel="../6%20-%20Summer%20Retrieval%20Kit/Quote_Cards.docx" data-sp="Year%2011/6%20-%20Summer%20Retrieval%20Kit/Quote_Cards.docx"><span class="ic">&#9679;</span><span class="lb">Quote cards<em>Quote_Cards.docx</em></span><span class="go">&#8599;</span></a></div></div><div class="ticks"><span class="tl">Tick when done</span><label class="tk"><input type="checkbox" data-t="w27_listen"><span>1. Listen</span></label><label class="tk"><input type="checkbox" data-t="w27_read"><span>2. Read</span></label><label class="tk"><input type="checkbox" data-t="w27_practise"><span>3. Practise</span></label></div></article>
+<article class="wk ph-ret" id="w28" data-iso="2027-04-19"><div class="wk-h">
+      <span class="wno">Week 28</span>
+      <span class="phase ph-ret">Practice</span>
+      <span class="wdate">Mon 19 Apr 2027</span>
+      <button class="wlink" data-w="28" title="Copy the link to this week">&#128279; Copy week link</button>
+    </div><span class="chip p2">Paper 2 · Islam</span><h3 class="wk-t">Paper 2 — retrieval blitz</h3><p class="say">The same blitz, aimed at Paper 2. If a key word needs the page open, it is not yet knowledge.</p><div class="acts"><div class="act"><h5>Retrieval roulette</h5><p>All four Paper 2 units mixed together on one grid.</p></div><div class="act"><h5>Blurting</h5><p>Two minutes writing everything you know. Check. Then blurt again — the second go is the learning.</p></div><div class="act"><h5>Loop cards and quote relay</h5><p>Play until the loop closes. It cannot close if anyone is wrong.</p></div></div><div class="shelf"><span class="blk-l">What you read and bring</span><div class="shelf-g"><a class="res-btn" data-key="res_w28_0" data-rel="../6%20-%20Summer%20Retrieval%20Kit/Loop_Cards.docx" data-sp="Year%2011/6%20-%20Summer%20Retrieval%20Kit/Loop_Cards.docx"><span class="ic">&#9679;</span><span class="lb">Loop cards<em>Loop_Cards.docx</em></span><span class="go">&#8599;</span></a><a class="res-btn" data-key="res_w28_1" data-rel="../6%20-%20Summer%20Retrieval%20Kit/Quote_Cards.docx" data-sp="Year%2011/6%20-%20Summer%20Retrieval%20Kit/Quote_Cards.docx"><span class="ic">&#9679;</span><span class="lb">Quote cards<em>Quote_Cards.docx</em></span><span class="go">&#8599;</span></a></div></div><div class="ticks"><span class="tl">Tick when done</span><label class="tk"><input type="checkbox" data-t="w28_listen"><span>1. Listen</span></label><label class="tk"><input type="checkbox" data-t="w28_read"><span>2. Read</span></label><label class="tk"><input type="checkbox" data-t="w28_practise"><span>3. Practise</span></label></div></article>
+<article class="wk ph-ret" id="w29" data-iso="2027-04-26"><div class="wk-h">
+      <span class="wno">Week 29</span>
+      <span class="phase ph-ret">Practice</span>
+      <span class="wdate">Mon 26 Apr 2027</span>
+      <button class="wlink" data-w="29" title="Copy the link to this week">&#128279; Copy week link</button>
+    </div><h3 class="wk-t">Question analysis I — reading the question</h3><p class="say">Command words this week: ways means actions, reasons means because, beliefs means teachings. Read the question the way the examiner wrote it.</p><div class="acts"><div class="act"><h5>Deconstruct (a) to (c)</h5><p>What is the question actually asking you to do?</p></div><div class="act"><h5>Mark scheme sorting</h5><p>Rank four real answers, then match them to levels. If you can grade an answer you can write one.</p></div></div><div class="shelf"><span class="blk-l">What you read and bring</span><div class="shelf-g"><a class="res-btn" data-key="res_w29_0" data-rel="../6%20-%20Summer%20Retrieval%20Kit/Question_Banks.docx" data-sp="Year%2011/6%20-%20Summer%20Retrieval%20Kit/Question_Banks.docx"><span class="ic">&#9679;</span><span class="lb">Question banks<em>Question_Banks.docx</em></span><span class="go">&#8599;</span></a></div></div><div class="ticks"><span class="tl">Tick when done</span><label class="tk"><input type="checkbox" data-t="w29_listen"><span>1. Listen</span></label><label class="tk"><input type="checkbox" data-t="w29_read"><span>2. Read</span></label><label class="tk"><input type="checkbox" data-t="w29_practise"><span>3. Practise</span></label></div></article>
+<article class="wk ph-ret" id="w30" data-iso="2027-05-03"><div class="wk-h">
+      <span class="wno">Week 30</span>
+      <span class="phase ph-ret">Practice</span>
+      <span class="wdate">Mon 3 May 2027</span>
+      <button class="wlink" data-w="30" title="Copy the link to this week">&#128279; Copy week link</button>
+    </div><h3 class="wk-t">Question analysis II — the (d) answer, and a live mock</h3><p class="say">May Day Monday costs a slot; what remains goes on the (d) — including one live, timed mock answer.</p><div class="acts"><div class="act"><h5>Brainstorm walls</h5><p>One (d) statement per wall. Add arguments, teachings and the non-religious view.</p></div><div class="act"><h5>Steelman relay</h5><p>Write the strongest argument AGAINST your own view. Pass it on.</p></div><div class="act"><h5>Walking-talking mock</h5><p>Your teacher sits the paper live and thinks out loud. You write alongside.</p></div></div><div class="shelf"><span class="blk-l">What you read and bring</span><div class="shelf-g"><a class="res-btn" data-key="res_w30_0" data-rel="../6%20-%20Summer%20Retrieval%20Kit/Question_Banks.docx" data-sp="Year%2011/6%20-%20Summer%20Retrieval%20Kit/Question_Banks.docx"><span class="ic">&#9679;</span><span class="lb">Question banks<em>Question_Banks.docx</em></span><span class="go">&#8599;</span></a><a class="res-btn" data-key="res_w30_1" data-rel="../6%20-%20Summer%20Retrieval%20Kit/Roulette_Grids.docx" data-sp="Year%2011/6%20-%20Summer%20Retrieval%20Kit/Roulette_Grids.docx"><span class="ic">&#9679;</span><span class="lb">Roulette grids<em>Roulette_Grids.docx</em></span><span class="go">&#8599;</span></a></div></div><div class="ticks"><span class="tl">Tick when done</span><label class="tk"><input type="checkbox" data-t="w30_listen"><span>1. Listen</span></label><label class="tk"><input type="checkbox" data-t="w30_read"><span>2. Read</span></label><label class="tk"><input type="checkbox" data-t="w30_practise"><span>3. Practise</span></label></div></article>
+<article class="wk ph-ex" id="w31" data-iso="2027-05-10"><div class="wk-h">
+      <span class="wno">Week 31</span>
+      <span class="phase ph-ex">The real exam</span>
+      <span class="wdate">Mon 10 May 2027</span>
+      <button class="wlink" data-w="31" title="Copy the link to this week">&#128279; Copy week link</button>
+    </div><span class="chip p1">Paper 1 · Christianity</span><h3 class="wk-t">★ PAPER 1 — Thursday 13 May, morning</h3><p class="say">Monday to Wednesday: the final Christianity clinic. Thursday morning: Paper 1, for real. Trust the structure you have drilled.</p><ul class="chklist"><li>Paper 1 · Religion and Ethics (1RB0/1B)</li><li>1 hour 45 minutes · 102 marks</li><li>Companion 1 + your quote sheet</li><li>Two black pens, be early</li></ul><div class="ticks"><span class="tl">Tick when done</span><label class="tk"><input type="checkbox" data-t="w31_revised"><span>1. Revised for it</span></label><label class="tk"><input type="checkbox" data-t="w31_sat"><span>2. Sat the paper</span></label><label class="tk"><input type="checkbox" data-t="w31_done"><span>3. Nothing left to do</span></label></div></article>
+<article class="wk ph-ex" id="w32" data-iso="2027-05-17"><div class="wk-h">
+      <span class="wno">Week 32</span>
+      <span class="phase ph-ex">The real exam</span>
+      <span class="wdate">Mon 17 May 2027</span>
+      <button class="wlink" data-w="32" title="Copy the link to this week">&#128279; Copy week link</button>
+    </div><span class="chip p2">Paper 2 · Islam</span><h3 class="wk-t">★ PAPER 2 — Friday 21 May, morning</h3><p class="say">Eight days between papers and one focus: Islam, all week. Finish the course the way you ran it.</p><ul class="chklist"><li>Paper 2 · Religion, Peace and Conflict (1RB0/2C)</li><li>1 hour 45 minutes · 102 marks</li><li>All four Paper 2 units</li><li>Two black pens, be early</li></ul><div class="ticks"><span class="tl">Tick when done</span><label class="tk"><input type="checkbox" data-t="w32_revised"><span>1. Revised for it</span></label><label class="tk"><input type="checkbox" data-t="w32_sat"><span>2. Sat the paper</span></label><label class="tk"><input type="checkbox" data-t="w32_done"><span>3. Nothing left to do</span></label></div></article>
+<article class="wk ph-ex" id="w33" data-iso="2027-05-24"><div class="wk-h">
+      <span class="wno">Week 33</span>
+      <span class="phase ph-ex">The real exam</span>
+      <span class="wdate">Mon 24 May 2027</span>
+      <button class="wlink" data-w="33" title="Copy the link to this week">&#128279; Copy week link</button>
+    </div><h3 class="wk-t">DONE — both papers sat</h3><p class="say">Both papers sat. Your GCSE Religious Studies is complete — and you met it at the summit. Well done.</p><ul class="chklist"><li>Post-exam review</li><li>Nothing left to revise</li></ul><div class="ticks"><span class="tl">Tick when done</span><label class="tk"><input type="checkbox" data-t="w33_revised"><span>1. Revised for it</span></label><label class="tk"><input type="checkbox" data-t="w33_sat"><span>2. Sat the paper</span></label><label class="tk"><input type="checkbox" data-t="w33_done"><span>3. Nothing left to do</span></label></div></article>
+<div class="hol">&#9670; Half term · 31 May – 4 June 2027</div>
+  </div>
+</div></section>
+
+<section id="shelf"><div class="wrap">
+  <div class="sec-head"><span class="num">03</span><h2>Everything, in one place</h2></div>
+  <p class="sec-lead">The Grade 9 workbooks, the HE companions and the practice kit. Same files as the ones linked inside each week.</p>
+  <div class="res-note" id="resNote"><b>Teacher setup:</b> right now every button opens the file sitting next to this page in the Year 11 folder &#8212; which works on the classroom machine but not for a student at home. To serve the whole page from SharePoint, upload the Year 11 folder, open this file in a text editor and paste the folder&#8217;s address into <code>RESOURCE_BASE</code> at the bottom. One line re-points all 156 buttons and players. A tick in the corner of the page confirms the files can be reached.</div>
+  <div class="res-grid"><div class="res-col g1"><div class="rc-head"><span class="rc-n">Your shelf</span><h3>Workbooks — Grade 9 edition</h3></div><a class="res-btn" data-key="wb7" data-rel="../Unit7_Matters_of_Life_and_Death_Workbook_Grade9.docx" data-sp="Year%2011/Unit7_Matters_of_Life_and_Death_Workbook_Grade9.docx"><span class="ic">&#9632;</span><span class="lb">Unit 7 · Matters of Life and Death<em>Grade 9 edition</em></span><span class="go">&#8599;</span></a><a class="res-btn" data-key="wb8" data-rel="../Unit8_Peace_and_Conflict_Workbook_Grade9.docx" data-sp="Year%2011/Unit8_Peace_and_Conflict_Workbook_Grade9.docx"><span class="ic">&#9632;</span><span class="lb">Unit 8 · Peace and Conflict<em>Grade 9 edition</em></span><span class="go">&#8599;</span></a></div><div class="res-col g2"><div class="rc-head"><span class="rc-n">Your shelf</span><h3>Companions — HE edition</h3></div><a class="res-btn" data-key="c1" data-rel="Mock_Exam_Companion_HE.docx" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Mock_Exam_Companion_HE.docx"><span class="ic">&#9670;</span><span class="lb">Companion 1 · for Mock 1<em>Weeks 1–11 · HE</em></span><span class="go">&#8599;</span></a><a class="res-btn" data-key="c2" data-rel="../4%20-%20Mock%202%20Companion/Mock2_Companion_HE.docx" data-sp="Year%2011/4%20-%20Mock%202%20Companion/Mock2_Companion_HE.docx"><span class="ic">&#9670;</span><span class="lb">Companion 2 · for Mock 2<em>Weeks 12–24 · HE</em></span><span class="go">&#8599;</span></a></div><div class="res-col g3"><div class="rc-head"><span class="rc-n">Your shelf</span><h3>Revision and practice kit</h3></div><a class="res-btn" data-key="rev1" data-rel="../5%20-%20Revision%20Lessons/REV_W7_Paper1_Christian_Beliefs_LCL.pptx" data-sp="Year%2011/5%20-%20Revision%20Lessons/REV_W7_Paper1_Christian_Beliefs_LCL.pptx"><span class="ic">&#9635;</span><span class="lb">Week 7 revision — Paper 1<em>Christian Beliefs · LCL</em></span><span class="go">&#8599;</span></a><a class="res-btn" data-key="rev2" data-rel="../5%20-%20Revision%20Lessons/REV_W8_Paper2_Muslim_Beliefs_LML.pptx" data-sp="Year%2011/5%20-%20Revision%20Lessons/REV_W8_Paper2_Muslim_Beliefs_LML.pptx"><span class="ic">&#9635;</span><span class="lb">Week 8 revision — Paper 2<em>Muslim Beliefs · LML</em></span><span class="go">&#8599;</span></a><a class="res-btn" data-key="rev3" data-rel="../5%20-%20Revision%20Lessons/REV_W9_Crime_Punishment_D_Clinic.pptx" data-sp="Year%2011/5%20-%20Revision%20Lessons/REV_W9_Crime_Punishment_D_Clinic.pptx"><span class="ic">&#9635;</span><span class="lb">Week 9 revision — C&amp;P + (d) clinic<em>The boss battle</em></span><span class="go">&#8599;</span></a><a class="res-btn" data-key="kit1" data-rel="../6%20-%20Summer%20Retrieval%20Kit/Roulette_Grids.docx" data-sp="Year%2011/6%20-%20Summer%20Retrieval%20Kit/Roulette_Grids.docx"><span class="ic">&#9679;</span><span class="lb">Retrieval roulette grids<em>Summer kit</em></span><span class="go">&#8599;</span></a><a class="res-btn" data-key="kit2" data-rel="../6%20-%20Summer%20Retrieval%20Kit/Loop_Cards.docx" data-sp="Year%2011/6%20-%20Summer%20Retrieval%20Kit/Loop_Cards.docx"><span class="ic">&#9679;</span><span class="lb">Loop cards<em>Summer kit</em></span><span class="go">&#8599;</span></a><a class="res-btn" data-key="kit3" data-rel="../6%20-%20Summer%20Retrieval%20Kit/Quote_Cards.docx" data-sp="Year%2011/6%20-%20Summer%20Retrieval%20Kit/Quote_Cards.docx"><span class="ic">&#9679;</span><span class="lb">Quote cards<em>Summer kit</em></span><span class="go">&#8599;</span></a><a class="res-btn" data-key="kit4" data-rel="../6%20-%20Summer%20Retrieval%20Kit/Question_Banks.docx" data-sp="Year%2011/6%20-%20Summer%20Retrieval%20Kit/Question_Banks.docx"><span class="ic">&#9679;</span><span class="lb">Question banks<em>Summer kit</em></span><span class="go">&#8599;</span></a></div></div>
+  <div class="res-wide"><a class="res-btn big" data-key="start_here" data-rel="Podcast_Audio/Mock_Countdown/E00_How_To_Use_Your_Companion.mp3" data-sp="Year%2011/3%20-%20Mock%20Exam%20Companion/Podcast_Audio/Mock_Countdown/E00_How_To_Use_Your_Companion.mp3"><span class="ic">&#9654;</span><span class="lb">START HERE — how to use your Companion<em>E00 · listen once, in week 1</em></span><span class="go">&#8599;</span></a><a data-localonly="1" class="res-btn big" data-key="y11_revision" data-rel="../Y11_Revision_Ecosystem.html" data-sp="Year%2011/Y11_Revision_Ecosystem.html"><span class="ic">&#9968;</span><span class="lb">The Final Run-In — revision and summer kit page<em>Y11_Revision_Ecosystem.html</em></span><span class="go">&#8599;</span></a><a data-localonly="1" class="res-btn big" data-key="mock2_page" data-rel="../4%20-%20Mock%202%20Companion/Mock2_Ecosystem.html" data-sp="Year%2011/4%20-%20Mock%202%20Companion/Mock2_Ecosystem.html"><span class="ic">&#9635;</span><span class="lb">The Mock 2 page<em>Mock2_Ecosystem.html</em></span><span class="go">&#8599;</span></a></div>
+</div></section>
+
+<section id="map"><div class="wrap">
+  <div class="sec-head"><span class="num">04</span><h2>What the exam looks like</h2></div>
+  <p class="sec-lead">Two papers. Same shape in both. Once you know the shape, no question is a surprise.</p>
+  <div class="ecards2">
+    <div class="ecard e1"><div class="eh">Paper 1 &#183; Religion and Ethics &#8212; Christianity</div><div class="eb">
+      <p>Q1 Christian Beliefs &#183; Q2 Marriage and the Family &#183; Q3 Living the Christian Life &#183; Q4 Matters of Life and Death</p>
+      <p>Every question: (a) 3 marks &#183; (b) 4 &#183; (c) 5 + a source &#183; (d) 12 evaluation</p>
+      <p>1 hour 45 minutes &#183; 102 marks &#183; spelling counts (+3) on 1(d) and 3(d)</p>
+      <p class="exday">Thursday 13 May 2027 &#183; morning</p></div></div>
+    <div class="ecard e2"><div class="eh">Paper 2 &#183; Religion, Peace and Conflict &#8212; Islam</div><div class="eb">
+      <p>Q1 Muslim Beliefs &#183; Q2 Crime and Punishment &#183; Q3 Living the Muslim Life &#183; Q4 Peace and Conflict</p>
+      <p>Every question: (a) 3 marks &#183; (b) 4 &#183; (c) 5 + a source &#183; (d) 12 evaluation</p>
+      <p>1 hour 45 minutes &#183; 102 marks &#183; spelling counts (+3) on 1(d) and 3(d)</p>
+      <p class="exday">Friday 21 May 2027 &#183; morning</p></div></div>
+  </div>
+</div></section>
+
+<footer>
+  <div class="wrap">
+    <span>Year 11 Religious Studies &#183; week by week &#183; Summit · Grade 9 edition</span>
+    <span class="amber">Harlington School &#183; Edexcel GCSE (9&#8211;1) Religious Studies B</span>
+  </div>
+</footer>
+
+<script>
+/* =====================================================================
+   ONE LINE TO PUT THIS PAGE ONLINE
+   ---------------------------------------------------------------------
+   Paste the SharePoint address of the uploaded YEAR 11 folder between the
+   quotes below. Every button and every player on the page then reads from
+   SharePoint instead of this Mac. Leave it empty and the page keeps using
+   the copies in the folder next to it.
+
+   It must be the address from the browser bar with the folder open, e.g.
+     https://hs365.sharepoint.com/sites/HS_Subjects_RE/Shared Documents/Edu Ai - GCSE/Year 11
+   NOT a "Copy link" sharing link (the kind with /:f:/s/ and a long code) —
+   those cannot have file names added to the end of them.
+
+   The folder you upload must keep its shape: 1 - Mock Exam Lessons,
+   2 - Post-Mock Lessons, 3 - Mock Exam Companion (with Podcast_Audio inside),
+   4, 5, 6 and the workbooks. Renaming or moving a folder breaks its links.
+   ===================================================================== */
+const RESOURCE_BASE = "https://hs365.sharepoint.com/sites/HS_Subjects_RE/Year%2011/Philosophy/Edu%20Ai%20-%20GCSE/KS4%20Edexcel%20RS%20-%20Full%20Scheme%20of%20Work%203%20%281%29";
+
+/* The podcasts sit in their own folder rather than inside 3 - Mock Exam Companion.
+   Leave this empty if you ever move them back in beside the companion. */
+const PODCAST_BASE  = "https://hs365.sharepoint.com/sites/HS_Subjects_RE/Year%2011/Philosophy/Edu%20Ai%20-%20GCSE/Podcast_Audio";
+
+/* Optional: a one-off address for a single button or player. Anything left
+   empty follows RESOURCE_BASE above, so you normally do not need this. */
+const LINKS = {
+  book_w1: "",
+  book_w12: "",
+  book_w13: "",
+  book_w16: "",
+  book_w17: "",
+  book_w2: "",
+  book_w3: "",
+  book_w4: "",
+  c1: "",
+  c2: "",
+  comp_w1: "",
+  comp_w12: "",
+  comp_w13: "",
+  comp_w16: "",
+  comp_w17: "",
+  comp_w18: "",
+  comp_w19: "",
+  comp_w2: "",
+  comp_w20: "",
+  comp_w21: "",
+  comp_w22: "",
+  comp_w3: "",
+  comp_w4: "",
+  comp_w5: "",
+  comp_w6: "",
+  comp_w7: "",
+  comp_w8: "",
+  comp_w9: "",
+  deck_CP_L05: "",
+  deck_CP_L06: "",
+  deck_CP_L07: "",
+  deck_CP_L08: "",
+  deck_MLD_L01: "",
+  deck_MLD_L02: "",
+  deck_MLD_L03: "",
+  deck_MLD_L04: "",
+  deck_MLD_L05: "",
+  deck_MLD_L06: "",
+  deck_MLD_L07: "",
+  deck_MLD_L08: "",
+  deck_MR_L01: "",
+  deck_MR_L02: "",
+  deck_MR_L03: "",
+  deck_MR_L04: "",
+  deck_MR_L05: "",
+  deck_MR_L06: "",
+  deck_MR_L07: "",
+  deck_MR_L08: "",
+  deck_PAC_L01: "",
+  deck_PAC_L02: "",
+  deck_PAC_L03: "",
+  deck_PAC_L04: "",
+  deck_PAC_L05: "",
+  deck_PAC_L06: "",
+  deck_PAC_L07: "",
+  deck_PAC_L08: "",
+  kit1: "",
+  kit2: "",
+  kit3: "",
+  kit4: "",
+  mock2_page: "",
+  pod_C09_w18: "",
+  pod_C10_w18: "",
+  pod_C11_w5: "",
+  pod_C12_w19: "",
+  pod_C13_w5: "",
+  pod_C14_w6: "",
+  pod_C15_w19: "",
+  pod_C16_w6: "",
+  pod_C25_w1: "",
+  pod_C26_w12: "",
+  pod_C27_w1: "",
+  pod_C28_w12: "",
+  pod_C29_w2: "",
+  pod_C30_w13: "",
+  pod_C31_w13: "",
+  pod_C32_w2: "",
+  pod_E01_w1: "",
+  pod_E02_w2: "",
+  pod_E03_w3: "",
+  pod_E04_w4: "",
+  pod_E05_w5: "",
+  pod_E06_w6: "",
+  pod_E07_w7: "",
+  pod_E08_w7: "",
+  pod_E09_w8: "",
+  pod_E10_w8: "",
+  pod_E11_w9: "",
+  pod_I13_w20: "",
+  pod_I14_w20: "",
+  pod_I15_w21: "",
+  pod_I16_w21: "",
+  pod_I25_w3: "",
+  pod_I26_w16: "",
+  pod_I27_w3: "",
+  pod_I28_w4: "",
+  pod_I29_w16: "",
+  pod_I30_w17: "",
+  pod_I31_w17: "",
+  pod_I32_w4: "",
+  res_w27_0: "",
+  res_w27_1: "",
+  res_w28_0: "",
+  res_w28_1: "",
+  res_w29_0: "",
+  res_w30_0: "",
+  res_w30_1: "",
+  res_w7_0: "",
+  res_w7_1: "",
+  res_w8_0: "",
+  res_w8_1: "",
+  res_w9_0: "",
+  res_w9_1: "",
+  rev1: "",
+  rev2: "",
+  rev3: "",
+  start_here: "",
+  wb7: "",
+  wb8: "",
+  y11_revision: ""
+};
+(function(){
+  "use strict";
+  /* ---- safe storage (falls back to memory if the browser blocks it) ---- */
+  var mem={}, store={
+    get:function(k){ try{ var v=localStorage.getItem(k); return v===null?mem[k]:v; }catch(e){ return mem[k]; } },
+    set:function(k,v){ mem[k]=v; try{ localStorage.setItem(k,v); }catch(e){} }
+  };
+
+  /* ---- 1. work out where every resource lives -------------------------------
+     Order of preference for each button and player:
+       1. a URL pasted against its key in LINKS  (one-off override)
+       2. RESOURCE_BASE + its path inside the Year 11 folder  (the whole page at once)
+       3. the copy sitting next to this file in the folder  (what you use on your Mac)
+     Office files get ?web=1 appended on SharePoint so they open in the browser. */
+  function clean(v){ return (v||"").trim().replace(/\/+$/,"").replace(/ /g,"%20"); }
+  var BASE=clean(typeof RESOURCE_BASE!=="undefined" && RESOURCE_BASE);
+  var PODS=clean(typeof PODCAST_BASE!=="undefined" && PODCAST_BASE);
+  var ONLINE=!!BASE;
+  function resolve(el){
+    var over=((typeof LINKS!=="undefined" && LINKS[el.dataset.key])||"").trim();
+    if(over) return {url:over, remote:true};
+    var sp=(el.dataset.sp||"").trim();
+    if(!sp || !BASE) return {url:(el.dataset.rel||"").trim(), remote:false};
+    /* podcasts live in their own folder, so rewrite anything under Podcast_Audio/ */
+    var i=sp.indexOf("Podcast_Audio/");
+    if(PODS && i>=0) return {url:PODS+"/"+sp.slice(i+"Podcast_Audio/".length), remote:true};
+    var url=BASE+"/"+sp;
+    if(/\.(pptx|docx|xlsx|ppt|doc|xls)$/i.test(sp)) url+="?web=1";
+    return {url:url, remote:true};
+  }
+  document.querySelectorAll(".res-btn").forEach(function(btn){
+    /* the two links to the other .html pages only work from the folder —
+       SharePoint will not run a page, so hide them once a base is set */
+    if(ONLINE && btn.dataset.localonly==="1"){ btn.style.display="none"; return; }
+    var r=resolve(btn);
+    if(r.url){ btn.href=r.url; if(r.remote){ btn.target="_blank"; btn.rel="noopener"; } }
+    else{ btn.classList.add("unset"); btn.removeAttribute("href"); btn.setAttribute("aria-disabled","true"); }
+  });
+  document.querySelectorAll(".pod").forEach(function(p){
+    var r=resolve(p), a=p.querySelector("audio");
+    if(a && r.url) a.src=r.url;
+  });
+  document.querySelectorAll(".pchip").forEach(function(c){
+    var r=resolve(c);
+    if(r.url) c.dataset.play=r.url;
+  });
+
+  /* ---- 2. one podcast at a time ---- */
+  var audios=Array.prototype.slice.call(document.querySelectorAll("audio"));
+  audios.forEach(function(a){
+    a.addEventListener("play",function(){ audios.forEach(function(b){ if(b!==a && !b.paused) b.pause(); }); });
+    a.addEventListener("error",function(){ var w=a.closest(".pod"); if(w) w.classList.add("missing"); });
+  });
+
+  /* ---- 3. revision-week episode chips play inline ---- */
+  var chipPlayer=new Audio();
+  document.querySelectorAll(".pchip").forEach(function(c){
+    c.addEventListener("click",function(e){
+      e.preventDefault();
+      var was=c.classList.contains("playing");
+      document.querySelectorAll(".pchip.playing").forEach(function(x){ x.classList.remove("playing"); });
+      chipPlayer.pause();
+      if(was) return;
+      audios.forEach(function(b){ if(!b.paused) b.pause(); });
+      chipPlayer.src=c.dataset.play||c.dataset.rel; chipPlayer.play().catch(function(){});
+      c.classList.add("playing");
+      toast("Playing "+c.textContent+" — click again to stop");
+    });
+  });
+  chipPlayer.addEventListener("ended",function(){
+    document.querySelectorAll(".pchip.playing").forEach(function(x){ x.classList.remove("playing"); });
+  });
+
+  /* ---- 4. tick boxes + progress ---- */
+  var boxes=Array.prototype.slice.call(document.querySelectorAll('input[type=checkbox][data-t]'));
+  var saved={}; try{ saved=JSON.parse(store.get("y11_supported_ticks")||"{}")||{}; }catch(e){ saved={}; }
+  function save(){
+    var o={}; boxes.forEach(function(b){ if(b.checked) o[b.dataset.t]=1; });
+    store.set("y11_supported_ticks",JSON.stringify(o));
+  }
+  function paint(){
+    var done=boxes.filter(function(b){ return b.checked; }).length;
+    var bar=document.getElementById("pbar"), txt=document.getElementById("ptxt");
+    if(bar) bar.style.width=(boxes.length?done/boxes.length*100:0)+"%";
+    if(txt) txt.textContent=done+" of "+boxes.length+" ticked";
+  }
+  boxes.forEach(function(b){
+    if(saved[b.dataset.t]) b.checked=true;
+    b.addEventListener("change",function(){ save(); paint(); });
+  });
+  paint();
+
+  /* ---- 5. copy a link to one week ---- */
+  var t=null;
+  function toast(msg){
+    var el=document.querySelector(".toast");
+    if(!el){ el=document.createElement("div"); el.className="toast"; document.body.appendChild(el); }
+    el.textContent=msg; el.classList.add("show");
+    clearTimeout(t); t=setTimeout(function(){ el.classList.remove("show"); },2600);
+  }
+  document.querySelectorAll(".wlink").forEach(function(btn){
+    btn.addEventListener("click",function(){
+      var url=location.href.split("#")[0]+"#w"+btn.dataset.w;
+      var ok=function(){ btn.classList.add("done"); btn.textContent="✓ Link copied";
+        toast("Week "+btn.dataset.w+" link copied — paste it into Teams or an email");
+        setTimeout(function(){ btn.classList.remove("done"); btn.textContent="🔗 Copy week link"; },2600); };
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(url).then(ok,function(){ prompt("Copy this link:",url); });
+      } else {
+        var ta=document.createElement("textarea"); ta.value=url; document.body.appendChild(ta); ta.select();
+        try{ document.execCommand("copy"); ok(); }catch(e){ prompt("Copy this link:",url); }
+        document.body.removeChild(ta);
+      }
+    });
+  });
+
+  /* ---- 6. which week are we in? ---- */
+  var cards=Array.prototype.slice.call(document.querySelectorAll(".wk"));
+  var today=new Date(); today.setHours(0,0,0,0);
+  var current=null;
+  cards.forEach(function(c){
+    var start=new Date(c.dataset.iso+"T00:00:00");
+    var end=new Date(start.getTime()+7*864e5);
+    if(today>=start && today<end) current=c;
+  });
+  if(current){
+    current.classList.add("now");
+    var h=current.querySelector(".wk-h");
+    if(h){ var s=document.createElement("span"); s.className="phase"; s.style.background="#A32219";
+      s.textContent="THIS WEEK"; h.insertBefore(s,h.children[2]||null); }
+  }
+
+  /* ---- 7. highlight the week chip you are looking at ---- */
+  if("IntersectionObserver" in window){
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(e){
+        if(!e.isIntersecting) return;
+        var n=e.target.id.replace("w","");
+        document.querySelectorAll(".nch.on").forEach(function(x){ x.classList.remove("on"); });
+        var chip=document.querySelector('.nch[data-w="'+n+'"]');
+        if(chip){
+          chip.classList.add("on");
+          /* scroll the chip strip SIDEWAYS only — never scrollIntoView here,
+             it drags the whole page back and fights the user's scrolling */
+          var strip=chip.parentElement;
+          if(strip && strip.scrollWidth>strip.clientWidth){
+            strip.scrollLeft=Math.max(0, chip.offsetLeft-strip.clientWidth/2+chip.clientWidth/2);
+          }
+        }
+      });
+    },{rootMargin:"-88px 0px -70% 0px"});
+    cards.forEach(function(c){ io.observe(c); });
+  }
+
+  /* ---- 8. self-check: can this copy of the page actually reach the files? ---- */
+  (function selfCheck(){
+    var first=document.querySelector(".pod audio");
+    if(!first || !first.getAttribute("src")) return;
+    var probe=new Audio(); var settled=false;
+    function pill(ok){
+      if(settled) return; settled=true;
+      var el=document.createElement("div");
+      el.className="check "+(ok?"ok":"bad");
+      el.innerHTML = ok
+        ? "<b>&#10003; Resources connected</b><span>"+(ONLINE?"reading from SharePoint":"reading from this folder")+"</span>"
+        : "<b>&#9888; The files cannot be reached</b><span>"+(ONLINE
+            ? "Check RESOURCE_BASE at the bottom of this file, and that you are signed in to SharePoint."
+            : (/^https?:/.test(location.protocol)
+               ? "This page is online but no resource address has been set. Put the SharePoint Year 11 folder address into RESOURCE_BASE at the bottom of this file."
+               : "This copy of the page is not inside the &lsquo;3 - Mock Exam Companion&rsquo; folder. Open the copy that sits next to Podcast_Audio."))+"</span>";
+      document.body.appendChild(el);
+      if(ok) setTimeout(function(){ el.classList.add("fade"); },4000);
+    }
+    probe.addEventListener("loadedmetadata",function(){ pill(true); });
+    probe.addEventListener("error",function(){ pill(false); });
+    setTimeout(function(){ pill(false); },9000);
+    probe.preload="metadata"; probe.src=first.getAttribute("src");
+  })();
+
+  /* ---- 9. flash the week a shared link points at ---- */
+  function flash(){
+    if(!location.hash) return;
+    var el=document.querySelector(location.hash);
+    if(el && el.classList.contains("wk")){ el.classList.remove("target"); void el.offsetWidth; el.classList.add("target"); }
+  }
+  window.addEventListener("hashchange",flash); flash();
+})();
+
+</script>
+<script>
+(function(){try{
+var EP="https://eduai-tripwire.sveduai.workers.dev/e";
+function send(k){try{var d=JSON.stringify({k:k,p:"summit/year11-summit.html",u:String(location.href).slice(0,480),r:String(document.referrer||"").slice(0,280)});
+if(navigator.sendBeacon){navigator.sendBeacon(EP,new Blob([d],{type:"text/plain"}));}
+else if(window.fetch){fetch(EP,{method:"POST",body:d,keepalive:true}).catch(function(){});}}catch(e){}}
+if(location.hostname!=="vmcssse-ui.github.io"){var f=null;try{f=sessionStorage.getItem("eatw")}catch(e){}
+if(!f){try{sessionStorage.setItem("eatw","1")}catch(e){}send("rehost");}}
+document.addEventListener("copy",function(){try{var s=window.getSelection?String(window.getSelection()):"";if(s.length>1200)send("bulk-copy");}catch(e){}});
+}catch(e){}})();
+</script>
+<footer style="text-align:center;padding:20px 12px 28px;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;font-size:11px;letter-spacing:.02em;color:#888;opacity:.85">© Edu.Ai SV Digital 2026 · Designed and built by Dr Vitor Carvalho</footer>
+</body>
+</html>
